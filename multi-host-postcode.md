@@ -69,6 +69,7 @@ The component diagram shows the present implementation for postcode and history 
 
 ```
  **phosphor-host-postd**
+ 
 The below device entry added in tiogapass DTS to create the LPC device(aspeed-lpc-snoop) in /dev
 
 &lpc_snoop {
@@ -226,5 +227,6 @@ Change single process into a multi-process to handle multi-host postcode history
 ## Alternatives Considered
 Considered using to read post-code directly from Bridge IC under [fb-yv2-misc](https://github.com/HCLOpenBMC/fb-yv2-misc) instead of using [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTgwOTE2MTZdfQ==
+eyJoaXN0b3J5IjpbLTEwODgxNzMzMzIsLTE0NTgwOTE2MTZdfQ
+==
 -->
