@@ -222,10 +222,10 @@ The below module involved on proposed change.
  - Generate postcode event to post-code-manager by update postcode into "Value" property.
 
 ## phosphor-post-code-manager
-Change single process into a multi-process to handle multi-host postcode history.
+Change single process into a multi process to handle multi-host postcode history.
 
 ## Alternatives Considered
 Considered using to read post-code directly from Bridge IC under [fb-yv2-misc](https://github.com/HCLOpenBMC/fb-yv2-misc) instead of using [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0Mjc2MzkxNF19
+eyJoaXN0b3J5IjpbNDEyMjI4NjA1LDE5NDI3NjM5MTRdfQ==
 -->
