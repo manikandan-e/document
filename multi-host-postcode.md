@@ -214,7 +214,7 @@ The below module involved on proposed change.
 
  - Get Bridge IC configuration(cmd = 0x0E, netfn=0x38, lun=00).
  - Set Bridge IC configuration(cmd = 0x10, netfn=0x38, lun=00).
- - Create, register and add dbus connection for "/xyz/openbmc_project/hoststate/boot/raw".
+ - Create, register and add dbus connection for "/xyz/openbmc_project/hostX/state/boot/raw".
  - Add "Value" property to store current postcode from hostX(X=1,2,3,4).
  - Read each hosts postcode data from fb-ipmi-oem postcode interrupt handler.
  - Read host position from debug card.
@@ -227,5 +227,5 @@ Change single process into a multi process to handle multi-host postcode history
 ## Alternatives Considered
 Considered using to read post-code directly from Bridge IC under [fb-yv2-misc](https://github.com/HCLOpenBMC/fb-yv2-misc) instead of using [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc5NTAzNTI1LDQxMjIyODYwNV19
+eyJoaXN0b3J5IjpbMTM3NDIwMzEzMiw0MTIyMjg2MDVdfQ==
 -->
