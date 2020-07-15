@@ -99,9 +99,9 @@ and this object is the only object feeding into the final binary.
 If however, another object is added to this binary it would be proper
 to move these declarations to be global and extern to the other object.
 
-**root@tiogapass:~# busctl get-property xyz.openbmc_project.State.Boot.Raw /xyz/openbmc_project/state/boot/raw xyz.openbmc_project.State.Boot.Raw Value**
+`root@tiogapass:~# busctl get-property xyz.openbmc_project.State.Boot.Raw /xyz/openbmc_project/state/boot/raw xyz.openbmc_project.State.Boot.Raw Value
 
-t 0
+t 0`
 
 **phosphor-post-code-manager** 
 
@@ -227,5 +227,5 @@ Change single process into a multi-process to handle multi-host postcode history
 ## Alternatives Considered
 Considered using to read post-code directly from Bridge IC under [fb-yv2-misc](https://github.com/HCLOpenBMC/fb-yv2-misc) instead of using [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODgxNzMzMzJdfQ==
+eyJoaXN0b3J5IjpbMTk4NDU2MjU4LC0xMDg4MTczMzMyXX0=
 -->
