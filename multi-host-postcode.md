@@ -52,7 +52,7 @@ into phosphor-host-postd and phosphor-post-code-manager.
 |         |                        |                     +
 |         v                        |                     |      +------------------+
 |  +------+------------------------+                     +----->+                  |
-|  |Phosphor-postcode-manager      |                            |   https    |
+|  |Phosphor-postcode-manager      |                            |   https          |
 |  |                 +-------------+                            |                  |
 |  |                 |   postcode  +<-------------------------->+                  |
 |  |                 |   history   |                            |                  |
@@ -156,13 +156,63 @@ at 26 2 1 2 3 4 5 6 4 5 6 183 97 154 104 121 213 151 178 156 146 192 193 173 132
  - POST code history.
  - Provide a command for user to see the all postcode for any given server.
 
+## Proposed Design
+
+The below module involved on proposed change.
+
+fb-ipmi-oem.
+
+fb-yv2-misc.
+
+phosphor-post-code-manager.
+
+```ascii
+
++----------------------------------------------+                       +------------------+
+| +-----------------------------------+        +<-----+I2C/IPMI+------>+BIC||             |
+| |       fb-ipmi-oem                 +<----+--+                       +----|     Host1   |
+| |   (ipmi interrupt handler)        |     ^  |                       +------------------+
+| +-----------------------------------+     |  |
+| +-----------------------------------+     |  |                           +------------------+
+| |     fb-yv2-misc                   |     <---<------+I2C/IPMI+--------->+BIC|--|           |
+| |                                   |     |  |                           +------|   Host2   |
+| | xyz.openbmc_project.              |     |  |                           +------------------+
+| |  State.Hostx.Boot.Raw.Value       |     |  |
+| +---------------+----------+--------+     |  |                                  +-------------------+
+|  postcode       |          |        +     <---<------------+I2C/IPMI+---------->BIC|-|              |
+|  event0         +          |   postcode   |  |                                  +----|  Host3       |
+|    +         postcode      |   event3     |  |                                  +-------------------+
+|    |         event1        +        +     |  |
+|    |            +        postcode   |     |  |                                          +--------------------+
+|    |            |        event2     |     |  |                                          +-----|   Host4      |
+|    |            |          +        |     +---<---------------+I2C/IPMI+--------------->+BIC|-|              |
+|    |            |          |        |        |                                          +--------------------+
+|    v            v          v        v        |                                                        +--------------------+
+|  +-+------------+----------+--------+---+    |    xyz.openbmc_project.State.Host0.Boot.Raw            |                    |
+|  |                                      +<----<--+xyz.openbmc_project.State.Host1.Boot.Raw+---------->+                    |
+|  |         +--------+                   |    |    xyz.openbmc_project.State.Host2.Boot.Raw            |                    |
+|  |          history1                    |    |    xyz.openbmc_project.State.Host3.Boot.Raw            |                    |
+|  |         +--------+        +--------+ |    |                                                        |  https             |
+|  |                           | history3 |    |                                                        |                    |
+|  +--------+                  +--------+ |    |    xyz.openbmc_project.State.Host0.Boot.PostCode       |                    |
+|  |history0|                             +<----<--+xyz.openbmc_project.State.Host1.Boot.PostCode+----->+                    |
+|  +--------+       +--------+            |    |    xyz.openbmc_project.State.Host2.Boot.PostCode       |                    |
+|  |                 history2|            |    |    xyz.openbmc_project.State.Host3.Boot.PostCode       |                    |
+|  |                +--------+            |    |                                                        +--------------------+
+|  |                                      |    |           +--------------------+
+|  | Phosphor-post-code-manager           |    ++GPIOs+--->+ 7 segment display  |
+|  +--------------------------------------+    |           |                    |
++----------------------------------------------+           +--------------------+
+
+```
+
 ##  fb-ipmi-oem
 
  - Register Bridge IC OEM callback interrupt handler for a postcode(cmd = 0x08, netfn=0x38, lun=00).
  - Extract port 80 data from IPMI response based on length.
  - Send extracted postcode to fb-yv2-misc.
 
-## fb-yv2-misc implementation
+## fb-yv2-misc
 
  - Get Bridge IC configuration(cmd = 0x0E, netfn=0x38, lun=00).
  - Set Bridge IC configuration(cmd = 0x10, netfn=0x38, lun=00).
@@ -173,7 +223,7 @@ at 26 2 1 2 3 4 5 6 4 5 6 183 97 154 104 121 213 151 178 156 146 192 193 173 132
  - Display current post-code into the 7 segment display connected to GPIOs based on the host selection.
  - Generate postcode event to post-code-manager by update postcode into "Value" property.
 
-## postcode-manager implementation
+## phosphor-post-code-manager
 Change single process into a multi-process to handle multi-host postcode history.
 
 ## Alternatives Considered
