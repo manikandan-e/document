@@ -32,6 +32,7 @@ into phosphor-host-postd and phosphor-post-code-manager.
 
  **phosphor-host-postd**
 
+```ascii
 
 +----------------------------------+                           +--------------------+
 |  +-------------------------------+                           |                    |
@@ -67,6 +68,7 @@ into phosphor-host-postd and phosphor-post-code-manager.
 |                                  |                           |                      |
 +----------------------------------+                           +----------------------+
 
+```
 
 The below device entry added in tiogapass DTS to create the LPC device(aspeed-lpc-snoop) in /dev
 
