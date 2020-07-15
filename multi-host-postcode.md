@@ -160,11 +160,9 @@ at 26 2 1 2 3 4 5 6 4 5 6 183 97 154 104 121 213 151 178 156 146 192 193 173 132
 
 The below module involved on proposed change.
 
-fb-ipmi-oem.
-
-fb-yv2-misc.
-
-phosphor-post-code-manager.
+ - fb-ipmi-oem.
+ - fb-yv2-misc.
+ - phosphor-post-code-manager.
 
 ```ascii
 
@@ -229,5 +227,5 @@ Change single process into a multi-process to handle multi-host postcode history
 ## Alternatives Considered
 Considered using to read post-code directly from Bridge IC under [fb-yv2-misc](https://github.com/HCLOpenBMC/fb-yv2-misc) instead of using [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MTAwOTA5MiwtMTc4MTA4NjIzNV19
+eyJoaXN0b3J5IjpbMzE1MTE5MDk5XX0=
 -->
