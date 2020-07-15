@@ -1,4 +1,4 @@
-# Multi-host postcode
+# multi-host-postcode
 
 Author:
   manikandan Elumalai, [manikandan.hcl.ers.epl@gmail.com](mailto:manikandan.hcl.ers.epl@gmail.com)
@@ -227,5 +227,5 @@ Change single process into a multi-process to handle multi-host postcode history
 ## Alternatives Considered
 Considered using to read post-code directly from Bridge IC under [fb-yv2-misc](https://github.com/HCLOpenBMC/fb-yv2-misc) instead of using [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE1MTE5MDk5XX0=
+eyJoaXN0b3J5IjpbMjkwNDE2MTEwLDMxNTExOTA5OV19
 -->
