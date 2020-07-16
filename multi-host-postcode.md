@@ -135,11 +135,11 @@ BootCycleCount's max count is 100.
 
 `-rw-r--r--    1 root     root            19 Jan  7 03:51 CurrentBootCycleIndex`
 
-`root@tiogapass:~#busctl call xyz.openbmc_project.State.Boot.PostCode /xyz/openbmc_project/State``/Boot/PostCode xyz.openbmc_project.State.Boot.PostCode GetPostCodes q 1`
+`root@tiogapass:~#busctl call xyz.openbmc_project.State.Boot.PostCode /xyz/openbmc_project/State xyz.openbmc_project.State.Boot.PostCode GetPostCodes q 1`
 
 `at 20 5 6 183 97 154 104 121 213 151 178 156 146 192 193 173 132 132 227 0 0`
 
-`root@tiogapass:~#busctl call xyz.openbmc_project.State.Boot.PostCode /xyz/openbmc_project/State``/Boot/PostCode xyz.openbmc_project.State.Boot.PostCode GetPostCodes q 2`
+`root@tiogapass:~#busctl call xyz.openbmc_project.State.Boot.PostCode /xyz/openbmc_project/State /Boot/PostCode xyz.openbmc_project.State.Boot.PostCode GetPostCodes q 2`
 
 `at 26 1 2 2 3 3 4 5 6 5 6 183 97 154 104 121 213 151 178 156 146 192 193 173 132 132 0`
 
@@ -226,6 +226,6 @@ Change single process into a multi process to handle multi-host postcode history
 ## Alternatives Considered
 Considered using to read post-code directly from Bridge IC under [fb-yv2-misc](https://github.com/HCLOpenBMC/fb-yv2-misc) instead of using [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDQ5MjY1NzgsMTUyMTY2MDI2MywxOD
-c0OTAzODI5XX0=
+eyJoaXN0b3J5IjpbLTg4NTA3OTEzMywxNTIxNjYwMjYzLDE4Nz
+Q5MDM4MjldfQ==
 -->
