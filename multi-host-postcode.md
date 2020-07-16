@@ -12,13 +12,13 @@ Created:
 
 ## Problem Description
 
-The current implementation in the phosphor-host-postd for postcode based on the LPC port 80 
-connected b/w BMC and single host.
-
 It is required to develop a new mechanism that would allow to read port 80 post code 
-from multiple-host through BIC(Bridge IC) using IPMI protocol.
+for multiple-host through using IPMB protocol.
 
 ## Background and References
+
+The current implementation in the phosphor-host-postd for postcode based on the LPC port 80 
+connected b/w BMC and single host.
 
 Facebook Yosemitev2 had an internal solution already for the problem and solution may to add 
 into phosphor-host-postd and phosphor-post-code-manager. 
@@ -227,5 +227,5 @@ Change single process into a multi process to handle multi-host postcode history
 ## Alternatives Considered
 Considered using to read post-code directly from Bridge IC under [fb-yv2-misc](https://github.com/HCLOpenBMC/fb-yv2-misc) instead of using [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2MzE1OTA0MiwxMzc0MjAzMTMyXX0=
+eyJoaXN0b3J5IjpbLTQ0MTA5MDc2MCwxMzc0MjAzMTMyXX0=
 -->
