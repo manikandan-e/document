@@ -152,8 +152,8 @@ BootCycleCount's max count is 100.
 
  - Read postcode from servers.
  - Display host postcode to 7 segment display.
- - Provide a command interface for user to read any server current postcode .
- - Provide a command interface for user to see the all postcode given server.
+ - Provide a command interface for user to see any server current postcode .
+ - Provide a command interface for user to see any server postcode history.
 
 ## Proposed Design
 
@@ -226,5 +226,5 @@ Change single process into a multi process to handle multi-host postcode history
 ## Alternatives Considered
 Considered using to read post-code directly from Bridge IC under [fb-yv2-misc](https://github.com/HCLOpenBMC/fb-yv2-misc) instead of using [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUyOTI4NjY1LDE4NzQ5MDM4MjldfQ==
+eyJoaXN0b3J5IjpbMTIxODk2NjY0NywxODc0OTAzODI5XX0=
 -->
