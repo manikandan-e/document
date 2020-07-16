@@ -20,13 +20,6 @@ for multiple-host through using IPMB protocol.
 The current implementation in the phosphor-host-postd for postcode based on the LPC port 80 
 connected b/w BMC and single host.
 
-[OCP Debug Card with LCD Spec v1.0](http://files.opencompute.org/oc/public.php?service=files&t=4d86c4bcd365cd733ee1c4fa129bafca&download)
-
-[fb-yv2-misc](https://github.com/HCLOpenBMC/fb-yv2-misc)
-
-[fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem)
-
-
 The component diagram shows the present implementation for postcode and history high-level overview
 ```ascii
 
@@ -224,6 +217,6 @@ Change single process into a multi process to handle multi-host postcode history
 ## Alternatives Considered
 Considered using to read post-code directly from Bridge IC under [fb-yv2-misc](https://github.com/HCLOpenBMC/fb-yv2-misc) instead of using [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNzY2MDc3LC00NDEwOTA3NjAsMTM3ND
-IwMzEzMl19
+eyJoaXN0b3J5IjpbMTE0MTcwOTA2OSwtNDI3NjYwNzcsLTQ0MT
+A5MDc2MCwxMzc0MjAzMTMyXX0=
 -->
