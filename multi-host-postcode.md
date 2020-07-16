@@ -123,7 +123,7 @@ The below files strored as Non-persistence storage in BMC.
 
 BootCycleCount's max count is 100.
 
-`root@tiogapass:~#root@tiogapass:~# ls -l  /var/lib/phosphor-post-code-manager//Boot/PostCode `
+`root@tiogapass:~#root@tiogapass:~# ls -l  /var/lib/phosphor-post-code-manager/`
  
 `-rw-r--r--    1 root     root          1967 Jan  1 00:12 1`
 
@@ -226,5 +226,6 @@ Change single process into a multi process to handle multi-host postcode history
 ## Alternatives Considered
 Considered using to read post-code directly from Bridge IC under [fb-yv2-misc](https://github.com/HCLOpenBMC/fb-yv2-misc) instead of using [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMTY2MDI2MywxODc0OTAzODI5XX0=
+eyJoaXN0b3J5IjpbLTIxNDQ5MjY1NzgsMTUyMTY2MDI2MywxOD
+c0OTAzODI5XX0=
 -->
