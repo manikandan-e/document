@@ -222,10 +222,14 @@ The below module involved on proposed change.
 
 ## phosphor-post-code-manager
 Change single process into a multi process to handle multi-host postcode history.
+The below 
+  xyz.openbmc_project.State.Host0.Boot.PostCode
+  xyz.openbmc_project.State.Host1.Boot.PostCode
+  xyz.openbmc_project.State.Host2.Boot.PostCode
+  xyz.openbmc_project.State.Host3.Boot.PostCode
 
 ## Alternatives Considered
 Considered using to read post-code directly from Bridge IC under [fb-yv2-misc](https://github.com/HCLOpenBMC/fb-yv2-misc) instead of using [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTA1NDQwNjEsLTE2NzAyMTIwMzNdfQ
-==
+eyJoaXN0b3J5IjpbLTkxMzA1NTQwMywtMTY3MDIxMjAzM119
 -->
