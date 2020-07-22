@@ -238,9 +238,33 @@ The below dbus interface needs to created for multi-host post-code history.
  - xyz.openbmc_project.State.Host3.Boot.PostCode
  
 ## phosphor-dbus-interfaces
+The new YAML file needs to create to handle Facebook specific implementation .
+The example as below,
+description: >
+    Implement to provide D-bus interface for Facebook specfic implemention.
+
+properties:
+    - name: hostPosition
+      type: uint16
+      description: >
+          hostPosition indicates the current host position selected in OCP debug card.
+methods:
+    - name: readPostcode
+      description: >
+          Method to get the cached post codes.
+      parameters:
+        - name: postcode
+          type: uint16
+          description: >
+              postcode indicates which host postcode.
+        - name: host
+          type: uint16
+          description: >
+              postcode indicates which host postcode. 
 
 ## Alternatives Considered
 Considered using to read post-code directly from Bridge IC under [fb-yv2-misc](https://github.com/HCLOpenBMC/fb-yv2-misc) instead of using [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQxNTcyOTY2LDcxNjA3NTk0XX0=
+eyJoaXN0b3J5IjpbMTAwMjI1ODc0NiwzNDE1NzI5NjYsNzE2MD
+c1OTRdfQ==
 -->
