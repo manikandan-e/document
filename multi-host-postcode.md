@@ -240,6 +240,7 @@ The below dbus interface needs to created for multi-host post-code history.
 ## phosphor-dbus-interfaces
 The new YAML file needs to create to handle Facebook specific implementation .
 The example as below,
+
 description: >
     Implement to provide D-bus interface for Facebook specific implementation.
     
@@ -283,5 +284,5 @@ methods:
 ## Alternatives Considered
 Considered using to read post-code directly from Bridge IC under [fb-yv2-misc](https://github.com/HCLOpenBMC/fb-yv2-misc) instead of using [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzODgwNTY1NF19
+eyJoaXN0b3J5IjpbLTE1MTAyOTU1OTJdfQ==
 -->
