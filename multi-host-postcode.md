@@ -142,7 +142,6 @@ The below module involved on proposed design change.
  - Display current post-code into the 7 segment display connected to GPIOs based on the host selection.
  
  **D-Bus interface**
- - xyz.openbmc_project.Misc.Ipmi.Update
  - xyz.openbmc_project.State.Host0.Boot.Raw.Value
  - xyz.openbmc_project.State.Host1.Boot.Raw.Value
  - xyz.openbmc_project.State.Host2.Boot.Raw.Value
@@ -201,7 +200,12 @@ methods:
           description: >
           
               postcode indicates which host postcode. 
+
+**D-Bus interface**
+
+- xyz.openbmc_project.Misc.Ipmi.Update
+- xyz.openbmc_project.Misc.Ipmi.Postcode
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyOTI5NjQwOCwyMTQ0MzIwMTIxLC0xOD
-Y1Mjk0Njk5XX0=
+eyJoaXN0b3J5IjpbNjIyMzY3MzU2LDIxNDQzMjAxMjEsLTE4Nj
+UyOTQ2OTldfQ==
 -->
