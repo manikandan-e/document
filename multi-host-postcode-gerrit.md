@@ -133,7 +133,7 @@ This library is part of [phosphor-ipmi-host](https://github.com/openbmc/phosphor
  - Send extracted postcode to fb-yv2-misc by D-bus callback method registered in the fb-yv2-misc(xyz.openbmc_project.Misc.Ipmi.Update).
  
 ## fb-yv2-misc
- 
+ This is new process going create as part of the openbmc/meta-facebook to handle Facebook specific 
  - Get Bridge IC configuration(cmd = 0x0E, netfn=0x38, lun=00).
  - Set Bridge IC configuration(cmd = 0x10, netfn=0x38, lun=00).
  - Create, register and add dbus connection for "/xyz/openbmc_project/hostX/state/boot/raw".
@@ -208,6 +208,6 @@ methods:
 - xyz.openbmc_project.Misc.Ipmi.Update
 - xyz.openbmc_project.Misc.Ipmi.Postcode
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkxMjUzNTUyLC0xNjE3OTYxMTM4LDYyMj
-M2NzM1Nl19
+eyJoaXN0b3J5IjpbMjEwNDA4NzE0NiwtMTYxNzk2MTEzOCw2Mj
+IzNjczNTZdfQ==
 -->
