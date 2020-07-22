@@ -239,6 +239,5 @@ The below dbus interface needs to created for post-cdoe history.
 ## Alternatives Considered
 Considered using to read post-code directly from Bridge IC under [fb-yv2-misc](https://github.com/HCLOpenBMC/fb-yv2-misc) instead of using [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg1Mzc4NTcyLDE5MTA5MjY1NjksMTg3Nj
-c1NDA3XX0=
+eyJoaXN0b3J5IjpbMjg1Mzc4NTcyXX0=
 -->
