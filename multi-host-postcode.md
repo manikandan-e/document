@@ -164,42 +164,41 @@ The below module involved on proposed change.
  - phosphor-post-code-manager.
 
 ```ascii
-
 +----------------------------------------------+                       +------------------+
 | +-----------------------------------+        +<-----+I2C/IPMI+------>+BIC||             |
-| |       fb-ipmi-oem                 +<----+--+                       +----|     Host1   |
+| |        fb-ipmi-oem                +<----+--+                       +----|     Host1   |
 | |   (ipmi interrupt handler)        |     ^  |                       +------------------+
-| +-----------------------------------+     |  |
-| +-----------------------------------+     |  |                           +------------------+
-| |     fb-yv2-misc                   |     <---<------+I2C/IPMI+--------->+BIC|--|           |
-| |                                   |     |  |                           +------|   Host2   |
-| | xyz.openbmc_project.              |     |  |                           +------------------+
-| |  State.Hostx.Boot.Raw.Value       |     |  |
-| +---------------+----------+--------+     |  |                                  +-------------------+
-|  postcode       |          |        +     <---<------------+I2C/IPMI+---------->BIC|-|              |
-|  event0         +          |   postcode   |  |                                  +----|  Host3       |
-|    +         postcode      |   event3     |  |                                  +-------------------+
-|    |         event1        +        +     |  |
-|    |            +        postcode   |     |  |                                          +--------------------+
-|    |            |        event2     |     |  |                                          +-----|   Host4      |
-|    |            |          +        |     +---<---------------+I2C/IPMI+--------------->+BIC|-|              |
-|    |            |          |        |        |                                          +--------------------+
-|    v            v          v        v        |                                                        +--------------------+
-|  +-+------------+----------+--------+---+    |    xyz.openbmc_project.State.Host0.Boot.Raw            |                    |
-|  |                                      +<----<--+xyz.openbmc_project.State.Host1.Boot.Raw+---------->+                    |
-|  |         +--------+                   |    |    xyz.openbmc_project.State.Host2.Boot.Raw            |                    |
-|  |          history1                    |    |    xyz.openbmc_project.State.Host3.Boot.Raw            |                    |
-|  |         +--------+        +--------+ |    |                                                        |  https             |
-|  |                           | history3 |    |                                                        |                    |
-|  +--------+                  +--------+ |    |    xyz.openbmc_project.State.Host0.Boot.PostCode       |                    |
-|  |history0|                             +<----<--+xyz.openbmc_project.State.Host1.Boot.PostCode+----->+                    |
-|  +--------+       +--------+            |    |    xyz.openbmc_project.State.Host2.Boot.PostCode       |                    |
-|  |                 history2|            |    |    xyz.openbmc_project.State.Host3.Boot.PostCode       |                    |
-|  |                +--------+            |    |                                                        +--------------------+
-|  |                                      |    |           +--------------------+
-|  | Phosphor-post-code-manager           |    ++GPIOs+--->+ 7 segment display  |
-|  +--------------------------------------+    |           |                    |
-+----------------------------------------------+           +--------------------+
+| |xyz.openbmc_project.Misc.Ipmi.Update     |  |
+| +------------+----------------------+     |  |                           +------------------+
+|              |                            <---<------+I2C/IPMI+--------->+BIC|--|           |
+|            event                          |  |                           +------|   Host2   |
+|              |                            |  |                           +------------------+
+|              |                            |  |
+|  +-----------v----------------------+     |  |                                  +-------------------+
+|  |    fb-yv2-misc                   |     <---<------------+I2C/IPMI+---------->BIC|-|              |
+|  |                                  |     |  |                                  +----|  Host3       |
+|  |   xyz.openbmc_project.State.     +<--------------------+                     +-------------------+
+|  |   HostX(0,1,2,3).Boot.Raw.Value  |     |  |            |
+|  +-------------+-----------+--------+     |  |            |                             +--------------------+
+|   event0       |           |        |     |  |            |                             +-----|   Host4      |
+|    |           |           |        |     +---<---------------+I2C/IPMI+--------------->+BIC|-|              |
+|    |        event1       event2     |     |  |            |                             +--------------------+
+|    |           |           |     event3   |  |            |      +----------------------------+
+|    |           |           |        |     +-------8 GPIOs------->+                            |
+|  +-v-----------------------v--------v---+    |            |      |       Seven segment        |
+|  |         +--------+                   |    |            |      |       Display              |
+|  |          history1                    |    |            |      +----------------------------+
+|  |         +--------+        +--------+ |    |            |
+|  |                           | history3 |    |            |                                    +-----------------------------+
+|  +--------+                  +--------+ |    |            |                                    |                             |
+|  |history0|                             |    |            +----------------------------------->+                             |
+|  +--------+       +--------+            |    |                                                 |    Command Line Interface   |
+|  |                 history2|            |    |                                                 |                             |
+|  |                +--------+            <----------xyz.openbmc_project.State.------------------>                             |
+|  |                                      |    |     HostX(0,1,2,3).Boot.PostCode                |                             |
+|  | Phosphor-post-code-manager           |    |                                                 |                             |
+|  +- ------------------------------------+    |                                                 |                             |
++----------------------------------------------+                                                 +-----------------------------+
 
 ```
 
@@ -232,5 +231,5 @@ The below dbus interface needs to created for post-cdoe history.
 ## Alternatives Considered
 Considered using to read post-code directly from Bridge IC under [fb-yv2-misc](https://github.com/HCLOpenBMC/fb-yv2-misc) instead of using [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3Njc1NDA3XX0=
+eyJoaXN0b3J5IjpbMTkxMDkyNjU2OSwxODc2NzU0MDddfQ==
 -->
