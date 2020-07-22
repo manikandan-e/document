@@ -30,7 +30,7 @@ into phosphor-host-postd and phosphor-post-code-manager.
 [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem)
 
 
-The component diagram shows the present implementation for postcode and history at high-level overview
+The below component diagram shows the present implementation for postcode and history at high-level overview
 ```ascii
 
 +----------------------------------+                           +--------------------+
@@ -202,5 +202,5 @@ methods:
           
               postcode indicates which host postcode. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMjE1NDkzN119
+eyJoaXN0b3J5IjpbMTgyOTI5NjQwOCwtNDAyMTU0OTM3XX0=
 -->
