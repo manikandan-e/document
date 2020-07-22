@@ -227,7 +227,7 @@ The below module involved on proposed change.
  - xyz.openbmc_project.State.Host3.Boot.Raw.Value
 
 ## phosphor-post-code-manager
-The design shall handle hot plugged multi-host in the  single process postcode history.
+The design shall handle hot plugged multi-host in the  single process phosphor-post-code-manager based on host discovery.
 The below dbus interface needs to created for multi-host post-code history.
 
 **D-Bus interface**
@@ -241,5 +241,5 @@ The below dbus interface needs to created for multi-host post-code history.
 ## Alternatives Considered
 Considered using to read post-code directly from Bridge IC under [fb-yv2-misc](https://github.com/HCLOpenBMC/fb-yv2-misc) instead of using [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MjkxNDU1LDcxNjA3NTk0XX0=
+eyJoaXN0b3J5IjpbMTM5Mzg3OTMxNCw3MTYwNzU5NF19
 -->
