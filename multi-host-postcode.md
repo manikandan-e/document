@@ -218,7 +218,9 @@ The below module involved on proposed change.
  - Read host position from debug card.
  - Display current post-code into the 7 segment display connected to GPIOs based on the host selection.
  - Generate postcode event to post-code-manager by update postcode into "Value" property.
- D-Bus interface:
+ 
+ **D-Bus interface**
+ - xyz.openbmc_project.Misc.Ipmi.Update
  - xyz.openbmc_project.State.Host0.Boot.Raw
  - xyz.openbmc_project.State.Host1.Boot.Raw
  - xyz.openbmc_project.State.Host2.Boot.Raw
@@ -227,7 +229,8 @@ The below module involved on proposed change.
 ## phosphor-post-code-manager
 Change single process into a multi process to handle multi-host postcode history.
 The below dbus interface needs to created for post-cdoe history.
-D-Bus interface:
+
+**D-Bus interface**
  - xyz.openbmc_project.State.Host0.Boot.PostCode
  - xyz.openbmc_project.State.Host1.Boot.PostCode
  - xyz.openbmc_project.State.Host2.Boot.PostCode
@@ -236,6 +239,6 @@ D-Bus interface:
 ## Alternatives Considered
 Considered using to read post-code directly from Bridge IC under [fb-yv2-misc](https://github.com/HCLOpenBMC/fb-yv2-misc) instead of using [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzEwMDQyODM4LDE5MTA5MjY1NjksMTg3Nj
+eyJoaXN0b3J5IjpbMjg1Mzc4NTcyLDE5MTA5MjY1NjksMTg3Nj
 c1NDA3XX0=
 -->
