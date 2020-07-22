@@ -169,19 +169,19 @@ The below module involved on proposed change.
 | |        fb-ipmi-oem                +<----+--+                       +----|     Host1   |
 | |   (ipmi interrupt handler)        |     ^  |                       +------------------+
 | |xyz.openbmc_project.Misc.Ipmi.Update     |  |
-| +------------+----------------------+     |  |                           +------------------+
-|              |                            <---<------+I2C/IPMI+--------->+BIC|--|           |
-|            event                          |  |                           +------|   Host2   |
-|              |                            |  |                           +------------------+
+| +------------+----------------------+     |  |                           +-----+------------+
+|              |                            <---<------+I2C/IPMI+--------->+     |            |
+|            event                          |  |                           |BIC  |    Host2   |
+|              |                            |  |                           +-----+------------+
 |              |                            |  |
-|  +-----------v----------------------+     |  |                                  +-------------------+
-|  |    fb-yv2-misc                   |     <---<------------+I2C/IPMI+---------->BIC|-|              |
-|  |                                  |     |  |                                  +----|  Host3       |
-|  |   xyz.openbmc_project.State.     +<--------------------+                     +-------------------+
+|  +-----------v----------------------+     |  |                                  +----+--------------+
+|  |    fb-yv2-misc                   |     <---<------------+I2C/IPMI+---------->+    |              |
+|  |                                  |     |  |                                  |BIC |  Host3       |
+|  |   xyz.openbmc_project.State.     +<--------------------+                     +----+--------------+
 |  |   HostX(0,1,2,3).Boot.Raw.Value  |     |  |            |
-|  +-------------+-----------+--------+     |  |            |                             +--------------------+
-|   event0       |           |        |     |  |            |                             +-----|   Host4      |
-|    |           |           |        |     +---<---------------+I2C/IPMI+--------------->+BIC|-|              |
+|  +-------------+-----------+--------+     |  |            |                             +-----+--------------+
+|   event0       |           |        |     |  |            |                             |     |   Host4      |
+|    |           |           |        |     +---<---------------+I2C/IPMI+--------------->+BIC  |              |
 |    |        event1       event2     |     |  |            |                             +--------------------+
 |    |           |           |     event3   |  |            |      +----------------------------+
 |    |           |           |        |     +-------8 GPIOs------->+                            |
@@ -231,5 +231,6 @@ The below dbus interface needs to created for post-cdoe history.
 ## Alternatives Considered
 Considered using to read post-code directly from Bridge IC under [fb-yv2-misc](https://github.com/HCLOpenBMC/fb-yv2-misc) instead of using [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxMDkyNjU2OSwxODc2NzU0MDddfQ==
+eyJoaXN0b3J5IjpbODI0MTgwODk0LDE5MTA5MjY1NjksMTg3Nj
+c1NDA3XX0=
 -->
