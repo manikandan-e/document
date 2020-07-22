@@ -187,18 +187,18 @@ The below module involved on proposed change.
 |    |           |           |        |   +---------8 GPIOs------->+                            |
 |  +-v-----------------------v--------v---+    |            |      |       Seven segment        |
 |  |         +--------+                   |    |            |      |       Display              |
-|  |          history1                    |    |            |      +----------------------------+
-|  |         +--------+        +--------+ |    |            |
-|  |                           | history3 |    |            |                                    +-----------------------------+
-|  +--------+                  +--------+ |    |            |                                    |                             |
-|  |history0|                             |    |            +----------------------------------->+                             |
-|  +--------+       +--------+            |    |                                                 |    Command Line Interface   |
-|  |                 history2|            |    |                                                 |                             |
-|  |                +--------+            <----------xyz.openbmc_project.State.------------------>                             |
-|  |                                      |    |     HostX(0,1,2,3).Boot.PostCode                |                             |
-|  | Phosphor-post-code-manager           |    |                                                 |                             |
-|  +- ------------------------------------+    |                                                 |                             |
-+----------------------------------------------+                                                 +-----------------------------+
+|  |          history1                    |    |            |      |                            |
+|  |         +--------+        +--------+ |    |            |      +----------------------------+
+|  |                           | history3 |    |            |
+|  +--------+                  +--------+ |    |            |                      +---------------------------+
+|  |history0|                             |    |            +----------------------+                           |
+|  +--------+       +--------+            |    |                                   | Command Line              |
+|  |                 history2|            |    |                                   |   Interface               |
+|  |                +--------+            <----------xyz.openbmc_project.State.+--->                           |
+|  |                                      |    |     HostX(0,1,2,3).Boot.PostCode  |                           |
+|  | Phosphor-post-code-manager           |    |                                   +---------------------------+
+|  +- ------------------------------------+    |
++----------------------------------------------+
 
 ```
 
@@ -239,5 +239,5 @@ The below dbus interface needs to created for post-cdoe history.
 ## Alternatives Considered
 Considered using to read post-code directly from Bridge IC under [fb-yv2-misc](https://github.com/HCLOpenBMC/fb-yv2-misc) instead of using [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTczMjE4NTU3XX0=
+eyJoaXN0b3J5IjpbMTUyMjQwODA0Ml19
 -->
