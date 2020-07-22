@@ -125,7 +125,7 @@ The below module involved on proposed design change.
 ```
 
 ##  fb-ipmi-oem
-
+This library is part of ipmi
  - Register Bridge IC OEM callback interrupt handler for a postcode(cmd = 0x08, netfn=0x38, lun=00).
  - Extract port 80 data from IPMI response based on length.
  - Send extracted postcode to fb-yv2-misc by D-bus callback method registered in the fb-yv2-misc(xyz.openbmc_project.Misc.Ipmi.Update).
@@ -206,5 +206,5 @@ methods:
 - xyz.openbmc_project.Misc.Ipmi.Update
 - xyz.openbmc_project.Misc.Ipmi.Postcode
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIyMzY3MzU2XX0=
+eyJoaXN0b3J5IjpbLTE2MTc5NjExMzgsNjIyMzY3MzU2XX0=
 -->
