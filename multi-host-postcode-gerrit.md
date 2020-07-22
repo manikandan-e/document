@@ -128,12 +128,12 @@ The below module involved on proposed design change.
 
 This library is part of [phosphor-ipmi-host](https://github.com/openbmc/phosphor-host-ipmid) and get the postcode from host through [phosphor-ipmi-ipmb](https://github.com/openbmc/ipmbbridge).
 
- - Register Bridge IC OEM callback interrupt handler for a postcode(cmd = 0x08, netfn=0x38, lun=00).
+ - Register new Bridge IC OEM callback interrupt handler for a postcode(cmd = 0x08, netfn=0x38, lun=00).
  - Extract port 80 data from IPMI response based on length.
  - Send extracted postcode to fb-yv2-misc by D-bus callback method registered in the fb-yv2-misc(xyz.openbmc_project.Misc.Ipmi.Update).
  
 ## fb-yv2-misc
-
+ 
  - Get Bridge IC configuration(cmd = 0x0E, netfn=0x38, lun=00).
  - Set Bridge IC configuration(cmd = 0x10, netfn=0x38, lun=00).
  - Create, register and add dbus connection for "/xyz/openbmc_project/hostX/state/boot/raw".
@@ -208,6 +208,6 @@ methods:
 - xyz.openbmc_project.Misc.Ipmi.Update
 - xyz.openbmc_project.Misc.Ipmi.Postcode
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MDIwNTI0OCwtMTYxNzk2MTEzOCw2Mj
-IzNjczNTZdfQ==
+eyJoaXN0b3J5IjpbNzkxMjUzNTUyLC0xNjE3OTYxMTM4LDYyMj
+M2NzM1Nl19
 -->
