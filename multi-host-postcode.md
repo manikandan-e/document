@@ -217,7 +217,7 @@ The below module involved on proposed change.
  - Read each hosts postcode data from fb-ipmi-oem postcode interrupt handler.
  - Read host position from debug card.
  - Display current post-code into the 7 segment display connected to GPIOs based on the host selection.
- - Generate postcode event to post-code-manager by update postcode into "Value" D-bus property.
+ - Generate postcode event to post-code-manager by update postcode into "Value" D-bus property(xyz.openbmc_project.State.HostX.Boot.Raw.Value).
  
  **D-Bus interface**
  - xyz.openbmc_project.Misc.Ipmi.Update
@@ -239,5 +239,5 @@ The below dbus interface needs to created for post-cdoe history.
 ## Alternatives Considered
 Considered using to read post-code directly from Bridge IC under [fb-yv2-misc](https://github.com/HCLOpenBMC/fb-yv2-misc) instead of using [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNDc3NjkyMywxNTIyNDA4MDQyXX0=
+eyJoaXN0b3J5IjpbMTU2MjczMjAwMSwxNTIyNDA4MDQyXX0=
 -->
