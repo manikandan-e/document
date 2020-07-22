@@ -86,41 +86,6 @@ The below module involved on proposed design change.
  - phosphor-dbus-interfaces
 
 ```ascii
-+----------------------------------------------+                       +------------------+
-| +-----------------------------------+        +<-----+I2C/IPMI+------>+BIC||             |
-| |        fb-ipmi-oem                +<----+--+                       +----|     Host1   |
-| |   (ipmi interrupt handler)        |     ^  |                       +------------------+
-| |xyz.openbmc_project.Misc.Ipmi.Update     |  |
-| +------------+----------------------+     |  |                           +-----+------------+
-|              |                            <---<------+I2C/IPMI+--------->+     |            |
-|            event                          |  |                           |BIC  |    Host2   |
-|              |       BMC                  |  |                           +-----+------------+
-|              |                            |  |
-|  +-----------v----------------------+     |  |                                  +----+--------------+
-|  |    fb-yv2-misc                   |     <---<------------+I2C/IPMI+---------->+    |              |
-|  |                                  |     |  |                                  |BIC |  Host3       |
-|  |   xyz.openbmc_project.State.     <---------------------+                     +----+--------------+
-|  |   HostX(0,1,2,3).Boot.Raw.Value  <---+ |  |            |
-|  +-------------+-----------+--------+   | |  |            |                             +-----+--------------+
-|   event0       |           |        |   | |  |            |                             |     |   Host4      |
-|    |           |           |        |   | +---<---------------+I2C/IPMI+--------------->+BIC  |              |
-|    |        event1       event2     |   |    |            |                             +--------------------+
-|    |           |           |     event3 |    |            |      +----------------------------+
-|    |           |           |        |   +---------  GPIOs------->+     OCP Debug card         |
-|  +-v-----------------------v--------v---+    |            |      |   (7 segment display       |
-|  |         +--------+                   |    |            |      |   & Host selection switch) |
-|  |          history1                    |    |            |      |                            |
-|  |         +--------+        +--------+ |    |            |      +----------------------------+
-|  |                           | history3 |    |            |
-|  +--------+                  +--------+ |    |            |                      +---------------------------+
-|  |history0|                             |    |            +----------------------+                           |
-|  +--------+       +--------+            |    |                                   | Command Line              |
-|  |                 history2|            |    |                                   |   Interface               |
-|  |                +--------+            <----------xyz.openbmc_project.State.+--->                           |
-|  |                                      |    |     HostX(0,1,2,3).Boot.PostCode  |                           |
-|  | Phosphor-post-code-manager           |    |                                   +---------------------------+
-|  +- ------------------------------------+    |
-+----------------------------------------------+
 
 ```
 
@@ -212,5 +177,5 @@ methods:
 - xyz.openbmc_project.Misc.Ipmi.Update
 - xyz.openbmc_project.Misc.Ipmi.Postcode
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI0NTgwOTA5XX0=
+eyJoaXN0b3J5IjpbMTczNTMyMTIzMiw4MjQ1ODA5MDldfQ==
 -->
