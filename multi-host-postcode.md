@@ -113,7 +113,7 @@ The below module involved on proposed design change.
 |  |         +--------+        +--------+ |    |            |      +----------------------------+
 |  |                           | history3 |    |            |
 |  +--------+                  +--------+ |    |            |                      +---------------------------+
-|  |history0|                             |    |            +----------------------+                           |
+|  |history0|                             |    |            +---------------------->                           |
 |  +--------+       +--------+            |    |                                   | Command Line              |
 |  |                 history2|            |    |                                   |   Interface               |
 |  |                +--------+            <----------xyz.openbmc_project.State.+--->                           |
@@ -212,7 +212,5 @@ methods:
 - xyz.openbmc_project.Misc.Ipmi.Update
 - xyz.openbmc_project.Misc.Ipmi.Postcode
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI0NTgwOTA5LC0xMDg5NDAzMTY1LC0xNj
-E3OTYxMTM4LDYyMjM2NzM1NiwyMTQ0MzIwMTIxLC0xODY1Mjk0
-Njk5XX0=
+eyJoaXN0b3J5IjpbNDM1OTkyNjQwXX0=
 -->
