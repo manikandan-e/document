@@ -133,7 +133,9 @@ This library is part of [phosphor-ipmi-host](https://github.com/openbmc/phosphor
  - Send extracted postcode to fb-yv2-misc by D-bus callback method registered in the fb-yv2-misc(xyz.openbmc_project.Misc.Ipmi.Update).
  
 ## fb-yv2-misc
- This is new process going create as part of the openbmc/meta-facebook to handle Facebook specific 
+
+ This is new process going create as part of the openbmc/meta-facebook to handle Facebook platform specific feature.
+ 
  - Get Bridge IC configuration(cmd = 0x0E, netfn=0x38, lun=00).
  - Set Bridge IC configuration(cmd = 0x10, netfn=0x38, lun=00).
  - Create, register and add dbus connection for "/xyz/openbmc_project/hostX/state/boot/raw".
@@ -150,8 +152,9 @@ This library is part of [phosphor-ipmi-host](https://github.com/openbmc/phosphor
  - xyz.openbmc_project.State.Host3.Boot.Raw.Value
 
 ## phosphor-post-code-manager
-The design shall handle hot plugged multi-host in the  single process phosphor-post-code-manager based on host discovery.
-The below dbus interface needs to created for multi-host post-code history.
+The design shall handle the hot plugged multi-host in the single process phosphor-post-code-manager based on host discovery.
+
+The below D-Bus interface needs to created for multi-host post-code history.
 
 **D-Bus interface**
  - xyz.openbmc_project.State.Host0.Boot.PostCode
@@ -208,6 +211,6 @@ methods:
 - xyz.openbmc_project.Misc.Ipmi.Update
 - xyz.openbmc_project.Misc.Ipmi.Postcode
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNDA4NzE0NiwtMTYxNzk2MTEzOCw2Mj
-IzNjczNTZdfQ==
+eyJoaXN0b3J5IjpbLTE5MDEwNjk5MzcsLTE2MTc5NjExMzgsNj
+IyMzY3MzU2XX0=
 -->
