@@ -126,7 +126,7 @@ The below module involved on proposed design change.
 
 ##  fb-ipmi-oem
 
-This library is part of [phosphor-ipmi-host](https://github.com/openbmc/phosphor-host-ipmid) and get the postcode from host through [phosphor-ipmi-ipmb](https://github.com/openbmc/ipmbbridge).
+This library is part of [phosphor-ipmi-host](https://github.com/openbmc/phosphor-host-ipmid) and get the postcode  from host through [phosphor-ipmi-ipmb](https://github.com/openbmc/ipmbbridge).
 
  - Register new Bridge IC OEM callback interrupt handler for a postcode(cmd = 0x08, netfn=0x38, lun=00).
  - Extract port 80 data from IPMI response based on length.
@@ -211,6 +211,6 @@ methods:
 - xyz.openbmc_project.Misc.Ipmi.Update
 - xyz.openbmc_project.Misc.Ipmi.Postcode
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDEwNjk5MzcsLTE2MTc5NjExMzgsNj
-IyMzY3MzU2LC00MDIxNTQ5MzddfQ==
+eyJoaXN0b3J5IjpbMjEzNzkwMzE4NSwtMTYxNzk2MTEzOCw2Mj
+IzNjczNTYsLTQwMjE1NDkzN119
 -->
