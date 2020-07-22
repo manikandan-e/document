@@ -220,9 +220,9 @@ The below module involved on proposed change.
  - Generate postcode event to post-code-manager by update postcode into "Value" property.
  D-Bus interface:
  - xyz.openbmc_project.State.Host0.Boot.Raw
- - xyz.openbmc_project.State.Host1.Boot.Rw
- - xyz.openbmc_project.State.Host2.Boot.PostCode
- - xyz.openbmc_project.State.Host3.Boot.PostCode
+ - xyz.openbmc_project.State.Host1.Boot.Raw
+ - xyz.openbmc_project.State.Host2.Boot.Raw
+ - xyz.openbmc_project.State.Host3.Boot.Raw
 
 ## phosphor-post-code-manager
 Change single process into a multi process to handle multi-host postcode history.
@@ -236,6 +236,6 @@ D-Bus interface:
 ## Alternatives Considered
 Considered using to read post-code directly from Bridge IC under [fb-yv2-misc](https://github.com/HCLOpenBMC/fb-yv2-misc) instead of using [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3ODg0MTQzLDE5MTA5MjY1NjksMTg3Nj
+eyJoaXN0b3J5IjpbMzEwMDQyODM4LDE5MTA5MjY1NjksMTg3Nj
 c1NDA3XX0=
 -->
