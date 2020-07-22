@@ -143,7 +143,7 @@ This library is part of [phosphor-ipmi-host](https://github.com/openbmc/phosphor
  - Read each hosts postcode data from fb-ipmi-oem postcode interrupt handler.
  - Generate postcode event to post-code-manager by update postcode into "Value" D-bus property(xyz.openbmc_project.State.HostX.Boot.Raw.Value).
  - Read host position from debug card.
- - Display current post-code into the 7 segment display connected to GPIOs based on the host selection.
+ - Display current post-code into the 7 segment display connected to GPIOs based on the host selection in de.
  
  **D-Bus interface**
  - xyz.openbmc_project.State.Host0.Boot.Raw.Value
@@ -212,5 +212,5 @@ methods:
 - xyz.openbmc_project.Misc.Ipmi.Update
 - xyz.openbmc_project.Misc.Ipmi.Postcode
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTE4NDYwODVdfQ==
+eyJoaXN0b3J5IjpbLTY2OTQxNjY0MSwtMTA5MTg0NjA4NV19
 -->
