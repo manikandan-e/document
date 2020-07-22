@@ -280,10 +280,6 @@ methods:
           description: >
           
               postcode indicates which host postcode. 
-              
-
-## Alternatives Considered
-Considered using to read post-code directly from Bridge IC under [fb-yv2-misc](https://github.com/HCLOpenBMC/fb-yv2-misc) instead of using [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjUyOTQ2OTldfQ==
+eyJoaXN0b3J5IjpbMjE0NDMyMDEyMSwtMTg2NTI5NDY5OV19
 -->
