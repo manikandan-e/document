@@ -162,6 +162,7 @@ The below module involved on proposed change.
  - fb-ipmi-oem.
  - fb-yv2-misc.
  - phosphor-post-code-manager.
+ - phosphor-dbus-interfaces
 
 ```ascii
 +----------------------------------------------+                       +------------------+
@@ -241,5 +242,5 @@ The below dbus interface needs to created for multi-host post-code history.
 ## Alternatives Considered
 Considered using to read post-code directly from Bridge IC under [fb-yv2-misc](https://github.com/HCLOpenBMC/fb-yv2-misc) instead of using [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5Mzg3OTMxNCw3MTYwNzU5NF19
+eyJoaXN0b3J5IjpbOTQ3NTI1Mzk2LDcxNjA3NTk0XX0=
 -->
