@@ -244,17 +244,29 @@ description: >
     Implement to provide D-bus interface for Facebook specific implementation.
     
 properties:
+
     - name: hostPosition
+    
       type: uint16
+      
       description: >
+      
           hostPosition indicates the current host position selected in OCP debug card.
+          
 methods:
+
     - name: update
+    
       description: >
+      
           Method to get the cached post codes.
+          
       parameters:
+      
         - name: postcode
+        
           type: uint16
+          
           description: >
               postcode indicates which host postcode.
         - name: host
@@ -265,5 +277,5 @@ methods:
 ## Alternatives Considered
 Considered using to read post-code directly from Bridge IC under [fb-yv2-misc](https://github.com/HCLOpenBMC/fb-yv2-misc) instead of using [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5NDIyMzMwNl19
+eyJoaXN0b3J5IjpbLTExMDYyNDg4NjIsLTY5NDIyMzMwNl19
 -->
