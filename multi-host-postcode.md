@@ -288,13 +288,13 @@ Approach 1 : << add ipmisnoop in phosphor-host-postd >>
 ```
 Approach 2 : << Move Platform Dependent Service (fb-yv2-misc)  feature into phoshor-post-code-manager >>
   
-  Move D-bus 
+  Move postcode D-bus creation and event generation from fb-yv2-misc into 
    xyz.openbmc_project.State.Hostx(0,1,2.N).Boot.Raw.Value
 
 Approach 3 : << Move  Platform Dependent Service (fb-yv2-misc)  feature into phoshor-state-manager >>
   
-   xyz.openbmc_project.State.Hostx.Boot.Raw.Value
+  xyz.openbmc_project.State.Hostx(0,1,2.N).Boot.Raw.Value
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM1NDkwNTM0LDE4MDA4NDM2NDcsOTE2Mj
-EwMTNdfQ==
+eyJoaXN0b3J5IjpbLTI4NzAyNzcxMiwxODAwODQzNjQ3LDkxNj
+IxMDEzXX0=
 -->
