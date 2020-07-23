@@ -162,7 +162,7 @@ This library is part of [phosphor-ipmi-host](https://github.com/openbmc/phosphor
  - Read each hosts postcode data from fb-ipmi-oem postcode interrupt handler.
  -  Send event to post-code-manager based on which host's postcode received from IPMB interface(xyz.openbmc_project.State.HostX.Boot.Raw.Value) 
  - Read host position from debug card.
- - Display current post-code into the 7 segment display connected to GPIOs based on the host selection in the plug-able debug card.
+ - Display current post-code into the 7 segment display connected to BMC's 8 GPIOs based on the host selection in the plug-able debug card.
  
  **D-Bus interface**
  - xyz.openbmc_project.State.Host0.Boot.Raw.Value
@@ -299,10 +299,10 @@ methods:
    
     xyz.openbmc_project.State.Hostx(0,1,2.N).Boot.Raw.Value
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NzEzNzg0MCwxODAwODQzNjQ3LDkxNj
-IxMDEzLC00MTA2Mjc4NDIsMTA5NzU2MjAzMSw4NDc0NjU2Mjks
-LTEyMTA3MjEzNDUsMTU4MTEwMDMxNSwyMDc0OTQ3NTI3LDE4OT
-E4NTQ3MjQsNTUzMDgxNzUsNTc3NDMyNjU4LDg3OTk2NDcyOSwx
-MjU1MTkwOTgxLDE1Mzg1MDk5MjAsNDM1OTkyNjQwLDgyNDU4MD
-kwOV19
+eyJoaXN0b3J5IjpbMjA3OTA4MTM5NiwxODk3MTM3ODQwLDE4MD
+A4NDM2NDcsOTE2MjEwMTMsLTQxMDYyNzg0MiwxMDk3NTYyMDMx
+LDg0NzQ2NTYyOSwtMTIxMDcyMTM0NSwxNTgxMTAwMzE1LDIwNz
+Q5NDc1MjcsMTg5MTg1NDcyNCw1NTMwODE3NSw1Nzc0MzI2NTgs
+ODc5OTY0NzI5LDEyNTUxOTA5ODEsMTUzODUwOTkyMCw0MzU5OT
+I2NDAsODI0NTgwOTA5XX0=
 -->
