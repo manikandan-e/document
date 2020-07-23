@@ -141,8 +141,6 @@ Following modules will updated for this implementation
 |  | phosphor-post-code-manager           |  |
 |  ++ +-----------------------------------+  |
 +--------------------------------------------+
-
-
 ```
 
 ##  fb-ipmi-oem
@@ -170,7 +168,7 @@ This library is part of [phosphor-ipmi-host](https://github.com/openbmc/phosphor
  - xyz.openbmc_project.State.Host0.Boot.Raw.Value
  - xyz.openbmc_project.State.Host1.Boot.Raw.Value
  - xyz.openbmc_project.State.Host2.Boot.Raw.Value
- - xyz.openbmc_project.State.Host3.Boot.Raw.Value
+ - xyz.openbmc_project.State.HostN.Boot.Raw.Value
 
 ## phosphor-post-code-manager
 The design shall handle the hot plugged multi-host in the single process phosphor-post-code-manager based on host discovery.
@@ -183,7 +181,7 @@ The below D-Bus interface needs to created for multi-host post-code history.
  - xyz.openbmc_project.State.Host0.Boot.PostCode
  - xyz.openbmc_project.State.Host1.Boot.PostCode
  - xyz.openbmc_project.State.Host2.Boot.PostCode
- - xyz.openbmc_project.State.Host3.Boot.PostCode
+ - xyz.openbmc_project.State.HostN.Boot.PostCode
  
 ## phosphor-dbus-interfaces
 
@@ -237,9 +235,15 @@ methods:
 
 - xyz.openbmc_project.Misc.Ipmi.Update
 - xyz.openbmc_project.Misc.Ipmi.Postcode
+-
+## Alternate design
+
+```ascii
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4MTEwMDMxNSwyMDc0OTQ3NTI3LDE4OT
-E4NTQ3MjQsNTUzMDgxNzUsNTc3NDMyNjU4LDg3OTk2NDcyOSwx
-MjU1MTkwOTgxLDE1Mzg1MDk5MjAsNDM1OTkyNjQwLDgyNDU4MD
-kwOV19
+eyJoaXN0b3J5IjpbLTE3MzI2ODQzNzksMTU4MTEwMDMxNSwyMD
+c0OTQ3NTI3LDE4OTE4NTQ3MjQsNTUzMDgxNzUsNTc3NDMyNjU4
+LDg3OTk2NDcyOSwxMjU1MTkwOTgxLDE1Mzg1MDk5MjAsNDM1OT
+kyNjQwLDgyNDU4MDkwOV19
 -->
