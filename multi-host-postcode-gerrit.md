@@ -184,6 +184,9 @@ The below D-Bus interface needs to created for multi-host post-code history.
  - xyz.openbmc_project.State.Host3.Boot.PostCode
  
 ## phosphor-dbus-interfaces
+
+**Host discovery**
+  
 The new YAML file needs to create to handle the Facebook platform specific implementation .
 
 The example as below,
@@ -233,7 +236,7 @@ methods:
 - xyz.openbmc_project.Misc.Ipmi.Update
 - xyz.openbmc_project.Misc.Ipmi.Postcode
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMjgxNTcwMSwxODkxODU0NzI0LDU1Mz
+eyJoaXN0b3J5IjpbMjA3NDk0NzUyNywxODkxODU0NzI0LDU1Mz
 A4MTc1LDU3NzQzMjY1OCw4Nzk5NjQ3MjksMTI1NTE5MDk4MSwx
 NTM4NTA5OTIwLDQzNTk5MjY0MCw4MjQ1ODA5MDldfQ==
 -->
