@@ -161,6 +161,7 @@ This library is part of [phosphor-ipmi-host](https://github.com/openbmc/phosphor
  - Add "Value" property to store current postcode from hostX(X=0,1,2,3).
  - Read each hosts postcode data from fb-ipmi-oem postcode interrupt handler.
  - Generate postcode event to post-code-manager by based on which hosts postcode into "Value" D-bus property(xyz.openbmc_project.State.HostX.Boot.Raw.Value).
+ -  Send event to post-code-manager based on which 
  - Read host position from debug card.
  - Display current post-code into the 7 segment display connected to GPIOs based on the host selection in the plug-able debug card.
  
@@ -294,10 +295,10 @@ Approach 3 : << Move  Platform Dependent Service (fb-yv2-misc)  feature into pho
   
    xyz.openbmc_project.State.Hostx.Boot.Raw.Value
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0MTc3Njg2MywxODAwODQzNjQ3LDkxNj
-IxMDEzLC00MTA2Mjc4NDIsMTA5NzU2MjAzMSw4NDc0NjU2Mjks
-LTEyMTA3MjEzNDUsMTU4MTEwMDMxNSwyMDc0OTQ3NTI3LDE4OT
-E4NTQ3MjQsNTUzMDgxNzUsNTc3NDMyNjU4LDg3OTk2NDcyOSwx
-MjU1MTkwOTgxLDE1Mzg1MDk5MjAsNDM1OTkyNjQwLDgyNDU4MD
-kwOV19
+eyJoaXN0b3J5IjpbNjkyODQ5NDM4LDE4MDA4NDM2NDcsOTE2Mj
+EwMTMsLTQxMDYyNzg0MiwxMDk3NTYyMDMxLDg0NzQ2NTYyOSwt
+MTIxMDcyMTM0NSwxNTgxMTAwMzE1LDIwNzQ5NDc1MjcsMTg5MT
+g1NDcyNCw1NTMwODE3NSw1Nzc0MzI2NTgsODc5OTY0NzI5LDEy
+NTUxOTA5ODEsMTUzODUwOTkyMCw0MzU5OTI2NDAsODI0NTgwOT
+A5XX0=
 -->
