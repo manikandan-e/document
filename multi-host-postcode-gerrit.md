@@ -8,8 +8,7 @@ Created: 2020-07-02
 
 ## Problem Description
 
-The current implementation in the phosphor-host-postd for postcode based on the LPC port 80 
-connected b/w BMC and single host.
+The current implementation in the phosphor-host-postd for only single host postcode access available through  LPC interface.
 
 
 It is required to develop a new mechanism that would allow to read port 80 post code 
@@ -209,6 +208,6 @@ methods:
 - xyz.openbmc_project.Misc.Ipmi.Update
 - xyz.openbmc_project.Misc.Ipmi.Postcode
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTk5NzM4NzEsMTUzODUwOTkyMCw0Mz
-U5OTI2NDAsODI0NTgwOTA5XX0=
+eyJoaXN0b3J5IjpbNDY1OTU4MzM2LDE1Mzg1MDk5MjAsNDM1OT
+kyNjQwLDgyNDU4MDkwOV19
 -->
