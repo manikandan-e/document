@@ -290,10 +290,10 @@ Approach 2 : << Move Platform Dependent Service (fb-yv2-misc)  feature into phos
   
    xyz.openbmc_project.State.Hostx.Boot.Raw.Value
 
-Approach 3 : << Remove  Platform Dependent Service (fb-yv2-misc)  feature into phoshor-post-code-manager >>
+Approach 3 : << Move  Platform Dependent Service (fb-yv2-misc)  feature into phoshor-state-manager >>
   
    xyz.openbmc_project.State.Hostx.Boot.Raw.Value
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NjQzODU3NCwxODAwODQzNjQ3LDkxNj
+eyJoaXN0b3J5IjpbMTg1NjE5NzEzMCwxODAwODQzNjQ3LDkxNj
 IxMDEzXX0=
 -->
