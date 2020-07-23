@@ -86,7 +86,7 @@ The below component diagram shows the present implementation for postcode and hi
 
 This document proposes a new design engaging the IPMB interface to read port-80 post code from multiple-host through BIC (Bridge IC). This design also supports host discovery including the hot-plug feature.
 
-The below module involved on proposed design change.
+Following modules will updated for this implementation
 
  - fb-ipmi-oem.
  - fb-yv2-misc.
@@ -232,7 +232,7 @@ methods:
 - xyz.openbmc_project.Misc.Ipmi.Update
 - xyz.openbmc_project.Misc.Ipmi.Postcode
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTg4MjIyMTksNTc3NDMyNjU4LDg3OT
-k2NDcyOSwxMjU1MTkwOTgxLDE1Mzg1MDk5MjAsNDM1OTkyNjQw
-LDgyNDU4MDkwOV19
+eyJoaXN0b3J5IjpbNTUzMDgxNzUsNTc3NDMyNjU4LDg3OTk2ND
+cyOSwxMjU1MTkwOTgxLDE1Mzg1MDk5MjAsNDM1OTkyNjQwLDgy
+NDU4MDkwOV19
 -->
