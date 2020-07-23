@@ -158,7 +158,7 @@ This library is part of [phosphor-ipmi-host](https://github.com/openbmc/phosphor
  - Get Bridge IC(BIC) configuration(cmd = 0x0E, netfn=0x38, lun=00).
  - Set Bridge IC(BIC) configuration(cmd = 0x10, netfn=0x38, lun=00).
  - Create, register and add dbus connection for "/xyz/openbmc_project/hostX/state/boot/raw".
- - Add "Value" property to store current postcode from hostX(X=0,1,2,3).
+ - Add "Value" property to store current postcode from hostX(X=0,1,2.N).
  - Read each hosts postcode data from fb-ipmi-oem postcode interrupt handler.
  -  Send event to post-code-manager based on which host's postcode received from IPMB interface(xyz.openbmc_project.State.HostX.Boot.Raw.Value) 
  - Read host position from debug card.
@@ -299,5 +299,5 @@ methods:
    
     xyz.openbmc_project.State.Hostx(0,1,2.N).Boot.Raw.Value
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MTc1ODAzMV19
+eyJoaXN0b3J5IjpbMTg5NDc0NTA2NCwxNjkxNzU4MDMxXX0=
 -->
