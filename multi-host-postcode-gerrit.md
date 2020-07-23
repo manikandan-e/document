@@ -46,7 +46,7 @@ The below component diagram shows the present implementation for postcode and hi
 |              +                             |  |                             +------------------+
 |              |                             |  |                                +-------------------+
 |  +-----------v------------------------+    |  +<------------+I2C/IPMI+-------->+    |              |
-|  |      fb-yv2-misc                   |    |                                   |BIC |     Host4    |
+|  |      fb-yv2-misc                   |    |                                   |BIC |     HostN    |
 |  |                                    <-----------------------------------+    +----+--------------+
 |  |   xyz.openbmc_project.State.       |    |                              |
 |  |   HostX(0,1,2,3).Boot.Raw.Value    <--------------------+              |
@@ -299,10 +299,10 @@ methods:
    
     xyz.openbmc_project.State.Hostx(0,1,2.N).Boot.Raw.Value
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NDc0NTA2NCwxODAwODQzNjQ3LDkxNj
-IxMDEzLC00MTA2Mjc4NDIsMTA5NzU2MjAzMSw4NDc0NjU2Mjks
-LTEyMTA3MjEzNDUsMTU4MTEwMDMxNSwyMDc0OTQ3NTI3LDE4OT
-E4NTQ3MjQsNTUzMDgxNzUsNTc3NDMyNjU4LDg3OTk2NDcyOSwx
-MjU1MTkwOTgxLDE1Mzg1MDk5MjAsNDM1OTkyNjQwLDgyNDU4MD
-kwOV19
+eyJoaXN0b3J5IjpbNzUwMDgwMTQyLDE4MDA4NDM2NDcsOTE2Mj
+EwMTMsLTQxMDYyNzg0MiwxMDk3NTYyMDMxLDg0NzQ2NTYyOSwt
+MTIxMDcyMTM0NSwxNTgxMTAwMzE1LDIwNzQ5NDc1MjcsMTg5MT
+g1NDcyNCw1NTMwODE3NSw1Nzc0MzI2NTgsODc5OTY0NzI5LDEy
+NTUxOTA5ODEsMTUzODUwOTkyMCw0MzU5OTI2NDAsODI0NTgwOT
+A5XX0=
 -->
