@@ -299,5 +299,5 @@ methods:
    
     xyz.openbmc_project.State.Hostx(0,1,2.N).Boot.Raw.Value
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3OTA4MTM5NiwxODk3MTM3ODQwXX0=
+eyJoaXN0b3J5IjpbMjA3OTA4MTM5Nl19
 -->
