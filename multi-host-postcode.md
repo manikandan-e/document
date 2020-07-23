@@ -286,7 +286,8 @@ Approach 1 : << add ipmisnoop in phosphor-host-postd >>
 | ++ +-----------------------------------+  |
 +-------------------------------------------+
 ```
-Approach 2 : << add ipmisnoop in phosphor-host-postd >>
+Approach 2 : << add  >>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMDYyNzg0MiwxMDk3NTYyMDMxXX0=
+eyJoaXN0b3J5IjpbMTk0MDA3NTE1OCwtNDEwNjI3ODQyLDEwOT
+c1NjIwMzFdfQ==
 -->
