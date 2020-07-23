@@ -2,10 +2,9 @@
 
 Author: Manikandan Elumalai, [manikandan.hcl.ers.epl@gmail.com](mailto:manikandan.hcl.ers.epl@gmail.com)
 
-Other contributors:None
+Other contributors: None
 
-Created:
-2020-07-02
+Created: 2020-07-02
 
 ## Problem Description
 
@@ -209,5 +208,5 @@ methods:
 - xyz.openbmc_project.Misc.Ipmi.Update
 - xyz.openbmc_project.Misc.Ipmi.Postcode
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDQ1MDY2NDMsOTY4NzQzMDQwXX0=
+eyJoaXN0b3J5IjpbODc0MjA1NzU5LDk2ODc0MzA0MF19
 -->
