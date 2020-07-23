@@ -236,7 +236,7 @@ methods:
 - xyz.openbmc_project.Misc.Ipmi.Update
 - xyz.openbmc_project.Misc.Ipmi.Postcode
 ## Alternate design
-
+Approach 1 : <<add ipmisnoop in post >>
 
 ```ascii
 +-------------------------------------------+
@@ -287,9 +287,9 @@ methods:
 +-------------------------------------------+
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTQxNzc3MjcsMTA5NzU2MjAzMSw4ND
-c0NjU2MjksLTEyMTA3MjEzNDUsMTU4MTEwMDMxNSwyMDc0OTQ3
-NTI3LDE4OTE4NTQ3MjQsNTUzMDgxNzUsNTc3NDMyNjU4LDg3OT
-k2NDcyOSwxMjU1MTkwOTgxLDE1Mzg1MDk5MjAsNDM1OTkyNjQw
-LDgyNDU4MDkwOV19
+eyJoaXN0b3J5IjpbNDI5NDY3MTY0LDEwOTc1NjIwMzEsODQ3ND
+Y1NjI5LC0xMjEwNzIxMzQ1LDE1ODExMDAzMTUsMjA3NDk0NzUy
+NywxODkxODU0NzI0LDU1MzA4MTc1LDU3NzQzMjY1OCw4Nzk5Nj
+Q3MjksMTI1NTE5MDk4MSwxNTM4NTA5OTIwLDQzNTk5MjY0MCw4
+MjQ1ODA5MDldfQ==
 -->
