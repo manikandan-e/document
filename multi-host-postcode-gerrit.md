@@ -175,6 +175,8 @@ This library is part of [phosphor-ipmi-host](https://github.com/openbmc/phosphor
 ## phosphor-post-code-manager
 The design shall handle the hot plugged multi-host in the single process phosphor-post-code-manager based on host discovery.
 
+**Host discovery**
+
 The below D-Bus interface needs to created for multi-host post-code history.
 
 **D-Bus interface**
@@ -185,7 +187,7 @@ The below D-Bus interface needs to created for multi-host post-code history.
  
 ## phosphor-dbus-interfaces
 
-**Host discovery**
+
   
 The new YAML file needs to create to handle the Facebook platform specific implementation .
 
@@ -236,7 +238,8 @@ methods:
 - xyz.openbmc_project.Misc.Ipmi.Update
 - xyz.openbmc_project.Misc.Ipmi.Postcode
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3NDk0NzUyNywxODkxODU0NzI0LDU1Mz
-A4MTc1LDU3NzQzMjY1OCw4Nzk5NjQ3MjksMTI1NTE5MDk4MSwx
-NTM4NTA5OTIwLDQzNTk5MjY0MCw4MjQ1ODA5MDldfQ==
+eyJoaXN0b3J5IjpbMTU4MTEwMDMxNSwyMDc0OTQ3NTI3LDE4OT
+E4NTQ3MjQsNTUzMDgxNzUsNTc3NDMyNjU4LDg3OTk2NDcyOSwx
+MjU1MTkwOTgxLDE1Mzg1MDk5MjAsNDM1OTkyNjQwLDgyNDU4MD
+kwOV19
 -->
