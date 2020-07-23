@@ -141,7 +141,6 @@ Following modules will updated for this implementation
 | | Phosphor-post-code-manager           |  |
 | ++ +-----------------------------------+  |
 +-------------------------------------------+
-
 ```
 
 ##  fb-ipmi-oem
@@ -287,5 +286,5 @@ methods:
 +-------------------------------------------+
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ3NDY1NjI5XX0=
+eyJoaXN0b3J5IjpbMTA5NzU2MjAzMV19
 -->
