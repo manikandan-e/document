@@ -236,7 +236,8 @@ methods:
 - xyz.openbmc_project.Misc.Ipmi.Update
 - xyz.openbmc_project.Misc.Ipmi.Postcode
 ## Alternate design
-Approach 1 : << add ipmisnoop in phosphor-host-postd >>
+
+**Approach 1 : << Move Platform Dependent Service (fb-yv2-misc)  feature into phoshor-post-code-manager  >>**
 
 ```ascii
 +-------------------------------------------+
@@ -286,15 +287,18 @@ Approach 1 : << add ipmisnoop in phosphor-host-postd >>
 | ++ +-----------------------------------+  |
 +-------------------------------------------+
 ```
-Approach 2 : << Move Platform Dependent Service (fb-yv2-misc)  feature into phoshor-post-code-manager >>
+**Approach 2 : << Move Platform Dependent Service (fb-yv2-misc)  feature into phoshor-post-code-manager >>**
   
-  Move postcode D-bus creation and event generation from fb-yv2-misc into 
+  Move postcode D-bus creation and event generation from fb-yv2-misc into phoshor-post-code-manager.
+  
    xyz.openbmc_project.State.Hostx(0,1,2.N).Boot.Raw.Value
 
-Approach 3 : << Move  Platform Dependent Service (fb-yv2-misc)  feature into phoshor-state-manager >>
+**Approach 3 : << Move  Platform Dependent Service (fb-yv2-misc)  feature into phoshor-state-manager >>**
   
-  xyz.openbmc_project.State.Hostx(0,1,2.N).Boot.Raw.Value
+   Move postcode D-bus creation and event generation from fb-yv2-misc into phoshor-state-manager 
+   
+    xyz.openbmc_project.State.Hostx(0,1,2.N).Boot.Raw.Value
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NzAyNzcxMiwxODAwODQzNjQ3LDkxNj
-IxMDEzXX0=
+eyJoaXN0b3J5IjpbLTE3NzE0ODA3NDQsMTgwMDg0MzY0Nyw5MT
+YyMTAxM119
 -->
