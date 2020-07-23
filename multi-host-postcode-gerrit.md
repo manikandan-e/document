@@ -236,7 +236,7 @@ methods:
 - xyz.openbmc_project.Misc.Ipmi.Update
 - xyz.openbmc_project.Misc.Ipmi.Postcode
 ## Alternate design
-Approach 1 : <<add ipmisnoop in post >>
+Approach 1 : << add ipmisnoop in phosphor-host-postd >>
 
 ```ascii
 +-------------------------------------------+
@@ -286,10 +286,11 @@ Approach 1 : <<add ipmisnoop in post >>
 | ++ +-----------------------------------+  |
 +-------------------------------------------+
 ```
+Approach 2 : << add ipmisnoop in phosphor-host-postd >>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI5NDY3MTY0LDEwOTc1NjIwMzEsODQ3ND
-Y1NjI5LC0xMjEwNzIxMzQ1LDE1ODExMDAzMTUsMjA3NDk0NzUy
-NywxODkxODU0NzI0LDU1MzA4MTc1LDU3NzQzMjY1OCw4Nzk5Nj
-Q3MjksMTI1NTE5MDk4MSwxNTM4NTA5OTIwLDQzNTk5MjY0MCw4
-MjQ1ODA5MDldfQ==
+eyJoaXN0b3J5IjpbLTQxMDYyNzg0MiwxMDk3NTYyMDMxLDg0Nz
+Q2NTYyOSwtMTIxMDcyMTM0NSwxNTgxMTAwMzE1LDIwNzQ5NDc1
+MjcsMTg5MTg1NDcyNCw1NTMwODE3NSw1Nzc0MzI2NTgsODc5OT
+Y0NzI5LDEyNTUxOTA5ODEsMTUzODUwOTkyMCw0MzU5OTI2NDAs
+ODI0NTgwOTA5XX0=
 -->
