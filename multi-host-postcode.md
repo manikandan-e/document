@@ -1,11 +1,8 @@
 # Multi-host-p Postcode
 
-Author:
-  Manikandan Elumalai, [manikandan.hcl.ers.epl@gmail.com](mailto:manikandan.hcl.ers.epl@gmail.com)
+Author: Manikandan Elumalai, [manikandan.hcl.ers.epl@gmail.com](mailto:manikandan.hcl.ers.epl@gmail.com)
 
-Primary assignee:
-  
-Other contributors:
+Other contributors:None
 
 Created:
   2020-07-02
@@ -212,5 +209,5 @@ methods:
 - xyz.openbmc_project.Misc.Ipmi.Update
 - xyz.openbmc_project.Misc.Ipmi.Postcode
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDA3NDYxOTIsOTY4NzQzMDQwXX0=
+eyJoaXN0b3J5IjpbODk3OTQyOTU3LDk2ODc0MzA0MF19
 -->
