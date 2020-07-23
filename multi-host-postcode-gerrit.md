@@ -118,7 +118,7 @@ Following modules will updated for this implementation
 |             |                             |  |                                +-------------------+
 | +-----------v------------------------+    |  +<------------+I2C/IPMI+-------->+    |              |
 | | Platform Dependent Service         |    |                                   |BIC |     HostN    |
-| |     (fb-ipmi-oem)                  <-----------------------------------+    +----+--------------+
+| |     (fb-yv2-misc)                  <-----------------------------------+    +----+--------------+
 | |   xyz.openbmc_project.State.       |    |                              |
 | |   HostX(0,1,2.N).Boot.Raw.Value    <--------------------+              |
 | +-+-------------+---------+--------+-+    |               +              |
@@ -286,9 +286,9 @@ Approach 1 : << add ipmisnoop in phosphor-host-postd >>
 | ++ +-----------------------------------+  |
 +-------------------------------------------+
 ```
-Approach 2 : << add  >>
+Approach 2 : << move Platform Dependent Service (fb-yv2-misc) >>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0MDA3NTE1OCwtNDEwNjI3ODQyLDEwOT
+eyJoaXN0b3J5IjpbLTIwODc0NTAzMiwtNDEwNjI3ODQyLDEwOT
 c1NjIwMzEsODQ3NDY1NjI5LC0xMjEwNzIxMzQ1LDE1ODExMDAz
 MTUsMjA3NDk0NzUyNywxODkxODU0NzI0LDU1MzA4MTc1LDU3Nz
 QzMjY1OCw4Nzk5NjQ3MjksMTI1NTE5MDk4MSwxNTM4NTA5OTIw
