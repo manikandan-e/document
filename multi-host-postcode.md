@@ -233,5 +233,5 @@ methods:
 - xyz.openbmc_project.Misc.Ipmi.Update
 - xyz.openbmc_project.Misc.Ipmi.Postcode
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NDU4NzA1NSw4Nzk5NjQ3MjldfQ==
+eyJoaXN0b3J5IjpbMTQ0NDU4NzA1NV19
 -->
