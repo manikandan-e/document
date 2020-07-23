@@ -1,4 +1,4 @@
-# Multi-host-p Postcode
+# Multi-host Postcode Support
 
 Author: Manikandan Elumalai, [manikandan.hcl.ers.epl@gmail.com](mailto:manikandan.hcl.ers.epl@gmail.com)
 
@@ -207,5 +207,5 @@ methods:
 - xyz.openbmc_project.Misc.Ipmi.Update
 - xyz.openbmc_project.Misc.Ipmi.Postcode
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNzEyMjE4OSw5Njg3NDMwNDBdfQ==
+eyJoaXN0b3J5IjpbMTI1NTE5MDk4MSw5Njg3NDMwNDBdfQ==
 -->
