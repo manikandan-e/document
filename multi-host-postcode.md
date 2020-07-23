@@ -239,9 +239,53 @@ methods:
 ## Alternate design
 
 ```ascii
-
++-------------------------------------------+
+|                                      BMC  |
+|                                           |
+| +-----------------+  +-----------------+  |
+| |  Host Discovery |  | OEM Specific    |  |
+| | (through        |  | Functions       |  |
+| |  inventory &    |  |                 |  |
+| |  hotplug        |  | (fb-ipmi-oem)   |  |
+| |  events)        |  |                 |  |                          +----+-------------+
+| |                 |  |                 |  |  +<-----+I2C/IPMI+------>+BIC |             |
+| +-----------+-----+  +--------+--------+  |  |                       |    |     Host1   |
+|             |                 |           |  |                       +------------------+
+| +-----------v-----------------v--------+  |  |                          +------------------+
+| |phosphor-ipmi-host/phosphor-ipmi-ipmb +<-----<-------+I2C/IPMI+------->+BIC |             |
+| |         (interrupt handler)          |  |  |                          |    |     Host2   |
+| |xyz.openbmc_project.Misc.Ipmi.Update  |  |  |                          +------------------+
+| +-----------+--------------------------+  |  |                             +------------------+
+|             +                             |  +<---------+I2C/IPMI+-------->+BIC  |            |
+|           event                           |  |                             |     |    Host3   |
+|             +                             |  |                             +------------------+
+|             |                             |  |                                +-------------------+
+| +-----------v------------------------+    |  +<------------+I2C/IPMI+-------->+    |              |
+| | phosphor-host-postd                |    |                                   |BIC |     HostN    |
+| |    (ipmisnoop)                     <-----------------------------------+    +----+--------------+
+| |   xyz.openbmc_project.State.       |    |                              |
+| |   HostX(0,1,2.N).Boot.Raw.Value    <--------------------+              |
+| +-+-------------+---------+--------+-+    |               +              |
+|   |             |         |        |      |             GPIOs            |
+|  event0         +         +        |      |               +              |
+|   |          event1   event2       +      |  +------------v----------+   |
+|   |             +         +     eventN    |  | OCP Debug card        |   |
+|   |             v         |        +      |  |(7 segment display &   |   |
+| +-v-----------------------v--------v---+  |  | Host selection switch)|   |
+| |         +--------+                   |  |  +-----------------------+   |
+| |          history1                    |  |                              |
+| |         +--------+        +--------+ |  |                              |
+| |                           | historyN |  |                              |  +---------------------+
+| +--------+                  +--------+ |  |                              +->+                     |
+| |history0|                             |  |                                 |    Command Line     |
+| +--------+       +--------+            <-----+xyz.openbmc_project.State.+-->+    Interface        |
+| |                 history2|            |  |   HostX(0,1,2..N).Boot.PostCode |                     |
+| |                +--------+            |  |                                 +---------------------+
+| |                                      |  |
+| | Phosphor-post-code+manager           |  |
+| ++ +-----------------------------------+  |
++-------------------------------------------+
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzI2ODQzNzksMTU4MTEwMDMxNSwyMD
-c0OTQ3NTI3XX0=
+eyJoaXN0b3J5IjpbLTEyMTA3MjEzNDVdfQ==
 -->
