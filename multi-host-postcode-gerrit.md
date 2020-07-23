@@ -287,10 +287,12 @@ Approach 1 : << add ipmisnoop in phosphor-host-postd >>
 +-------------------------------------------+
 ```
 Approach 2 : << move Platform Dependent Service (fb-yv2-misc)  feature into phoshor-post-code-manager >>
+
+   xyz.openbmc_project.State.Host0.Boot.Raw.Value
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4NjE0ODc4LC00MTA2Mjc4NDIsMTA5Nz
-U2MjAzMSw4NDc0NjU2MjksLTEyMTA3MjEzNDUsMTU4MTEwMDMx
-NSwyMDc0OTQ3NTI3LDE4OTE4NTQ3MjQsNTUzMDgxNzUsNTc3ND
-MyNjU4LDg3OTk2NDcyOSwxMjU1MTkwOTgxLDE1Mzg1MDk5MjAs
-NDM1OTkyNjQwLDgyNDU4MDkwOV19
+eyJoaXN0b3J5IjpbLTUyNzQ0NjU3OSwtNDEwNjI3ODQyLDEwOT
+c1NjIwMzEsODQ3NDY1NjI5LC0xMjEwNzIxMzQ1LDE1ODExMDAz
+MTUsMjA3NDk0NzUyNywxODkxODU0NzI0LDU1MzA4MTc1LDU3Nz
+QzMjY1OCw4Nzk5NjQ3MjksMTI1NTE5MDk4MSwxNTM4NTA5OTIw
+LDQzNTk5MjY0MCw4MjQ1ODA5MDldfQ==
 -->
