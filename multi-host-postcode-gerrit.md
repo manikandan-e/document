@@ -79,6 +79,8 @@ The below component diagram shows the present implementation for postcode and hi
  - Display given host postcode to 7 segment display based host position in debug card.
  - Provide a command interface for user to see any server current postcode .
  - Provide a command interface for user to see any server postcode history.
+ - Support for hotplug host
+ - Dynamic host management
 
 ## Proposed Design
 
@@ -231,7 +233,7 @@ methods:
 - xyz.openbmc_project.Misc.Ipmi.Update
 - xyz.openbmc_project.Misc.Ipmi.Postcode
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc3NDMyNjU4LDg3OTk2NDcyOSwxMjU1MT
-kwOTgxLDE1Mzg1MDk5MjAsNDM1OTkyNjQwLDgyNDU4MDkwOV19
-
+eyJoaXN0b3J5IjpbLTExODg2MTc3NDEsNTc3NDMyNjU4LDg3OT
+k2NDcyOSwxMjU1MTkwOTgxLDE1Mzg1MDk5MjAsNDM1OTkyNjQw
+LDgyNDU4MDkwOV19
 -->
