@@ -237,6 +237,7 @@ methods:
 - xyz.openbmc_project.Misc.Ipmi.Postcode
 ## Alternate design
 
+
 ```ascii
 +-------------------------------------------+
 |                                      BMC  |
@@ -286,5 +287,5 @@ methods:
 +-------------------------------------------+
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NzU2MjAzMV19
+eyJoaXN0b3J5IjpbLTIxMTQxNzc3MjcsMTA5NzU2MjAzMV19
 -->
