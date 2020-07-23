@@ -11,6 +11,7 @@ Created: 2020-07-02
 The current implementation in the phosphor-host-postd for postcode based on the LPC port 80 
 connected b/w BMC and single host.
 
+
 It is required to develop a new mechanism that would allow to read port 80 post code 
 for multiple-host through BIC(Bridge IC) using IPMI protocol.
 
@@ -208,5 +209,5 @@ methods:
 - xyz.openbmc_project.Misc.Ipmi.Update
 - xyz.openbmc_project.Misc.Ipmi.Postcode
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc0MjA1NzU5LDk2ODc0MzA0MF19
+eyJoaXN0b3J5IjpbLTEwOTk5NzM4NzEsOTY4NzQzMDQwXX0=
 -->
