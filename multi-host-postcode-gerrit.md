@@ -237,7 +237,7 @@ methods:
 - xyz.openbmc_project.Misc.Ipmi.Postcode
 ## Alternate design
 
-**Approach 1 : << adMove Platform Dependent Service (fb-yv2-misc)  feature into phoshor-post-code-manager  >>**
+**Approach 1 : << Move Platform Dependent Service (fb-yv2-misc)  feature into phoshor-host-postd  >>**
 
 ```ascii
 +-------------------------------------------+
@@ -291,7 +291,7 @@ methods:
   
   Move postcode D-bus creation and event generation from fb-yv2-misc into phoshor-post-code-manager.
   
-   xyz.openbmc_project.State.Hostx(0,1,2.N).Boot.Raw.Value
+     xyz.openbmc_project.State.Hostx(0,1,2.N).Boot.Raw.Value
 
 **Approach 3 : << Move  Platform Dependent Service (fb-yv2-misc)  feature into phoshor-state-manager >>**
   
@@ -299,10 +299,10 @@ methods:
    
     xyz.openbmc_project.State.Hostx(0,1,2.N).Boot.Raw.Value
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzE0NjYyMTksMTgwMDg0MzY0Nyw5MT
-YyMTAxMywtNDEwNjI3ODQyLDEwOTc1NjIwMzEsODQ3NDY1NjI5
-LC0xMjEwNzIxMzQ1LDE1ODExMDAzMTUsMjA3NDk0NzUyNywxOD
-kxODU0NzI0LDU1MzA4MTc1LDU3NzQzMjY1OCw4Nzk5NjQ3Mjks
-MTI1NTE5MDk4MSwxNTM4NTA5OTIwLDQzNTk5MjY0MCw4MjQ1OD
-A5MDldfQ==
+eyJoaXN0b3J5IjpbNjQ2NzkzMjUsMTgwMDg0MzY0Nyw5MTYyMT
+AxMywtNDEwNjI3ODQyLDEwOTc1NjIwMzEsODQ3NDY1NjI5LC0x
+MjEwNzIxMzQ1LDE1ODExMDAzMTUsMjA3NDk0NzUyNywxODkxOD
+U0NzI0LDU1MzA4MTc1LDU3NzQzMjY1OCw4Nzk5NjQ3MjksMTI1
+NTE5MDk4MSwxNTM4NTA5OTIwLDQzNTk5MjY0MCw4MjQ1ODA5MD
+ldfQ==
 -->
