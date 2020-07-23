@@ -283,12 +283,12 @@ methods:
 | |                 history2|            |  |   HostX(0,1,2..N).Boot.PostCode |                     |
 | |                +--------+            |  |                                 +---------------------+
 | |                                      |  |
-| | Phosphor-post-code+manager           |  |
+| | Phosphor-post-code-manager           |  |
 | ++ +-----------------------------------+  |
 +-------------------------------------------+
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjcxMTQ2ODAsLTEyMTA3MjEzNDUsMT
+eyJoaXN0b3J5IjpbLTE3MDA1NjAxODIsLTEyMTA3MjEzNDUsMT
 U4MTEwMDMxNSwyMDc0OTQ3NTI3LDE4OTE4NTQ3MjQsNTUzMDgx
 NzUsNTc3NDMyNjU4LDg3OTk2NDcyOSwxMjU1MTkwOTgxLDE1Mz
 g1MDk5MjAsNDM1OTkyNjQwLDgyNDU4MDkwOV19
