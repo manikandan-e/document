@@ -286,11 +286,11 @@ Approach 1 : << add ipmisnoop in phosphor-host-postd >>
 | ++ +-----------------------------------+  |
 +-------------------------------------------+
 ```
-Approach 2 : << add ipmisnoop in phosphor-host-postd >>
+Approach 2 : << add  >>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMDYyNzg0MiwxMDk3NTYyMDMxLDg0Nz
-Q2NTYyOSwtMTIxMDcyMTM0NSwxNTgxMTAwMzE1LDIwNzQ5NDc1
-MjcsMTg5MTg1NDcyNCw1NTMwODE3NSw1Nzc0MzI2NTgsODc5OT
-Y0NzI5LDEyNTUxOTA5ODEsMTUzODUwOTkyMCw0MzU5OTI2NDAs
-ODI0NTgwOTA5XX0=
+eyJoaXN0b3J5IjpbMTk0MDA3NTE1OCwtNDEwNjI3ODQyLDEwOT
+c1NjIwMzEsODQ3NDY1NjI5LC0xMjEwNzIxMzQ1LDE1ODExMDAz
+MTUsMjA3NDk0NzUyNywxODkxODU0NzI0LDU1MzA4MTc1LDU3Nz
+QzMjY1OCw4Nzk5NjQ3MjksMTI1NTE5MDk4MSwxNTM4NTA5OTIw
+LDQzNTk5MjY0MCw4MjQ1ODA5MDldfQ==
 -->
