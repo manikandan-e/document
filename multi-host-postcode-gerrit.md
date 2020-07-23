@@ -93,7 +93,7 @@ Following modules will updated for this implementation
  - phosphor-post-code-manager.
  - phosphor-dbus-interfaces
 
-iNERTFACE 	
+**Interface Diagram**
 ```ascii
 +--------------------------------------------+
 |                                       BMC  |
@@ -233,7 +233,7 @@ methods:
 - xyz.openbmc_project.Misc.Ipmi.Update
 - xyz.openbmc_project.Misc.Ipmi.Postcode
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MTg1NDcyNCw1NTMwODE3NSw1Nzc0Mz
-I2NTgsODc5OTY0NzI5LDEyNTUxOTA5ODEsMTUzODUwOTkyMCw0
-MzU5OTI2NDAsODI0NTgwOTA5XX0=
+eyJoaXN0b3J5IjpbMTEwMjgxNTcwMSwxODkxODU0NzI0LDU1Mz
+A4MTc1LDU3NzQzMjY1OCw4Nzk5NjQ3MjksMTI1NTE5MDk4MSwx
+NTM4NTA5OTIwLDQzNTk5MjY0MCw4MjQ1ODA5MDldfQ==
 -->
