@@ -286,17 +286,18 @@ Approach 1 : << add ipmisnoop in phosphor-host-postd >>
 | ++ +-----------------------------------+  |
 +-------------------------------------------+
 ```
-Approach 2 : << move Platform Dependent Service (fb-yv2-misc)  feature into phoshor-post-code-manager >>
+Approach 2 : << Move Platform Dependent Service (fb-yv2-misc)  feature into phoshor-post-code-manager >>
   
    xyz.openbmc_project.State.Hostx.Boot.Raw.Value
 
-Approach 3 : << move Platform Dependent Service (fb-yv2-misc)  feature into phoshor-post-code-manager >>
+Approach 3 : << Remove  Platform Dependent Service (fb-yv2-misc)  feature into phoshor-post-code-manager >>
   
    xyz.openbmc_project.State.Hostx.Boot.Raw.Value
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMDg0MzY0Nyw5MTYyMTAxMywtNDEwNj
-I3ODQyLDEwOTc1NjIwMzEsODQ3NDY1NjI5LC0xMjEwNzIxMzQ1
-LDE1ODExMDAzMTUsMjA3NDk0NzUyNywxODkxODU0NzI0LDU1Mz
-A4MTc1LDU3NzQzMjY1OCw4Nzk5NjQ3MjksMTI1NTE5MDk4MSwx
-NTM4NTA5OTIwLDQzNTk5MjY0MCw4MjQ1ODA5MDldfQ==
+eyJoaXN0b3J5IjpbMTE4NjQzODU3NCwxODAwODQzNjQ3LDkxNj
+IxMDEzLC00MTA2Mjc4NDIsMTA5NzU2MjAzMSw4NDc0NjU2Mjks
+LTEyMTA3MjEzNDUsMTU4MTEwMDMxNSwyMDc0OTQ3NTI3LDE4OT
+E4NTQ3MjQsNTUzMDgxNzUsNTc3NDMyNjU4LDg3OTk2NDcyOSwx
+MjU1MTkwOTgxLDE1Mzg1MDk5MjAsNDM1OTkyNjQwLDgyNDU4MD
+kwOV19
 -->
