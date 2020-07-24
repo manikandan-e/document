@@ -139,33 +139,33 @@ and get the postcode  from host through [phosphor-ipmi-ipmb](https://github.com/
 **Host discovery**
       This feature adds to detect,  when the hot plug-able host connected in the slot.
       Postcode D-bus interface needs to be created based on host present 
-      discovery(Host state /xyz/openbmc_project/state/hostX(0,1,2.N) D-bus interface ).
+      discovery(Host state /xyz/openbmc_project/state/hostX(1,2,3.N) D-bus interface ).
       
- - Create, register and add dbus connection for "/xyz/openbmc_project/hostX(0,1,2.N)/state/boot/raw" based on  Host discovery as mentioned above.
+ - Create, register and add dbus connection for "/xyz/openbmc_project/hostX(1,2,3.N)/state/boot/raw" based on  Host discovery as mentioned above.
  - Read each hosts postcode from Platform Specific OEM ServicesIPMI OEM handler(fb-ipmi-oem, intel-ipmi-oem,etc).
  - Send event to post-code-manager based on which host's postcode received from IPMB interface (xyz.openbmc_project.State.HostX.Boot.Raw.Value) 
  - Read host position from dbus property (debug card).
  - Display current post-code into the 7 segment display connected to BMC's 8 GPIOs based on the host position.
  
  **D-Bus interface**
- - xyz.openbmc_project.State.Host0.Boot.Raw.Value
  - xyz.openbmc_project.State.Host1.Boot.Raw.Value
  - xyz.openbmc_project.State.Host2.Boot.Raw.Value
+ - xyz.openbmc_project.State.Host3.Boot.Raw.Value
  - xyz.openbmc_project.State.HostN.Boot.Raw.Value
 
 ## phosphor-post-code-manager
 
 phosphor-post-code-manager is the single process based on host discovery for multi-host. This design shall not affect single host for post-code.
 
-- Create, register and add the dbus connection for "xyz.openbmc_project.State.Hostx(0,1,2.N).Boot.PostCode based on Host discovery.
-- Store/retrieve post-code from directory (/var/lib/phosphor-post-code-manager/hostX(0,1,2.N))  based on event received from phosphor-host-postd.
+- Create, register and add the dbus connection for "xyz.openbmc_project.State.Hostx(1,2,3.N).Boot.PostCode based on Host discovery.
+- Store/retrieve post-code from directory (/var/lib/phosphor-post-code-manager/hostX(1,2,3.N))  based on event received from phosphor-host-postd.
 
 The below D-Bus interface needs to created for multi-host post-code history.
 
 **D-Bus interface**
- - xyz.openbmc_project.State.Host0.Boot.PostCode
  - xyz.openbmc_project.State.Host1.Boot.PostCode
  - xyz.openbmc_project.State.Host2.Boot.PostCode
+ - xyz.openbmc_project.State.Host3.Boot.PostCode
  - xyz.openbmc_project.State.HostN.Boot.PostCode
  
 ## phosphor-dbus-interfaces
@@ -177,11 +177,11 @@ The below D-Bus interface needs to created for multi-host post-code history.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NDI2MDA4OCwtMTE4OTYwNDY3NCw3MD
-A0MTExMDgsMjYwNzE4MDkwLDE3NTQ1Njg5OTYsMTY2NzQ4MDkw
-NSwxNTU5MjIzMjg1LC04NjQ1OTIzODMsMTk3NTk3NzgyMCwtMT
-g0OTEyMTU1Myw1MDQwODU4MzEsMTk0OTM2NjI1MCwtMTU1MzI5
-NzM5NSwtOTU4MDIyMTcyLC03MzE1NjY1NjAsLTE1MDQwOTE3MT
-IsMjA3OTA4MTM5NiwxODk3MTM3ODQwLDE4MDA4NDM2NDcsOTE2
-MjEwMTNdfQ==
+eyJoaXN0b3J5IjpbLTE5MDE0MjE2MjYsMTA1NDI2MDA4OCwtMT
+E4OTYwNDY3NCw3MDA0MTExMDgsMjYwNzE4MDkwLDE3NTQ1Njg5
+OTYsMTY2NzQ4MDkwNSwxNTU5MjIzMjg1LC04NjQ1OTIzODMsMT
+k3NTk3NzgyMCwtMTg0OTEyMTU1Myw1MDQwODU4MzEsMTk0OTM2
+NjI1MCwtMTU1MzI5NzM5NSwtOTU4MDIyMTcyLC03MzE1NjY1Nj
+AsLTE1MDQwOTE3MTIsMjA3OTA4MTM5NiwxODk3MTM3ODQwLDE4
+MDA4NDM2NDddfQ==
 -->
