@@ -142,10 +142,13 @@ and get the postcode  from host through [phosphor-ipmi-ipmb](https://github.com/
       discovery(Host state /xyz/openbmc_project/state/hostX(1,2,3.N) D-bus interface ).
       
  - Create, register and add dbus connection for "/xyz/openbmc_project/hostX(1,2,3.N)/state/boot/raw" based on  Host discovery as mentioned above.
- - Read each hosts postcode from Platform Specific OEM ServicesIPMI OEM handler(fb-ipmi-oem, intel-ipmi-oem,etc).
- - Send event to post-code-manager based on which host's postcode received from IPMB interface (xyz.openbmc_project.State.HostX.Boot.Raw.Value) 
+ - Read each hosts postcode from Platform Specific OEM ServicesIPMI OEM 
+    handler(fb-ipmi-oem, intel-ipmi-oem,etc).
+ - Send event to post-code-manager based on which host's postcode received 
+   from IPMB interface (xyz.openbmc_project.State.HostX.Boot.Raw.Value) 
  - Read host position from dbus property (debug card).
- - Display current post-code into the 7 segment display connected to BMC's 8 GPIOs based on the host position.
+ - Display current post-code into the 7 segment display 
+   connected to BMC's 8 GPIOs based on the host position.
  
  **D-Bus interface**
  - xyz.openbmc_project.State.Host1.Boot.Raw.Value
@@ -177,11 +180,11 @@ The below D-Bus interface needs to created for multi-host post-code history.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDE0MjE2MjYsMTA1NDI2MDA4OCwtMT
-E4OTYwNDY3NCw3MDA0MTExMDgsMjYwNzE4MDkwLDE3NTQ1Njg5
-OTYsMTY2NzQ4MDkwNSwxNTU5MjIzMjg1LC04NjQ1OTIzODMsMT
-k3NTk3NzgyMCwtMTg0OTEyMTU1Myw1MDQwODU4MzEsMTk0OTM2
-NjI1MCwtMTU1MzI5NzM5NSwtOTU4MDIyMTcyLC03MzE1NjY1Nj
-AsLTE1MDQwOTE3MTIsMjA3OTA4MTM5NiwxODk3MTM3ODQwLDE4
-MDA4NDM2NDddfQ==
+eyJoaXN0b3J5IjpbLTQ4MzE5NTQ2MiwtMTkwMTQyMTYyNiwxMD
+U0MjYwMDg4LC0xMTg5NjA0Njc0LDcwMDQxMTEwOCwyNjA3MTgw
+OTAsMTc1NDU2ODk5NiwxNjY3NDgwOTA1LDE1NTkyMjMyODUsLT
+g2NDU5MjM4MywxOTc1OTc3ODIwLC0xODQ5MTIxNTUzLDUwNDA4
+NTgzMSwxOTQ5MzY2MjUwLC0xNTUzMjk3Mzk1LC05NTgwMjIxNz
+IsLTczMTU2NjU2MCwtMTUwNDA5MTcxMiwyMDc5MDgxMzk2LDE4
+OTcxMzc4NDBdfQ==
 -->
