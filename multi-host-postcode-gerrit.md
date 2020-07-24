@@ -195,7 +195,7 @@ methods:
     
       description: >
       
-          Method to get the cached post codes.
+          Method to get the post codes from specific host.
           
       parameters:
       
@@ -225,11 +225,11 @@ methods:
        change single process into multi-process on phosphor-post-code-manager
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMzM0ODIxOCwtNzMxNTY2NTYwLC0xNT
-A0MDkxNzEyLDIwNzkwODEzOTYsMTg5NzEzNzg0MCwxODAwODQz
-NjQ3LDkxNjIxMDEzLC00MTA2Mjc4NDIsMTA5NzU2MjAzMSw4ND
-c0NjU2MjksLTEyMTA3MjEzNDUsMTU4MTEwMDMxNSwyMDc0OTQ3
-NTI3LDE4OTE4NTQ3MjQsNTUzMDgxNzUsNTc3NDMyNjU4LDg3OT
-k2NDcyOSwxMjU1MTkwOTgxLDE1Mzg1MDk5MjAsNDM1OTkyNjQw
-XX0=
+eyJoaXN0b3J5IjpbNzIzMTc0OTI4LC03MzE1NjY1NjAsLTE1MD
+QwOTE3MTIsMjA3OTA4MTM5NiwxODk3MTM3ODQwLDE4MDA4NDM2
+NDcsOTE2MjEwMTMsLTQxMDYyNzg0MiwxMDk3NTYyMDMxLDg0Nz
+Q2NTYyOSwtMTIxMDcyMTM0NSwxNTgxMTAwMzE1LDIwNzQ5NDc1
+MjcsMTg5MTg1NDcyNCw1NTMwODE3NSw1Nzc0MzI2NTgsODc5OT
+Y0NzI5LDEyNTUxOTA5ODEsMTUzODUwOTkyMCw0MzU5OTI2NDBd
+fQ==
 -->
