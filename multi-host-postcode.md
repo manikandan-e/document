@@ -206,6 +206,5 @@ The below D-Bus interface needs to created for multi-host post-code history.
       handle IPMI postcode , seven segment  display  and 
       host position specific feature.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMDAwOTk3MSwtNTQ3Mjk0NTQ2LC04Nj
-Q1NzcyMzZdfQ==
+eyJoaXN0b3J5IjpbMTQzMDAwOTk3MV19
 -->
