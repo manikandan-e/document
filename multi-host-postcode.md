@@ -130,7 +130,7 @@ This library is part of  the [phosphor-ipmi-host](https://github.com/openbmc/pho
 
 **Host discovery**
       This feature adds to detect,  when the hot plug-able host connected in the slot.
-      Postcode D-bus interface needs to be created based on host present discovery(Host Field replaceable Unit D-bus interface ).
+      Postcode D-bus interface needs to be created based on host present discovery(Host state D-bus interface ).
       
  - Create, register and add dbus connection for "/xyz/openbmc_project/hostX(0,1,2.N)/state/boot/raw" based on Host discovery as mentioned above.
  - Read each hosts postcode from Platform Specific OEM ServicesIPMI OEM handler(fb-ipmi-oem, intel-ipmi-oem,etc).
@@ -175,5 +175,5 @@ The below operation part of the fb-yv2-misc.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2NzQ4MDkwNV19
+eyJoaXN0b3J5IjpbLTY4Njk1MTI0NCwxNjY3NDgwOTA1XX0=
 -->
