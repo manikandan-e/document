@@ -79,9 +79,9 @@ Following modules will updated for this implementation
 
  - phosphor-host-postd.
  - phosphor-post-code-manager.
- - phosphor-dbus-interfaces.
  - fb-ipmi-oem.
  - fb-yv2-misc.
+ - phosphor-dbus-interfaces.
 
 **Interface Diagram**
 ```ascii
@@ -186,9 +186,7 @@ The below operation part of the fb-yv2-misc.
 
  **phosphor-post-code-manager**
        change single process into multi-process on phosphor-post-code-manager.
-  **fb-yv2-misc**
-        Host selection 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDYzNjIzMTQ0LDE5NDkzNjYyNTAsLTE1NT
+eyJoaXN0b3J5IjpbLTgyMTE4ODE3LDE5NDkzNjYyNTAsLTE1NT
 MyOTczOTUsLTk1ODAyMjE3Ml19
 -->
