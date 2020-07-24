@@ -216,7 +216,8 @@ methods:
               postcode indicates which host postcode. 
 
 **D-Bus interface**
-
+- xyz.openbmc_project.State.Host(0, 1,2.N).Boot.PostCode.
+- xyz.openbmc_project.State.Host(0, 1,2.N).Boot.Raw.Value.
 - xyz.openbmc_project.Misc.Ipmi.Update
 - xyz.openbmc_project.Misc.Ipmi.Postcode
 ## Alternate design
@@ -225,5 +226,5 @@ methods:
        change single process into multi-process on phosphor-post-code-manager
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIzMTc0OTI4LDM3Mjc4MTgzOV19
+eyJoaXN0b3J5IjpbLTQyOTk0MjEyNCwzNzI3ODE4MzldfQ==
 -->
