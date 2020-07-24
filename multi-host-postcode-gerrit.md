@@ -129,8 +129,8 @@ Postcode Flow:
 
  - BMC power-on the Host.
  - Host starts send postcode IPMI message continuously to BMC.
- - The ipmbbridged  extract the postcode from the IPMI message .
- - The ipmbd append host information and send to phosphor-host-postd .
+ - The ipmbbridged(phosphor-ipmi-ipmb)  extract the postcode from the IPMI message .
+ - The ipmbd(phosphor-ipmi-host) append host information and send to phosphor-host-postd .
  - phosphor-host-postd displays send  postcode to phosphor-post-code-manager
     as well display postcode in seven segment display.
  - phosphor-post-code-manager store the postcode in directory.
@@ -206,11 +206,11 @@ The below D-Bus interface needs to created for multi-host post-code history.
   **Platform specific service(fb-yv2-misc) alternate to phosphor-host-postd**
         Handle 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc2MzA4MDg0LDg5NjEzNjkyOCwtMTU1MD
-MyNjM1NSwxNTUxNTQwOTY3LC0xNzIzMjA3Njg2LC0xOTAxNDIx
-NjI2LDEwNTQyNjAwODgsLTExODk2MDQ2NzQsNzAwNDExMTA4LD
-I2MDcxODA5MCwxNzU0NTY4OTk2LDE2Njc0ODA5MDUsMTU1OTIy
-MzI4NSwtODY0NTkyMzgzLDE5NzU5Nzc4MjAsLTE4NDkxMjE1NT
-MsNTA0MDg1ODMxLDE5NDkzNjYyNTAsLTE1NTMyOTczOTUsLTk1
-ODAyMjE3Ml19
+eyJoaXN0b3J5IjpbLTkyODg4NTI3MCw4OTYxMzY5MjgsLTE1NT
+AzMjYzNTUsMTU1MTU0MDk2NywtMTcyMzIwNzY4NiwtMTkwMTQy
+MTYyNiwxMDU0MjYwMDg4LC0xMTg5NjA0Njc0LDcwMDQxMTEwOC
+wyNjA3MTgwOTAsMTc1NDU2ODk5NiwxNjY3NDgwOTA1LDE1NTky
+MjMyODUsLTg2NDU5MjM4MywxOTc1OTc3ODIwLC0xODQ5MTIxNT
+UzLDUwNDA4NTgzMSwxOTQ5MzY2MjUwLC0xNTUzMjk3Mzk1LC05
+NTgwMjIxNzJdfQ==
 -->
