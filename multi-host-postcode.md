@@ -125,7 +125,7 @@ Following modules will updated for this implementation
 +-------------------------------------------+                                                    
 ```
 
-Postcode Flow:
+**Postcode Flow:**
 
  - BMC power-on the Host.
  - Host starts send postcode IPMI message continuously to BMC.
@@ -136,11 +136,6 @@ Postcode Flow:
  - phosphor-host-postd displays send  postcode to phosphor-post-code-manager
     as well display postcode in seven segment display.
  - phosphor-post-code-manager store the postcode in directory.
-
- 
-
- 
-
 
 ##  Platform Specific OEM Handler (fb-ipmi-oem)
 
@@ -208,6 +203,5 @@ The below D-Bus interface needs to created for multi-host post-code history.
   **Platform specific service(fb-yv2-misc) alternate to phosphor-host-postd**
         Handle 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTk5NTkxNCwtOTI4ODg1MjcwLDg5Nj
-EzNjkyOCwxNDk0ODYxOTk4XX0=
+eyJoaXN0b3J5IjpbLTE1Njc1NjI3MTZdfQ==
 -->
