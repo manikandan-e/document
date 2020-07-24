@@ -168,8 +168,8 @@ The below D-Bus interface needs to created for multi-host post-code history.
  - 
 ## fb-yv2-misc
 The below operation part of fb-yv2-misc.
-
- The command 10h “Enable postcode to BMC” need to send to each host though IPMB interface(cmd = 0x10, netfn=0x38, lun=00).
+Enable post code in each host connected through IPMB interface.
+Detect and send host position 
 
  
 ## phosphor-dbus-interfacesment 
@@ -182,11 +182,11 @@ D-bus interface need to create to support for multi-host postcode.
        change single process into multi-process on phosphor-post-code-manager.
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNTg5NDQzNywtMTU1MzI5NzM5NSwtOT
-U4MDIyMTcyLC03MzE1NjY1NjAsLTE1MDQwOTE3MTIsMjA3OTA4
-MTM5NiwxODk3MTM3ODQwLDE4MDA4NDM2NDcsOTE2MjEwMTMsLT
-QxMDYyNzg0MiwxMDk3NTYyMDMxLDg0NzQ2NTYyOSwtMTIxMDcy
-MTM0NSwxNTgxMTAwMzE1LDIwNzQ5NDc1MjcsMTg5MTg1NDcyNC
-w1NTMwODE3NSw1Nzc0MzI2NTgsODc5OTY0NzI5LDEyNTUxOTA5
-ODFdfQ==
+eyJoaXN0b3J5IjpbNzAzMjM4MjU5LC0xNTUzMjk3Mzk1LC05NT
+gwMjIxNzIsLTczMTU2NjU2MCwtMTUwNDA5MTcxMiwyMDc5MDgx
+Mzk2LDE4OTcxMzc4NDAsMTgwMDg0MzY0Nyw5MTYyMTAxMywtND
+EwNjI3ODQyLDEwOTc1NjIwMzEsODQ3NDY1NjI5LC0xMjEwNzIx
+MzQ1LDE1ODExMDAzMTUsMjA3NDk0NzUyNywxODkxODU0NzI0LD
+U1MzA4MTc1LDU3NzQzMjY1OCw4Nzk5NjQ3MjksMTI1NTE5MDk4
+MV19
 -->
