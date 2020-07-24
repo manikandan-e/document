@@ -9,19 +9,18 @@ Created: 2020-07-02
 
 ## Problem Description
 
-The current implementation in the phosphor-host-postd supports
- only single host postcode access through LPC interface.
+The current implementation in the phosphor-host-postd supports only single host
+postcode access through LPC interface.
 
- As the open BMC architecture is evolving, the single host support
- becomes contingent and needs multiple-host post code access to 
- be implemented.
+As the open BMC architecture is evolving, the single host support becomes
+contingent and needs multiple-host post code access to be implemented.
 
 ## Background and References
 
 **Existing postcode implementation for single host**
 
-The below component diagram shows the present implementation for 
-postcode and history at high-level overview
+The below component diagram shows the present implementation for postcode and
+history at high-level overview
 ```ascii
 +----------------------------------+                           +--------------------+
 |  +-------------------------------+                           |                    |
@@ -205,11 +204,11 @@ The below D-Bus interface needs to created for multi-host post-code history.
       handle IPMI postcode , seven segment  display  and 
       host position specific feature.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NzI5NDU0NiwtOTI4ODg1MjcwLDg5Nj
-EzNjkyOCwtMTU1MDMyNjM1NSwxNTUxNTQwOTY3LC0xNzIzMjA3
-Njg2LC0xOTAxNDIxNjI2LDEwNTQyNjAwODgsLTExODk2MDQ2Nz
-QsNzAwNDExMTA4LDI2MDcxODA5MCwxNzU0NTY4OTk2LDE2Njc0
-ODA5MDUsMTU1OTIyMzI4NSwtODY0NTkyMzgzLDE5NzU5Nzc4Mj
-AsLTE4NDkxMjE1NTMsNTA0MDg1ODMxLDE5NDkzNjYyNTAsLTE1
-NTMyOTczOTVdfQ==
+eyJoaXN0b3J5IjpbLTYzMDQ1NzgxMiwtNTQ3Mjk0NTQ2LC05Mj
+g4ODUyNzAsODk2MTM2OTI4LC0xNTUwMzI2MzU1LDE1NTE1NDA5
+NjcsLTE3MjMyMDc2ODYsLTE5MDE0MjE2MjYsMTA1NDI2MDA4OC
+wtMTE4OTYwNDY3NCw3MDA0MTExMDgsMjYwNzE4MDkwLDE3NTQ1
+Njg5OTYsMTY2NzQ4MDkwNSwxNTU5MjIzMjg1LC04NjQ1OTIzOD
+MsMTk3NTk3NzgyMCwtMTg0OTEyMTU1Myw1MDQwODU4MzEsMTk0
+OTM2NjI1MF19
 -->
