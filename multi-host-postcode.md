@@ -147,7 +147,7 @@ This library is part of [phosphor-ipmi-host](https://github.com/openbmc/phosphor
 
 ## phosphor-post-code-manager
 
-The design shall handle the hot plugged multi-host in the single process phosphor-post-code-manager based on host discovery.
+single process phosphor-post-code-manager based on host discovery.
 
 **Host discovery**
      This feature adds to detect when hot plug-able host connected in the slot.
@@ -180,5 +180,6 @@ The below operation part of the fb-yv2-misc.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDkxMjE1NTMsMTA3Njg5ODEzN119
+eyJoaXN0b3J5IjpbLTE0ODA5NDE3NzgsLTE4NDkxMjE1NTMsMT
+A3Njg5ODEzN119
 -->
