@@ -8,7 +8,9 @@ Created: 2020-07-02
 
 ## Problem Description
 
-The current implementation in the phosphor-host-postd supports only single host postcode access through LPC interface. Hence, multiple-host are not supported by mechanism.
+The current implementation in the phosphor-host-postd supports only 
+single host postcode access through LPC interface. Hence, multiple-host 
+are not supported by mechanism.
 
 ## Background and References
 
@@ -16,7 +18,8 @@ The current implementation in the phosphor-host-postd supports only single host 
 
 [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem)
 
-The below component diagram shows the present implementation for postcode and history at high-level overview
+The below component diagram shows the present implementation for 
+postcode and history at high-level overview
 ```ascii
 +----------------------------------+                           +--------------------+
 |  +-------------------------------+                           |                    |
@@ -168,5 +171,5 @@ The below D-Bus interface needs to created for multi-host post-code history.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzAwNDExMTA4XX0=
+eyJoaXN0b3J5IjpbLTI2NzQzNjk0Niw3MDA0MTExMDhdfQ==
 -->
