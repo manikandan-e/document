@@ -165,12 +165,14 @@ The below D-Bus interface needs to created for multi-host post-code history.
  - 
 ## fb-yv2-misc
 
- This is new process going create as part of the openbmc/meta-facebook to handle Facebook platform specific feature.
+ This is new process going create as part of the openbmc/meta-facebook to handle Facebook platform specific feature  .
  
 - Get Bridge IC(BIC) configuration(cmd = 0x0E, netfn=0x38, lun=00).
  - Set Bridge IC(BIC) configuration(cmd = 0x10, netfn=0x38, lun=00).
  
 ## phosphor-dbus-interfaces
+
+D-bus interface need to create to support for multi-host postcode.
 
 ## Alternate design
 
@@ -178,5 +180,5 @@ The below D-Bus interface needs to created for multi-host post-code history.
        change single process into multi-process on phosphor-post-code-manager.
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNDA4ODEyNiwtOTU4MDIyMTcyXX0=
+eyJoaXN0b3J5IjpbNjExMjAyNjQ3LC05NTgwMjIxNzJdfQ==
 -->
