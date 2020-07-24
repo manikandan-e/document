@@ -178,18 +178,18 @@ The below operation part of the fb-yv2-misc.
  
 ## phosphor-dbus-interfaces
 
-    
+       
 
 ## Alternate design
 
  **phosphor-post-code-manager**
        change single process into multi-process on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA0MDg1ODMxLDE5NDkzNjYyNTAsLTE1NT
-MyOTczOTUsLTk1ODAyMjE3MiwtNzMxNTY2NTYwLC0xNTA0MDkx
-NzEyLDIwNzkwODEzOTYsMTg5NzEzNzg0MCwxODAwODQzNjQ3LD
-kxNjIxMDEzLC00MTA2Mjc4NDIsMTA5NzU2MjAzMSw4NDc0NjU2
-MjksLTEyMTA3MjEzNDUsMTU4MTEwMDMxNSwyMDc0OTQ3NTI3LD
-E4OTE4NTQ3MjQsNTUzMDgxNzUsNTc3NDMyNjU4LDg3OTk2NDcy
-OV19
+eyJoaXN0b3J5IjpbMTk4MzYzNjk1OSw1MDQwODU4MzEsMTk0OT
+M2NjI1MCwtMTU1MzI5NzM5NSwtOTU4MDIyMTcyLC03MzE1NjY1
+NjAsLTE1MDQwOTE3MTIsMjA3OTA4MTM5NiwxODk3MTM3ODQwLD
+E4MDA4NDM2NDcsOTE2MjEwMTMsLTQxMDYyNzg0MiwxMDk3NTYy
+MDMxLDg0NzQ2NTYyOSwtMTIxMDcyMTM0NSwxNTgxMTAwMzE1LD
+IwNzQ5NDc1MjcsMTg5MTg1NDcyNCw1NTMwODE3NSw1Nzc0MzI2
+NThdfQ==
 -->
