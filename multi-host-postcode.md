@@ -1,6 +1,7 @@
 # Multi-host Postcode Support
 
-Author: Manikandan Elumalai, [manikandan.hcl.ers.epl@gmail.com](mailto:manikandan.hcl.ers.epl@gmail.com)
+Author: Manikandan Elumalai, [manikandan.hcl.ers.epl@gmail.com]
+(mailto:manikandan.hcl.ers.epl@gmail.com)
 
 Other contributors: None
 
@@ -188,5 +189,5 @@ The below D-Bus interface needs to created for multi-host post-code history.
   **Platform specific service(fb-yv2-misc) alternate to phosphor-host-postd**
         Handle 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MTc2MDQ0NV19
+eyJoaXN0b3J5IjpbMTIxOTAyMzkxNV19
 -->
