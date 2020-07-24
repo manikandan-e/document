@@ -101,8 +101,9 @@ Following modules will updated for this implementation
 |        |                                  |              |    |     HostN   |             
 | +------v-------------------------------+  |              +----+-------------+             
 | |                                      |  |                                                
-| |     phosphor-host-postd              |  |             +-----------------+                     
-| |       (ipmi snoop)                   |  |             | Seven segment   |                     
+| |     phosphor-host-postd              |  |             +-----------------+
+| |                                      |  |             |                 |
+| |       (ipmi snoop)                   |  |             | Seven Segment   |                     
 | |     xyz.openbmc_project.State.       +--+-------------> Display         |                     
 | |     HostX(1,2,3..N).Boot.Raw.Value   <--+-+           |                 |                     
 | |                                      |  | |           |                 |                     
@@ -120,7 +121,7 @@ Following modules will updated for this implementation
 | |                                      |  |                         +-----+
 | | Phosphor-post-code-manager           |  |                                                        
 | +--------------------------------------+  |                                                        
-+-------------------------------------------+                                                     
++-------------------------------------------+                                                    
 ```
 
 ##  Platform Specific OEM Handler (fb-ipmi-oem)
@@ -184,11 +185,11 @@ The below D-Bus interface needs to created for multi-host post-code history.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1MTU0MDk2NywtMTcyMzIwNzY4NiwtMT
-kwMTQyMTYyNiwxMDU0MjYwMDg4LC0xMTg5NjA0Njc0LDcwMDQx
-MTEwOCwyNjA3MTgwOTAsMTc1NDU2ODk5NiwxNjY3NDgwOTA1LD
-E1NTkyMjMyODUsLTg2NDU5MjM4MywxOTc1OTc3ODIwLC0xODQ5
-MTIxNTUzLDUwNDA4NTgzMSwxOTQ5MzY2MjUwLC0xNTUzMjk3Mz
-k1LC05NTgwMjIxNzIsLTczMTU2NjU2MCwtMTUwNDA5MTcxMiwy
-MDc5MDgxMzk2XX0=
+eyJoaXN0b3J5IjpbLTM1NDQzMDQwMSwxNTUxNTQwOTY3LC0xNz
+IzMjA3Njg2LC0xOTAxNDIxNjI2LDEwNTQyNjAwODgsLTExODk2
+MDQ2NzQsNzAwNDExMTA4LDI2MDcxODA5MCwxNzU0NTY4OTk2LD
+E2Njc0ODA5MDUsMTU1OTIyMzI4NSwtODY0NTkyMzgzLDE5NzU5
+Nzc4MjAsLTE4NDkxMjE1NTMsNTA0MDg1ODMxLDE5NDkzNjYyNT
+AsLTE1NTMyOTczOTUsLTk1ODAyMjE3MiwtNzMxNTY2NTYwLC0x
+NTA0MDkxNzEyXX0=
 -->
