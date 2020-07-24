@@ -187,8 +187,8 @@ The below operation part of the fb-yv2-misc.
  **phosphor-post-code-manager**
        change single process into multi-process on phosphor-post-code-manager.
   **fb-yv2-misc**
-      
+        Host selection 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMzM3ODA0OCwxOTQ5MzY2MjUwLC0xNT
-UzMjk3Mzk1LC05NTgwMjIxNzJdfQ==
+eyJoaXN0b3J5IjpbNDYzNjIzMTQ0LDE5NDkzNjYyNTAsLTE1NT
+MyOTczOTUsLTk1ODAyMjE3Ml19
 -->
