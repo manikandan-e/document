@@ -21,9 +21,6 @@ into phosphor-host-postd and phosphor-post-code-manager.
 
 [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem)
 
-BIC(Bridge IC)
-  The Bridge IC plays as a bridge between BMC and the host systemo which is part removable host. The host system can be managed by the BMC through Bridge IC even if host hardware or OS hang or goes down
-
 
 The below component diagram shows the present implementation for postcode and history at high-level overview
 ```ascii
@@ -73,7 +70,7 @@ The below component diagram shows the present implementation for postcode and hi
 
 ## Proposed Design
 
-This document proposes a new design engaging the IPMB interface to read port-80 post code from multiple-host through BIC (Bridge IC). This design also supports host discovery including the hot-plug feature.
+This document proposes a new design engaging the IPMB interface to read port-80 post code from multiple-host. This design also supports host discovery including the hot-plug-able host connected in slot.
 
 Following modules will updated for this implementation
 
@@ -189,5 +186,5 @@ The below operation part of the fb-yv2-misc.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNDk3MjQwMl19
+eyJoaXN0b3J5IjpbMTA3Njg5ODEzNywtMzM0OTcyNDAyXX0=
 -->
