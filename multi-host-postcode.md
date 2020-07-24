@@ -185,7 +185,9 @@ The below D-Bus interface needs to created for multi-host post-code history.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
   
-    **Platfrom specific service(fb-yv2-misc)**
+  **Platfrom specific service(fb-yv2-misc)**
+        Handle 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTAzMjYzNTUsMTU1MTU0MDk2N119
+eyJoaXN0b3J5IjpbMTgxNjEwMTU2OSwtMTU1MDMyNjM1NSwxNT
+UxNTQwOTY3XX0=
 -->
