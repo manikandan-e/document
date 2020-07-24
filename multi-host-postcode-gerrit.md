@@ -143,7 +143,7 @@ Provided below the post code interface diagram with flow sequence
 This library is part of  the [phosphor-ipmi-host]
 (https://github.com/openbmc/phosphor-host-ipmid) 
 and get the postcode  from host through
- [phosphor-ipmi-ipmb](https://github.com/openbmc/ipmbbridge).
+[phosphor-ipmi-ipmb](https://github.com/openbmc/ipmbbridge).
 
  - Register IPMI OEM postcode callback interrupt handler.
  - Extract postcode from IPMI message (phosphor-ipm-host/phosphor-ipmi-ipmb).
@@ -206,11 +206,11 @@ The below D-Bus interface needs to created for multi-host post-code history.
       handle IPMI postcode , seven segment  display  and 
       host position specific feature.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjA3MDU3OTksLTU0NzI5NDU0NiwtOT
-I4ODg1MjcwLDg5NjEzNjkyOCwtMTU1MDMyNjM1NSwxNTUxNTQw
-OTY3LC0xNzIzMjA3Njg2LC0xOTAxNDIxNjI2LDEwNTQyNjAwOD
-gsLTExODk2MDQ2NzQsNzAwNDExMTA4LDI2MDcxODA5MCwxNzU0
-NTY4OTk2LDE2Njc0ODA5MDUsMTU1OTIyMzI4NSwtODY0NTkyMz
-gzLDE5NzU5Nzc4MjAsLTE4NDkxMjE1NTMsNTA0MDg1ODMxLDE5
-NDkzNjYyNTBdfQ==
+eyJoaXN0b3J5IjpbMTQwODA0NzczNywtNTQ3Mjk0NTQ2LC05Mj
+g4ODUyNzAsODk2MTM2OTI4LC0xNTUwMzI2MzU1LDE1NTE1NDA5
+NjcsLTE3MjMyMDc2ODYsLTE5MDE0MjE2MjYsMTA1NDI2MDA4OC
+wtMTE4OTYwNDY3NCw3MDA0MTExMDgsMjYwNzE4MDkwLDE3NTQ1
+Njg5OTYsMTY2NzQ4MDkwNSwxNTU5MjIzMjg1LC04NjQ1OTIzOD
+MsMTk3NTk3NzgyMCwtMTg0OTEyMTU1Myw1MDQwODU4MzEsMTk0
+OTM2NjI1MF19
 -->
