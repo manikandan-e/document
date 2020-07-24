@@ -76,6 +76,47 @@ Following modules will updated for this implementation
 **Interface Diagram**
 ```ascii
 +-------------------------------------------+
+|                      +-----------------+  |
+|                      | (fb-ipmi-oem, )   |  |
+|     BMC              |                 |  |                          +----+-------------+
+|                      +--------+--------+  |       +-+I2C/IPMI+------>+BIC |             |
+|                               |           |       |                  |    |     Host1   |
+| +-----------------------------v--------+  |       |                  +------------------+
+| |                                      |  |       |                     +------------------+
+| | phosphor-ipm-host/phosphor-ipmi-ipmb +<-------------+I2C/IPMI+------->+BIC |             |
+| |         (interrupt handler           |  |       |                     |    |     Host2   |
+| |xyz.openbmc_project.Misc.Ipmi.Update  |  |       |                     +------------------+
+| +--+-----------------------------------+  |       |                        +------------------+
+|    |            +----------------------+  |       +-----+I2C/IPMI+-------->+BIC  |            |
+|    |       +----+    fb-yv2-misc       <---------->                        |     |    Host3   |
+|  event     |    |(postcode enable)     |  |       |                        +------------------+
+|    +       |    |(platfrom specific)   |  |       |                           +-------------------+
+|    |       |    |                      <-------+  +--------+I2C/IPMI+-------->+    |              |
+|    |       |    +----------------------+  |    |                              |BIC |     HostN    |
+|    |    host pos                          |    |                              +----+--------------+
+|    |       |                              |    |        +-------------------+
+| +--v-------v-------------------------+    |    +GPIOs---+ host postcode     |
+| |phosphor-post-code-manager          |    |             | selection switch  |
+| |   (ipmi snoop)                     +---------+        |                   |
+| | xyz.openbmc_project.State.         <------+  |        +-------------------+
+| | HostX(0,1,2.N).Boot.Raw.Value      |    | |  |
+| +-----------------------------+------+    | |  |
+|                               |           | |  |        +--------------------+
+|                          postcode event   | |  |        |  7 segment         |
+|                               |           | |  +GPIOs-->+   Display          |
+| +--------------------------------------+  | |           +--------------------+
+| | +-------------+     +-------v------+ |  | |
+| | |Inventory &  |     |              | |  | |                               +---------------------+
+| | |hotplug      |     |Histroy(1,2,3.N)|  | +------------------------------->                     |
+| | |             |     |              + |  |                                 |    Command Line     |
+| | |             |     |              +<------+xyz.openbmc_project.State.+--->    Interface        |
+| | +-------------+     +--------------+ |  |   HostX(0,1,2..N).Boot.PostCode |                     |
+| |                                      |  |                                 +---------------------+
+| | Phosphor-post-code-manager           |  |
+| +--------------------------------------+  |
++-------------------------------------------+
+
++-------------------------------------------+
 |                      +-----------------+  +
 |                      |(fb+ipmi+oem,etc)|  +
 |     BMC              |                 |  +                          +----+-------------+
@@ -174,5 +215,5 @@ The below operation part of the fb-yv2-misc.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDQxMjczMzBdfQ==
+eyJoaXN0b3J5IjpbMTU1OTIyMzI4NSwtMjE0NDEyNzMzMF19
 -->
