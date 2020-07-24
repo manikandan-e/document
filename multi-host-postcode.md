@@ -167,14 +167,15 @@ The below D-Bus interface needs to created for multi-host post-code history.
  - xyz.openbmc_project.State.HostN.Boot.PostCode
  - 
 ## fb-yv2-misc
-The below operation part of fb-yv2-misc.
+
+The below operation part of the fb-yv2-misc.
 
  - Enable post code in each host connected through IPMB interface.
- - Detect and send the host position switch position to phosphor-post-code-manager through. 
+ - Detect and send the host position switch position to phosphor-post-code-manager through D-bus. 
  
-## phosphor-dbus-interfacesment 
+## phosphor-dbus-interfaces
 
-D-bus interface need to create to support for multi-host postcode.
+   D-bus interface need to create to support for multi-host postcode.
 
 ## Alternate design
 
@@ -182,6 +183,6 @@ D-bus interface need to create to support for multi-host postcode.
        change single process into multi-process on phosphor-post-code-manager.
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4Nzg1MjgyMywtMTU1MzI5NzM5NSwtOT
-U4MDIyMTcyXX0=
+eyJoaXN0b3J5IjpbMTcwMDkxMzM1LC0xNTUzMjk3Mzk1LC05NT
+gwMjIxNzJdfQ==
 -->
