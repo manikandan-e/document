@@ -184,7 +184,7 @@ discovery.
 - Store/retrieve post-code from directory (/var/lib/phosphor-post-code-manager/
 hostX(1,2,3.N)) based on event received from phosphor-host-postd.
 
-The below D-Bus interface needs to created for multi-host post-code history.
+The below D-Bus interface needs to be created for multi-host post-code history.
 
 **D-Bus interface**
  - xyz.openbmc_project.State.Host1.Boot.PostCode
@@ -206,5 +206,5 @@ The below D-Bus interface needs to created for multi-host post-code history.
       handle IPMI postcode , seven segment  display  and 
       host position specific feature.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NjUwOTA4NCwxNDMwMDA5OTcxXX0=
+eyJoaXN0b3J5IjpbLTM2NTA0MzI2N119
 -->
