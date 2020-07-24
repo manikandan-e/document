@@ -69,8 +69,7 @@ Following modules will updated for this implementation
 
  - phosphor-host-postd.
  - phosphor-post-code-manager.
- - Platform Specific OEM Handler (fb-ipmi-oem, intel-ipmi-oem,etc).
- - Platform Specific Services(fb-yv2-misc).
+ - platform specific OEM handler (fb-ipmi-oem, intel-ipmi-oem,etc).
  - phosphor-dbus-interfaces.
 
 **Interface Diagram**
@@ -159,13 +158,6 @@ The below D-Bus interface needs to created for multi-host post-code history.
  - xyz.openbmc_project.State.Host2.Boot.PostCode
  - xyz.openbmc_project.State.HostN.Boot.PostCode
  
-## Platform Specific Services(fb-yv2-misc)
-
-The below operation part of the fb-yv2-misc.
-
- - Enable the post code in each host connected through IPMB interface.
- - Detect and send the host position switch position to phosphor-post-code-manager through D-bus. 
- 
 ## phosphor-dbus-interfaces
 
    All multi-host postcode related property and method need to create.
@@ -175,5 +167,6 @@ The below operation part of the fb-yv2-misc.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1NDU2ODk5NiwxNjY3NDgwOTA1XX0=
+eyJoaXN0b3J5IjpbMjYwNzE4MDkwLDE3NTQ1Njg5OTYsMTY2Nz
+Q4MDkwNV19
 -->
