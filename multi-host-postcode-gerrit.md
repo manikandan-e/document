@@ -125,6 +125,8 @@ Following modules will updated for this implementation
 +-------------------------------------------+                                                    
 ```
 
+Postcode Flow
+ 1. 
 
 
 ##  Platform Specific OEM Handler (fb-ipmi-oem)
@@ -191,11 +193,11 @@ The below D-Bus interface needs to created for multi-host post-code history.
   **Platform specific service(fb-yv2-misc) alternate to phosphor-host-postd**
         Handle 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTAzMjA4MTcsLTE1NTAzMjYzNTUsMT
-U1MTU0MDk2NywtMTcyMzIwNzY4NiwtMTkwMTQyMTYyNiwxMDU0
-MjYwMDg4LC0xMTg5NjA0Njc0LDcwMDQxMTEwOCwyNjA3MTgwOT
-AsMTc1NDU2ODk5NiwxNjY3NDgwOTA1LDE1NTkyMjMyODUsLTg2
-NDU5MjM4MywxOTc1OTc3ODIwLC0xODQ5MTIxNTUzLDUwNDA4NT
-gzMSwxOTQ5MzY2MjUwLC0xNTUzMjk3Mzk1LC05NTgwMjIxNzIs
-LTczMTU2NjU2MF19
+eyJoaXN0b3J5IjpbNDkyMjUzNDczLC0xNTUwMzI2MzU1LDE1NT
+E1NDA5NjcsLTE3MjMyMDc2ODYsLTE5MDE0MjE2MjYsMTA1NDI2
+MDA4OCwtMTE4OTYwNDY3NCw3MDA0MTExMDgsMjYwNzE4MDkwLD
+E3NTQ1Njg5OTYsMTY2NzQ4MDkwNSwxNTU5MjIzMjg1LC04NjQ1
+OTIzODMsMTk3NTk3NzgyMCwtMTg0OTEyMTU1Myw1MDQwODU4Mz
+EsMTk0OTM2NjI1MCwtMTU1MzI5NzM5NSwtOTU4MDIyMTcyLC03
+MzE1NjY1NjBdfQ==
 -->
