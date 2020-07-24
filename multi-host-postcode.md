@@ -138,6 +138,10 @@ This library is part of [phosphor-ipmi-host](https://github.com/openbmc/phosphor
  
 ## phosphor-host-postd
 
+**Host discovery**
+      This feature enables for Multi-host with hot plug-able host in slot.
+      Postcode D-bus interface needs to create based on host present(Host Field replaceable Unit D-bus interface ).
+      
  - Create, register and add dbus connection for "/xyz/openbmc_project/hostX/state/boot/raw".
  - Add "Value" property to store current postcode from hostX(X=0,1,2.N).
  - Read each hosts postcode from fb-ipmi-oem postcode interrupt handler.
@@ -155,7 +159,7 @@ This library is part of [phosphor-ipmi-host](https://github.com/openbmc/phosphor
 The design shall handle the hot plugged multi-host in the single process phosphor-post-code-manager based on host discovery.
 
 **Host discovery**
-      Facebook Yosemitev2 based on Multi-host with hot plugable host 
+      Facebook Yosemitev2 based on Multi-host with hot plug-able host in slot.
       Postcode D-bus interface needs to create based on host present(Host Field replaceable Unit D-bus interface ).
       
 - Create, register and add the dbus connection for "xyz.openbmc_project.State.Hostx(0,1,2.N).Boot.PostCode based on Host discovery as mentioned above.
@@ -185,6 +189,6 @@ The below operation part of the fb-yv2-misc.
  **phosphor-post-code-manager**
        change single process into multi-process on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1MjgyNDk4MCw1MDQwODU4MzEsMTk0OT
-M2NjI1MCwtMTU1MzI5NzM5NSwtOTU4MDIyMTcyXX0=
+eyJoaXN0b3J5IjpbNDY0OTU5NTc5LDUwNDA4NTgzMSwxOTQ5Mz
+Y2MjUwLC0xNTUzMjk3Mzk1LC05NTgwMjIxNzJdfQ==
 -->
