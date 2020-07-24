@@ -127,8 +127,7 @@ Following modules will updated for this implementation
 
 ##  Platform Specific OEM Handler (fb-ipmi-oem)
 
-This library is part of  the 
-[phosphor-ipmi-host](https://github.com/openbmc/phosphor-host-ipmid) 
+This library is part of  the [phosphor-ipmi-host](https://github.com/openbmc/phosphor-host-ipmid) 
 and get the postcode  from host through [phosphor-ipmi-ipmb](https://github.com/openbmc/ipmbbridge).
 
  - Register IPMI OEM postcode callback interrupt handler.
@@ -139,7 +138,8 @@ and get the postcode  from host through [phosphor-ipmi-ipmb](https://github.com/
 
 **Host discovery**
       This feature adds to detect,  when the hot plug-able host connected in the slot.
-      Postcode D-bus interface needs to be created based on host present discovery(Host state /xyz/openbmc_project/state/hostX(0,1,2.N) D-bus interface ).
+      Postcode D-bus interface needs to be created based on host present 
+      discovery(Host state /xyz/openbmc_project/state/hostX(0,1,2.N) D-bus interface ).
       
  - Create, register and add dbus connection for "/xyz/openbmc_project/hostX(0,1,2.N)/state/boot/raw" based on Host discovery as mentioned above.
  - Read each hosts postcode from Platform Specific OEM ServicesIPMI OEM handler(fb-ipmi-oem, intel-ipmi-oem,etc).
@@ -177,11 +177,11 @@ The below D-Bus interface needs to created for multi-host post-code history.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NzAwMTczMCwtMTE4OTYwNDY3NCw3MD
-A0MTExMDgsMjYwNzE4MDkwLDE3NTQ1Njg5OTYsMTY2NzQ4MDkw
-NSwxNTU5MjIzMjg1LC04NjQ1OTIzODMsMTk3NTk3NzgyMCwtMT
-g0OTEyMTU1Myw1MDQwODU4MzEsMTk0OTM2NjI1MCwtMTU1MzI5
-NzM5NSwtOTU4MDIyMTcyLC03MzE1NjY1NjAsLTE1MDQwOTE3MT
-IsMjA3OTA4MTM5NiwxODk3MTM3ODQwLDE4MDA4NDM2NDcsOTE2
-MjEwMTNdfQ==
+eyJoaXN0b3J5IjpbMTUzMDY4MzIyLC0xMTg5NjA0Njc0LDcwMD
+QxMTEwOCwyNjA3MTgwOTAsMTc1NDU2ODk5NiwxNjY3NDgwOTA1
+LDE1NTkyMjMyODUsLTg2NDU5MjM4MywxOTc1OTc3ODIwLC0xOD
+Q5MTIxNTUzLDUwNDA4NTgzMSwxOTQ5MzY2MjUwLC0xNTUzMjk3
+Mzk1LC05NTgwMjIxNzIsLTczMTU2NjU2MCwtMTUwNDA5MTcxMi
+wyMDc5MDgxMzk2LDE4OTcxMzc4NDAsMTgwMDg0MzY0Nyw5MTYy
+MTAxM119
 -->
