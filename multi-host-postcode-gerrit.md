@@ -165,7 +165,9 @@ The below D-Bus interface needs to created for multi-host post-code history.
  - 
 ## fb-yv2-misc
 
- This is new process going create as part of the openbmc/meta-facebook to handle Facebook platform specific feature  .
+ This is new process going create as part of the openbmc/meta-facebook to handle Facebook platform specific feature as below .
+   Enable postcode in each host through IPMB interface. 
+   Read host selection switch 
  
 - Get Bridge IC(BIC) configuration(cmd = 0x0E, netfn=0x38, lun=00).
  - Set Bridge IC(BIC) configuration(cmd = 0x10, netfn=0x38, lun=00).
@@ -180,11 +182,11 @@ D-bus interface need to create to support for multi-host postcode.
        change single process into multi-process on phosphor-post-code-manager.
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjExMjAyNjQ3LC05NTgwMjIxNzIsLTczMT
-U2NjU2MCwtMTUwNDA5MTcxMiwyMDc5MDgxMzk2LDE4OTcxMzc4
-NDAsMTgwMDg0MzY0Nyw5MTYyMTAxMywtNDEwNjI3ODQyLDEwOT
-c1NjIwMzEsODQ3NDY1NjI5LC0xMjEwNzIxMzQ1LDE1ODExMDAz
-MTUsMjA3NDk0NzUyNywxODkxODU0NzI0LDU1MzA4MTc1LDU3Nz
-QzMjY1OCw4Nzk5NjQ3MjksMTI1NTE5MDk4MSwxNTM4NTA5OTIw
-XX0=
+eyJoaXN0b3J5IjpbLTE4NDg1NDkzNjgsLTk1ODAyMjE3MiwtNz
+MxNTY2NTYwLC0xNTA0MDkxNzEyLDIwNzkwODEzOTYsMTg5NzEz
+Nzg0MCwxODAwODQzNjQ3LDkxNjIxMDEzLC00MTA2Mjc4NDIsMT
+A5NzU2MjAzMSw4NDc0NjU2MjksLTEyMTA3MjEzNDUsMTU4MTEw
+MDMxNSwyMDc0OTQ3NTI3LDE4OTE4NTQ3MjQsNTUzMDgxNzUsNT
+c3NDMyNjU4LDg3OTk2NDcyOSwxMjU1MTkwOTgxLDE1Mzg1MDk5
+MjBdfQ==
 -->
