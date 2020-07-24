@@ -178,13 +178,13 @@ The below operation part of the fb-yv2-misc.
  
 ## phosphor-dbus-interfaces
 
-  Multi-host postcode rekeatsded 
+    
 
 ## Alternate design
 
  **phosphor-post-code-manager**
        change single process into multi-process on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4NDc2OTkxOCwxOTQ5MzY2MjUwLC0xNT
-UzMjk3Mzk1LC05NTgwMjIxNzJdfQ==
+eyJoaXN0b3J5IjpbNTA0MDg1ODMxLDE5NDkzNjYyNTAsLTE1NT
+MyOTczOTUsLTk1ODAyMjE3Ml19
 -->
