@@ -95,6 +95,7 @@ Following modules will updated for this implementation
 
 **Interface Diagram**
 ```ascii
+```ascii
 +-------------------------------------------+
 |                                      BMC  |
 |                                           |
@@ -117,8 +118,8 @@ Following modules will updated for this implementation
 |             +                             |  |                             +------------------+
 |             |                             |  |                                +-------------------+
 | +-----------v------------------------+    |  +<------------+I2C/IPMI+-------->+    |              |
-| | Platform Dependent Service         |    |                                   |BIC |     HostN    |
-| |     (fb-yv2-misc)                  <-----------------------------------+    +----+--------------+
+| | phosphor-host-postd                |    |                                   |BIC |     HostN    |
+| |    (ipmisnoop)                     <-----------------------------------+    +----+--------------+
 | |   xyz.openbmc_project.State.       |    |                              |
 | |   HostX(0,1,2.N).Boot.Raw.Value    <--------------------+              |
 | +-+-------------+---------+--------+-+    |               +              |
@@ -299,10 +300,10 @@ methods:
    
     xyz.openbmc_project.State.Hostx(0,1,2.N).Boot.Raw.Value
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3OTA4MTM5NiwxODk3MTM3ODQwLDE4MD
-A4NDM2NDcsOTE2MjEwMTMsLTQxMDYyNzg0MiwxMDk3NTYyMDMx
-LDg0NzQ2NTYyOSwtMTIxMDcyMTM0NSwxNTgxMTAwMzE1LDIwNz
-Q5NDc1MjcsMTg5MTg1NDcyNCw1NTMwODE3NSw1Nzc0MzI2NTgs
-ODc5OTY0NzI5LDEyNTUxOTA5ODEsMTUzODUwOTkyMCw0MzU5OT
-I2NDAsODI0NTgwOTA5XX0=
+eyJoaXN0b3J5IjpbLTE1MDQwOTE3MTIsMjA3OTA4MTM5NiwxOD
+k3MTM3ODQwLDE4MDA4NDM2NDcsOTE2MjEwMTMsLTQxMDYyNzg0
+MiwxMDk3NTYyMDMxLDg0NzQ2NTYyOSwtMTIxMDcyMTM0NSwxNT
+gxMTAwMzE1LDIwNzQ5NDc1MjcsMTg5MTg1NDcyNCw1NTMwODE3
+NSw1Nzc0MzI2NTgsODc5OTY0NzI5LDEyNTUxOTA5ODEsMTUzOD
+UwOTkyMCw0MzU5OTI2NDAsODI0NTgwOTA5XX0=
 -->
