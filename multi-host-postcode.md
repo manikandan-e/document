@@ -126,6 +126,8 @@ Following modules will updated for this implementation
 ```
 
 Postcode Flow:
+BMC power-on the Host.
+Host starts send postcode IPMI message continuously to BMC.
 
  
 
@@ -196,6 +198,6 @@ The below D-Bus interface needs to created for multi-host post-code history.
   **Platform specific service(fb-yv2-misc) alternate to phosphor-host-postd**
         Handle 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2OTgwNjcyMCw4OTYxMzY5MjgsMTQ5ND
-g2MTk5OF19
+eyJoaXN0b3J5IjpbLTEyMzU3MjI2MzMsODk2MTM2OTI4LDE0OT
+Q4NjE5OThdfQ==
 -->
