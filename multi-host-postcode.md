@@ -59,8 +59,7 @@ The below component diagram shows the present implementation for postcode and hi
  - Display given host postcode to 7 segment display based host position in debug card.
  - Provide a command interface for user to see any server(multi-host) current postcode .
  - Provide a command interface for user to see any server(multi-host) postcode history.
- - Support for hotplug host.
- - Dynamic host management.
+ - Support for hot-plug-able host.
 
 ## Proposed Design
 
@@ -123,8 +122,8 @@ Following modules will updated for this implementation
 
 This library is part of [phosphor-ipmi-host](https://github.com/openbmc/phosphor-host-ipmid) and get the postcode  from host through [phosphor-ipmi-ipmb](https://github.com/openbmc/ipmbbridge).
 
- - Register postcode callback interrupt handler(cmd = 0x08, netfn=0x38, lun=00).
- - Extract postcode from IPMIB response based on length.
+ - Register postcode callback interrupt handler(cmd = 0x08, netfn=0x38, lun=00) to read postcode.
+ - Extract postcode from IPMB message.
  - Send extracted postcode to phosphor-host-postd.
  
 ## phosphor-host-postd
@@ -180,5 +179,5 @@ The below operation part of the fb-yv2-misc.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc3MjY3MjI3LDEwNzY4OTgxMzddfQ==
+eyJoaXN0b3J5IjpbMjE1ODgwOTA1LDEwNzY4OTgxMzddfQ==
 -->
