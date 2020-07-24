@@ -14,7 +14,8 @@ are not supported by mechanism.
 
 ## Background and References
 
-[OCP Debug Card with LCD Spec v1.0](http://files.opencompute.org/oc/public.php?service=files&t=4d86c4bcd365cd733ee1c4fa129bafca&download)
+[OCP Debug Card with LCD Spec v1.0]
+(http://files.opencompute.org/oc/public.php?service=files&t=4d86c4bcd365cd733ee1c4fa129bafca&download)
 
 [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem)
 
@@ -185,9 +186,9 @@ The below D-Bus interface needs to created for multi-host post-code history.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
   
-  **Platfrom specific service(fb-yv2-misc)**
+  **Platfrom specific service(fb-yv2-misc) alternate to phosphor**
         Handle 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNjEwMTU2OSwtMTU1MDMyNjM1NSwxNT
+eyJoaXN0b3J5IjpbMTc4NDQzMDQ3MywtMTU1MDMyNjM1NSwxNT
 UxNTQwOTY3XX0=
 -->
