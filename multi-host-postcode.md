@@ -142,10 +142,13 @@ and get the postcode  from host through [phosphor-ipmi-ipmb](https://github.com/
       discovery(Host state /xyz/openbmc_project/state/hostX(1,2,3.N) D-bus interface ).
       
  - Create, register and add dbus connection for "/xyz/openbmc_project/hostX(1,2,3.N)/state/boot/raw" based on  Host discovery as mentioned above.
- - Read each hosts postcode from Platform Specific OEM ServicesIPMI OEM handler(fb-ipmi-oem, intel-ipmi-oem,etc).
- - Send event to post-code-manager based on which host's postcode received from IPMB interface (xyz.openbmc_project.State.HostX.Boot.Raw.Value) 
+ - Read each hosts postcode from Platform Specific OEM ServicesIPMI OEM 
+    handler(fb-ipmi-oem, intel-ipmi-oem,etc).
+ - Send event to post-code-manager based on which host's postcode received 
+   from IPMB interface (xyz.openbmc_project.State.HostX.Boot.Raw.Value) 
  - Read host position from dbus property (debug card).
- - Display current post-code into the 7 segment display connected to BMC's 8 GPIOs based on the host position.
+ - Display current post-code into the 7 segment display 
+   connected to BMC's 8 GPIOs based on the host position.
  
  **D-Bus interface**
  - xyz.openbmc_project.State.Host1.Boot.Raw.Value
@@ -155,7 +158,8 @@ and get the postcode  from host through [phosphor-ipmi-ipmb](https://github.com/
 
 ## phosphor-post-code-manager
 
-phosphor-post-code-manager is the single process based on host discovery for multi-host. This design shall not affect single host for post-code.
+phosphor-post-code-manager is the single process based on host discovery 
+for multi-host. This design shall not affect single host for post-code.
 
 - Create, register and add the dbus connection for "xyz.openbmc_project.State.Hostx(1,2,3.N).Boot.PostCode based on Host discovery.
 - Store/retrieve post-code from directory (/var/lib/phosphor-post-code-manager/hostX(1,2,3.N))  based on event received from phosphor-host-postd.
@@ -177,5 +181,5 @@ The below D-Bus interface needs to created for multi-host post-code history.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDE0MjE2MjZdfQ==
+eyJoaXN0b3J5IjpbLTM3MTcyMzkyOCwtMTkwMTQyMTYyNl19
 -->
