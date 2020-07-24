@@ -88,10 +88,11 @@ This document proposes a new design engaging the IPMB interface to read port-80 
 
 Following modules will updated for this implementation
 
- - fb-ipmi-oem.
  - phosphor-host-postd.
  - phosphor-post-code-manager.
- - phosphor-dbus-interfaces
+ - phosphor-dbus-interfaces.
+ - fb-ipmi-oem.
+ - fb-yv2-misc.
 
 **Interface Diagram**
 ```ascii
@@ -300,7 +301,7 @@ methods:
    
     xyz.openbmc_project.State.Hostx(0,1,2.N).Boot.Raw.Value
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4NjkxNTk2OCwtMTUwNDA5MTcxMiwyMD
+eyJoaXN0b3J5IjpbLTczMTU2NjU2MCwtMTUwNDA5MTcxMiwyMD
 c5MDgxMzk2LDE4OTcxMzc4NDAsMTgwMDg0MzY0Nyw5MTYyMTAx
 MywtNDEwNjI3ODQyLDEwOTc1NjIwMzEsODQ3NDY1NjI5LC0xMj
 EwNzIxMzQ1LDE1ODExMDAzMTUsMjA3NDk0NzUyNywxODkxODU0
