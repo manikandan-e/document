@@ -127,7 +127,9 @@ Following modules will updated for this implementation
 
 ##  Platform Specific OEM Handler (fb-ipmi-oem)
 
-This library is part of  the [phosphor-ipmi-host](https://github.com/openbmc/phosphor-host-ipmid) and get the postcode  from host through [phosphor-ipmi-ipmb](https://github.com/openbmc/ipmbbridge).
+This library is part of  the 
+[phosphor-ipmi-host](https://github.com/openbmc/phosphor-host-ipmid) 
+and get the postcode  from host through [phosphor-ipmi-ipmb](https://github.com/openbmc/ipmbbridge).
 
  - Register IPMI OEM postcode callback interrupt handler.
  - Extract postcode from IPMI message (phosphor-ipm-host/phosphor-ipmi-ipmb).
@@ -175,5 +177,6 @@ The below D-Bus interface needs to created for multi-host post-code history.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODk2MDQ2NzQsNzAwNDExMTA4XX0=
+eyJoaXN0b3J5IjpbLTY3NzAwMTczMCwtMTE4OTYwNDY3NCw3MD
+A0MTExMDhdfQ==
 -->
