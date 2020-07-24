@@ -118,7 +118,7 @@ Following modules will updated for this implementation
 
 ```
 
-##  fb-ipmi-oem
+##  Platform Specific OEM Handler (fb-ipmi-oem)
 
 This library is part of  the [phosphor-ipmi-host](https://github.com/openbmc/phosphor-host-ipmid) and get the postcode  from host through [phosphor-ipmi-ipmb](https://github.com/openbmc/ipmbbridge).
 
@@ -134,7 +134,7 @@ This library is part of  the [phosphor-ipmi-host](https://github.com/openbmc/pho
       
  - Create, register and add dbus connection for "/xyz/openbmc_project/hostX(0,1,2.N)/state/boot/raw" based on Host discovery as mentioned above.
  - Read each hosts postcode from Platform Specific OEM ServicesIPMI OEM handler(fb-ipmi-oem, intel-ipmi-oem,etc).
- -  - Send event to post-code-manager based on which host's postcode received from IPMB interface(xyz.openbmc_project.State.HostX.Boot.Raw.Value) 
+ - Send event to post-code-manager based on which host's postcode received from IPMB interface(xyz.openbmc_project.State.HostX.Boot.Raw.Value) 
  - Read host position from dbus property (debug card).
  - Display current post-code into the 7 segment display connected to BMC's 8 GPIOs based on the host position.
  
@@ -159,7 +159,7 @@ The below D-Bus interface needs to created for multi-host post-code history.
  - xyz.openbmc_project.State.Host2.Boot.PostCode
  - xyz.openbmc_project.State.HostN.Boot.PostCode
  
-## fb-yv2-misc
+## Platform Specific Services(fb-yv2-misc)
 
 The below operation part of the fb-yv2-misc.
 
@@ -175,11 +175,11 @@ The below operation part of the fb-yv2-misc.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTYyMTI5MTMsMTU1OTIyMzI4NSwtOD
-Y0NTkyMzgzLDE5NzU5Nzc4MjAsLTE4NDkxMjE1NTMsNTA0MDg1
-ODMxLDE5NDkzNjYyNTAsLTE1NTMyOTczOTUsLTk1ODAyMjE3Mi
-wtNzMxNTY2NTYwLC0xNTA0MDkxNzEyLDIwNzkwODEzOTYsMTg5
-NzEzNzg0MCwxODAwODQzNjQ3LDkxNjIxMDEzLC00MTA2Mjc4ND
-IsMTA5NzU2MjAzMSw4NDc0NjU2MjksLTEyMTA3MjEzNDUsMTU4
-MTEwMDMxNV19
+eyJoaXN0b3J5IjpbLTY1NTgwMTc2OSwxNTU5MjIzMjg1LC04Nj
+Q1OTIzODMsMTk3NTk3NzgyMCwtMTg0OTEyMTU1Myw1MDQwODU4
+MzEsMTk0OTM2NjI1MCwtMTU1MzI5NzM5NSwtOTU4MDIyMTcyLC
+03MzE1NjY1NjAsLTE1MDQwOTE3MTIsMjA3OTA4MTM5NiwxODk3
+MTM3ODQwLDE4MDA4NDM2NDcsOTE2MjEwMTMsLTQxMDYyNzg0Mi
+wxMDk3NTYyMDMxLDg0NzQ2NTYyOSwtMTIxMDcyMTM0NSwxNTgx
+MTAwMzE1XX0=
 -->
