@@ -184,12 +184,14 @@ The below D-Bus interface needs to created for multi-host post-code history.
 
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
+  
+    **Platfrom specific service(fb-yv2-misc)**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NDQzMDQwMSwxNTUxNTQwOTY3LC0xNz
-IzMjA3Njg2LC0xOTAxNDIxNjI2LDEwNTQyNjAwODgsLTExODk2
-MDQ2NzQsNzAwNDExMTA4LDI2MDcxODA5MCwxNzU0NTY4OTk2LD
-E2Njc0ODA5MDUsMTU1OTIyMzI4NSwtODY0NTkyMzgzLDE5NzU5
-Nzc4MjAsLTE4NDkxMjE1NTMsNTA0MDg1ODMxLDE5NDkzNjYyNT
-AsLTE1NTMyOTczOTUsLTk1ODAyMjE3MiwtNzMxNTY2NTYwLC0x
-NTA0MDkxNzEyXX0=
+eyJoaXN0b3J5IjpbLTE1NTAzMjYzNTUsMTU1MTU0MDk2NywtMT
+cyMzIwNzY4NiwtMTkwMTQyMTYyNiwxMDU0MjYwMDg4LC0xMTg5
+NjA0Njc0LDcwMDQxMTEwOCwyNjA3MTgwOTAsMTc1NDU2ODk5Ni
+wxNjY3NDgwOTA1LDE1NTkyMjMyODUsLTg2NDU5MjM4MywxOTc1
+OTc3ODIwLC0xODQ5MTIxNTUzLDUwNDA4NTgzMSwxOTQ5MzY2Mj
+UwLC0xNTUzMjk3Mzk1LC05NTgwMjIxNzIsLTczMTU2NjU2MCwt
+MTUwNDA5MTcxMl19
 -->
