@@ -218,7 +218,7 @@ methods:
 **D-Bus interface**
 - xyz.openbmc_project.State.Host(0, 1,2.N).Boot.PostCode.
 - xyz.openbmc_project.State.Host(0, 1,2.N).Boot.Raw.Value.
-- xyz.openbmc_project.Misc.Ipmi.Update
+- xyz.openbmc_project.State.Host(0, 1,2.N).Boot.PostCode.
 - xyz.openbmc_project.Misc.Ipmi.Postcode
 ## Alternate design
 
@@ -226,7 +226,7 @@ methods:
        change single process into multi-process on phosphor-post-code-manager
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyOTk0MjEyNCwtNzMxNTY2NTYwLC0xNT
+eyJoaXN0b3J5IjpbLTI2Nzk0NjgyNCwtNzMxNTY2NTYwLC0xNT
 A0MDkxNzEyLDIwNzkwODEzOTYsMTg5NzEzNzg0MCwxODAwODQz
 NjQ3LDkxNjIxMDEzLC00MTA2Mjc4NDIsMTA5NzU2MjAzMSw4ND
 c0NjU2MjksLTEyMTA3MjEzNDUsMTU4MTEwMDMxNSwyMDc0OTQ3
