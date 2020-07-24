@@ -81,48 +81,46 @@ Following modules will updated for this implementation
 
 **Interface Diagram**
 ```ascii
-+-------------------------------------------+
-|                      +-----------------+  |
-|                      | fb-ipmi-oem,etc |  |
-|     BMC              |                 |  |                          +----+-------------+
-|                      +--------+--------+  |       +-+I2C/IPMI+------>+BIC |             |
-|                               |           |       |                  |    |     Host1   |
-| +-----------------------------v--------+  |       |                  +------------------+
-| |                                      |  |       |                     +------------------+
-| | phosphor-ipm-host/phosphor-ipmi-ipmb +<-------------+I2C/IPMI+------->+BIC |             |
-| |         (interrupt handler           |  |       |                     |    |     Host2   |
-| |                                      |  |       |                     +------------------+
-| +--+-----------------------------------+  |       |                        +------------------+
-|    |                                      |       +-----+I2C/IPMI+-------->+BIC  |            |
-|    +                                              |                        |     |    Host3   |
-|  event                                    |       |                        +------------------+
-|    +                                      |       |                           +-------------------+
-|    |                                              +--------+I2C/IPMI+-------->+    |              |
-|    |                                      |                                   |BIC |     HostN    |
-| +--v---------------------------------+    |                                   +----+--------------+
-| |                                    |    |
-| |                                    |    |             +--------------------+
-| | phosphor-host-postd                |    |             | Seven segment      |
-| |   (ipmi snoop)                     +------------------> Display            |
-| | xyz.openbmc_project.State.         <------+           |                    |
-| | HostX(0,1,2.N).Boot.Raw.Value      |    | |           |                    |
-| +-----------------------------+------+    | |           +--------------------+
-|                               +           | |
-|                          postcode event   | |
-|                               +           | |
-| +--------------------------------------+  | |
-| | +-------------+     +-------v------+ |  | |                               +---------------------+
-| | |Inventory &  |     |              + |  | +------------------------------->                     |
-| | |hotplug      |     |Histroy(1,2,3.N)|  |                                 |                     |
-| | |             |     |              + |  |                                 |    Command Line     |
-| | |             |     |              +<------+xyz.openbmc_project.State.+--->    Interface        |
-| | +-------------+     +--------------+ |  |   HostX(0,1,2..N).Boot.PostCode |                     |
-| |                                      |  |                                 +---------------------+
-| | Phosphor-post-code-manager           |  |
-| +--------------------------------------+  |
-+-------------------------------------------+
-
-
++-------------------------------------------+                                                        
+|                  BMC                      |                                                        
+|                                           |                                                    
+| +--------------+     +-----------------+  |    I2C/IPMI  +----+-------------+                  
+| |              |     |                 |  |  +----------->BIC |             |                  
+| |              |     |   ipmbbridged   <--+--+           |    |     Host1   |                  
+| |              |     |                 |  |  |           +----+-------------+                  
+| | oem handlers |     +-------+---------+  |  | I2C/IPMI  +----+-------------+                         
+| |              |             |            |  +----------->BIC |             |                         
+| |              |             |            |  |           |    |     Host2   |                         
+| |              |     +-------v---------+  |  |           +----+-------------+                         
+| | (fb-ipmi-oem)|     |                 |  |  | I2C/IPMI  +----+-------------+                  
+| |              <-----+     ipmid       |  |  +----------->BIC |             |                  
+| |              |     |                 |  |  |           |    |     Host3   |                  
+| +------+-------+     +-----------------+  |  |           +----+-------------+                  
+|        |                                  |  | I2C/IPMI  +----+-------------+  
+|        | postcode                         |  +----------->BIC |             |             
+|        |                                  |              |    |     HostN   |             
+| +------v-------------------------------+  |              +----+-------------+             
+| |                                      |  |                                                
+| |     phosphor-host-postd              |  |             +-----------------+                     
+| |       (ipmi snoop)                   |  |             | Seven segment   |                     
+| |     xyz.openbmc_project.State.       +--+-------------> Display         |                     
+| |     HostX(1,2,3..N).Boot.Raw.Value   <--+-+           |                 |                     
+| |                                      |  | |           |                 |                     
+| +-----------------------------+--------+  | |           +-----------------+                     
+|                               |           | |                                                    
+|                 postcode event|           | |  xyz.openbmc_project.                                                                        
+|                               |           | |  State.HostX(1,2,3..N).                            
+| +-----------------------------|--------+  | |  Boot.Postcode        +-----+                      
+| | +----------------+  +-------v------+ |  | |                       |     |
+| | | host discovery |  |              | |  | +----------------------->     |
+| | | (d-bus based)  |  |Histroy       | |  |                         | CLI |
+| | | with hotplug   |  |   (1,2,3..N) | |  |                         |     |
+| | |                |  |              <-+--+------------------------->     |
+| | +----------------+  +--------------+ |  |                         |     |
+| |                                      |  |                         +-----+
+| | Phosphor-post-code-manager           |  |                                                        
+| +--------------------------------------+  |                                                        
++-------------------------------------------+                                                     
 ```
 
 ##  Platform Specific OEM Handler (fb-ipmi-oem)
@@ -186,11 +184,11 @@ The below D-Bus interface needs to created for multi-host post-code history.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjMyMDc2ODYsLTE5MDE0MjE2MjYsMT
-A1NDI2MDA4OCwtMTE4OTYwNDY3NCw3MDA0MTExMDgsMjYwNzE4
-MDkwLDE3NTQ1Njg5OTYsMTY2NzQ4MDkwNSwxNTU5MjIzMjg1LC
-04NjQ1OTIzODMsMTk3NTk3NzgyMCwtMTg0OTEyMTU1Myw1MDQw
-ODU4MzEsMTk0OTM2NjI1MCwtMTU1MzI5NzM5NSwtOTU4MDIyMT
-cyLC03MzE1NjY1NjAsLTE1MDQwOTE3MTIsMjA3OTA4MTM5Niwx
-ODk3MTM3ODQwXX0=
+eyJoaXN0b3J5IjpbMTU1MTU0MDk2NywtMTcyMzIwNzY4NiwtMT
+kwMTQyMTYyNiwxMDU0MjYwMDg4LC0xMTg5NjA0Njc0LDcwMDQx
+MTEwOCwyNjA3MTgwOTAsMTc1NDU2ODk5NiwxNjY3NDgwOTA1LD
+E1NTkyMjMyODUsLTg2NDU5MjM4MywxOTc1OTc3ODIwLC0xODQ5
+MTIxNTUzLDUwNDA4NTgzMSwxOTQ5MzY2MjUwLC0xNTUzMjk3Mz
+k1LC05NTgwMjIxNzIsLTczMTU2NjU2MCwtMTUwNDA5MTcxMiwy
+MDc5MDgxMzk2XX0=
 -->
