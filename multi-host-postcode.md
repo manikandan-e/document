@@ -237,6 +237,5 @@ methods:
        change single process into multi-process on phosphor-post-code-manager
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTk2NzAxOSwtNzMxNTY2NTYwLC0xNT
-A0MDkxNzEyXX0=
+eyJoaXN0b3J5IjpbLTEzNTk2NzAxOV19
 -->
