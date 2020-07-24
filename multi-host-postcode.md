@@ -95,6 +95,7 @@ Following modules will updated for this implementation
 
 **Interface Diagram**
 ```ascii
+```ascii
 +-------------------------------------------+
 |                                      BMC  |
 |                                           |
@@ -117,8 +118,8 @@ Following modules will updated for this implementation
 |             +                             |  |                             +------------------+
 |             |                             |  |                                +-------------------+
 | +-----------v------------------------+    |  +<------------+I2C/IPMI+-------->+    |              |
-| | Platform Dependent Service         |    |                                   |BIC |     HostN    |
-| |     (fb-yv2-misc)                  <-----------------------------------+    +----+--------------+
+| | phosphor-host-postd                |    |                                   |BIC |     HostN    |
+| |    (ipmisnoop)                     <-----------------------------------+    +----+--------------+
 | |   xyz.openbmc_project.State.       |    |                              |
 | |   HostX(0,1,2.N).Boot.Raw.Value    <--------------------+              |
 | +-+-------------+---------+--------+-+    |               +              |
@@ -299,5 +300,5 @@ methods:
    
     xyz.openbmc_project.State.Hostx(0,1,2.N).Boot.Raw.Value
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3OTA4MTM5Nl19
+eyJoaXN0b3J5IjpbLTE1MDQwOTE3MTIsMjA3OTA4MTM5Nl19
 -->
