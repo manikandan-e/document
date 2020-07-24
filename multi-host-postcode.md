@@ -101,8 +101,9 @@ Following modules will updated for this implementation
 |        |                                  |              |    |     HostN   |             
 | +------v-------------------------------+  |              +----+-------------+             
 | |                                      |  |                                                
-| |     phosphor-host-postd              |  |             +-----------------+                     
-| |       (ipmi snoop)                   |  |             | Seven segment   |                     
+| |     phosphor-host-postd              |  |             +-----------------+
+| |                                      |  |             |                 |
+| |       (ipmi snoop)                   |  |             | Seven Segment   |                     
 | |     xyz.openbmc_project.State.       +--+-------------> Display         |                     
 | |     HostX(1,2,3..N).Boot.Raw.Value   <--+-+           |                 |                     
 | |                                      |  | |           |                 |                     
@@ -120,7 +121,7 @@ Following modules will updated for this implementation
 | |                                      |  |                         +-----+
 | | Phosphor-post-code-manager           |  |                                                        
 | +--------------------------------------+  |                                                        
-+-------------------------------------------+                                                     
++-------------------------------------------+                                                    
 ```
 
 ##  Platform Specific OEM Handler (fb-ipmi-oem)
@@ -184,5 +185,5 @@ The below D-Bus interface needs to created for multi-host post-code history.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1MTU0MDk2N119
+eyJoaXN0b3J5IjpbLTM1NDQzMDQwMSwxNTUxNTQwOTY3XX0=
 -->
