@@ -149,7 +149,7 @@ This library is part of  the [phosphor-ipmi-host](https://github.com/openbmc/pho
 phosphor-post-code-manager is the single process based on host discovery for multi-host. This design shall not affect single host for post-code.
 
 - Create, register and add the dbus connection for "xyz.openbmc_project.State.Hostx(0,1,2.N).Boot.PostCode based on Host discovery.
-- Store/retrieve post-code(/var/lib/phosphor-post-code-manager/hostX(0,1,2.N))  based on event received from phosphor-host-postd.
+- Store/retrieve post-code from directory (/var/lib/phosphor-post-code-manager/hostX(0,1,2.N))  based on event received from phosphor-host-postd.
 
 The below D-Bus interface needs to created for multi-host post-code history.
 
@@ -175,11 +175,11 @@ The below operation part of the fb-yv2-misc.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDY3NDk2NzgsMTU1OTIyMzI4NSwtOD
-Y0NTkyMzgzLDE5NzU5Nzc4MjAsLTE4NDkxMjE1NTMsNTA0MDg1
-ODMxLDE5NDkzNjYyNTAsLTE1NTMyOTczOTUsLTk1ODAyMjE3Mi
-wtNzMxNTY2NTYwLC0xNTA0MDkxNzEyLDIwNzkwODEzOTYsMTg5
-NzEzNzg0MCwxODAwODQzNjQ3LDkxNjIxMDEzLC00MTA2Mjc4ND
-IsMTA5NzU2MjAzMSw4NDc0NjU2MjksLTEyMTA3MjEzNDUsMTU4
-MTEwMDMxNV19
+eyJoaXN0b3J5IjpbMTY2NzQ4MDkwNSwxNTU5MjIzMjg1LC04Nj
+Q1OTIzODMsMTk3NTk3NzgyMCwtMTg0OTEyMTU1Myw1MDQwODU4
+MzEsMTk0OTM2NjI1MCwtMTU1MzI5NzM5NSwtOTU4MDIyMTcyLC
+03MzE1NjY1NjAsLTE1MDQwOTE3MTIsMjA3OTA4MTM5NiwxODk3
+MTM3ODQwLDE4MDA4NDM2NDcsOTE2MjEwMTMsLTQxMDYyNzg0Mi
+wxMDk3NTYyMDMxLDg0NzQ2NTYyOSwtMTIxMDcyMTM0NSwxNTgx
+MTAwMzE1XX0=
 -->
