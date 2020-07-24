@@ -175,14 +175,14 @@ based on the host position.
 
 ## phosphor-post-code-manager
 
-phosphor-post-code-manager is the single process based on host discovery 
-for multi-host. This design shall not affect single host for post-code.
+phosphor-post-code-manager is the single process based on host discovery for
+multi-host. This design shall not affect single host for post-code.
 
 - Create, register and add the dbus connection for 
-"xyz.openbmc_project.State.Hostx(1,2,3.N).Boot.PostCode based on Host discovery.
-- Store/retrieve post-code from directory 
-(/var/lib/phosphor-post-code-manager/hostX(1,2,3.N))  based on 
-event received from phosphor-host-postd.
+"xyz.openbmc_project.State.Hostx(1,2,3.N).Boot.PostCode based on the host
+discovery.
+- Store/retrieve post-code from directory (/var/lib/phosphor-post-code-manager/
+hostX(1,2,3.N)) based on event received from phosphor-host-postd.
 
 The below D-Bus interface needs to created for multi-host post-code history.
 
@@ -206,7 +206,7 @@ The below D-Bus interface needs to created for multi-host post-code history.
       handle IPMI postcode , seven segment  display  and 
       host position specific feature.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0NjExOTA5NiwtNTQ3Mjk0NTQ2LC05Mj
+eyJoaXN0b3J5IjpbMTQzMDAwOTk3MSwtNTQ3Mjk0NTQ2LC05Mj
 g4ODUyNzAsODk2MTM2OTI4LC0xNTUwMzI2MzU1LDE1NTE1NDA5
 NjcsLTE3MjMyMDc2ODYsLTE5MDE0MjE2MjYsMTA1NDI2MDA4OC
 wtMTE4OTYwNDY3NCw3MDA0MTExMDgsMjYwNzE4MDkwLDE3NTQ1
