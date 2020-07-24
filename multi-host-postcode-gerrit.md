@@ -187,13 +187,13 @@ The below operation part of the fb-yv2-misc.
  **phosphor-post-code-manager**
        change single process into multi-process on phosphor-post-code-manager.
   **fb-yv2-misc**
-      
+        Host selection 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMzM3ODA0OCwxOTQ5MzY2MjUwLC0xNT
-UzMjk3Mzk1LC05NTgwMjIxNzIsLTczMTU2NjU2MCwtMTUwNDA5
-MTcxMiwyMDc5MDgxMzk2LDE4OTcxMzc4NDAsMTgwMDg0MzY0Ny
-w5MTYyMTAxMywtNDEwNjI3ODQyLDEwOTc1NjIwMzEsODQ3NDY1
-NjI5LC0xMjEwNzIxMzQ1LDE1ODExMDAzMTUsMjA3NDk0NzUyNy
-wxODkxODU0NzI0LDU1MzA4MTc1LDU3NzQzMjY1OCw4Nzk5NjQ3
-MjldfQ==
+eyJoaXN0b3J5IjpbNDYzNjIzMTQ0LDE5NDkzNjYyNTAsLTE1NT
+MyOTczOTUsLTk1ODAyMjE3MiwtNzMxNTY2NTYwLC0xNTA0MDkx
+NzEyLDIwNzkwODEzOTYsMTg5NzEzNzg0MCwxODAwODQzNjQ3LD
+kxNjIxMDEzLC00MTA2Mjc4NDIsMTA5NzU2MjAzMSw4NDc0NjU2
+MjksLTEyMTA3MjEzNDUsMTU4MTEwMDMxNSwyMDc0OTQ3NTI3LD
+E4OTE4NTQ3MjQsNTUzMDgxNzUsNTc3NDMyNjU4LDg3OTk2NDcy
+OV19
 -->
