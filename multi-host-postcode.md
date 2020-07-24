@@ -165,6 +165,8 @@ The below D-Bus interface needs to created for multi-host post-code history.
  - 
 ## fb-yv2-misc
 
+The Bridge IC plays as a bridge between BMC and the host system. The host system can
+be managed by the BMC through Bridge IC even if host hardware or OS hang or goes down
  This is new process going create as part of the openbmc/meta-facebook to handle Facebook platform specific feature as below .
    Enable postcode in each host through IPMB interface. 
    7 seg 
@@ -182,5 +184,5 @@ D-bus interface need to create to support for multi-host postcode.
        change single process into multi-process on phosphor-post-code-manager.
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyNjI4NjgzMCwtOTU4MDIyMTcyXX0=
+eyJoaXN0b3J5IjpbLTE1NTMyOTczOTUsLTk1ODAyMjE3Ml19
 -->
