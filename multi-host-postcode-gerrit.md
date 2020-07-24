@@ -60,7 +60,7 @@ history at high-level overview
 
  - Read postcode from all servers.
  - Display the host postcode to the 7 segment display based on host position 
-     selection.
+    selection.
  - Provide a command interface for user to see any server(multi-host) current 
     postcode .
   - Provide a command interface for user to see any server(multi-host) postcode
@@ -206,11 +206,11 @@ The below D-Bus interface needs to be created for multi-host post-code history.
       handle IPMI postcode , seven segment  display  and 
       host position specific feature.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NTA0MzI2NywtNTQ3Mjk0NTQ2LC05Mj
-g4ODUyNzAsODk2MTM2OTI4LC0xNTUwMzI2MzU1LDE1NTE1NDA5
-NjcsLTE3MjMyMDc2ODYsLTE5MDE0MjE2MjYsMTA1NDI2MDA4OC
-wtMTE4OTYwNDY3NCw3MDA0MTExMDgsMjYwNzE4MDkwLDE3NTQ1
-Njg5OTYsMTY2NzQ4MDkwNSwxNTU5MjIzMjg1LC04NjQ1OTIzOD
-MsMTk3NTk3NzgyMCwtMTg0OTEyMTU1Myw1MDQwODU4MzEsMTk0
-OTM2NjI1MF19
+eyJoaXN0b3J5IjpbLTIxMjcwNjMwMTksLTU0NzI5NDU0NiwtOT
+I4ODg1MjcwLDg5NjEzNjkyOCwtMTU1MDMyNjM1NSwxNTUxNTQw
+OTY3LC0xNzIzMjA3Njg2LC0xOTAxNDIxNjI2LDEwNTQyNjAwOD
+gsLTExODk2MDQ2NzQsNzAwNDExMTA4LDI2MDcxODA5MCwxNzU0
+NTY4OTk2LDE2Njc0ODA5MDUsMTU1OTIyMzI4NSwtODY0NTkyMz
+gzLDE5NzU5Nzc4MjAsLTE4NDkxMjE1NTMsNTA0MDg1ODMxLDE5
+NDkzNjYyNTBdfQ==
 -->
