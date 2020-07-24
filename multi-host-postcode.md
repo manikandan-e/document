@@ -178,13 +178,13 @@ The below operation part of the fb-yv2-misc.
  
 ## phosphor-dbus-interfaces
 
-    
+       ph
 
 ## Alternate design
 
  **phosphor-post-code-manager**
        change single process into multi-process on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA0MDg1ODMxLDE5NDkzNjYyNTAsLTE1NT
-MyOTczOTUsLTk1ODAyMjE3Ml19
+eyJoaXN0b3J5IjpbLTEyNjY2OTM2NTcsNTA0MDg1ODMxLDE5ND
+kzNjYyNTAsLTE1NTMyOTczOTUsLTk1ODAyMjE3Ml19
 -->
