@@ -128,8 +128,9 @@ Following modules will updated for this implementation
 Postcode Flow:
 BMC power-on the Host.
 Host starts send postcode IPMI message continuously to BMC.
-ipmbbridged  extract the postcode from IPMI message .
-ipmbd extract postcode and add host index 
+ipmbbridged  extract the postcode from the IPMI message .
+ipmbd append host information and send to phosphor-host-postd .
+phosphor-host-postd d
  
 
  
@@ -201,7 +202,7 @@ The below D-Bus interface needs to created for multi-host post-code history.
   **Platform specific service(fb-yv2-misc) alternate to phosphor-host-postd**
         Handle 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMzMzMzEzMyw4OTYxMzY5MjgsLTE1NT
+eyJoaXN0b3J5IjpbMTU1MzYxNjE1Miw4OTYxMzY5MjgsLTE1NT
 AzMjYzNTUsMTU1MTU0MDk2NywtMTcyMzIwNzY4NiwtMTkwMTQy
 MTYyNiwxMDU0MjYwMDg4LC0xMTg5NjA0Njc0LDcwMDQxMTEwOC
 wyNjA3MTgwOTAsMTc1NDU2ODk5NiwxNjY3NDgwOTA1LDE1NTky
