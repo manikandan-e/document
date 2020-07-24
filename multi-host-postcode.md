@@ -69,15 +69,15 @@ Following modules will updated for this implementation
 
  - phosphor-host-postd.
  - phosphor-post-code-manager.
- - fb-ipmi-oem.
- - fb-yv2-misc.
+ - Platform Specific OEM Handler (fb-ipmi-oem, intel-ipmi-oem,etc).
+ - Platform Specific Services(fb-yv2-misc).
  - phosphor-dbus-interfaces.
 
 **Interface Diagram**
 ```ascii
 +-------------------------------------------+
 |                      +-----------------+  |
-|                      | (fb-ipmi-oem)   |  |
+|                      | (fb-ipmi-oem, )   |  |
 |     BMC              |                 |  |                          +----+-------------+
 |                      +--------+--------+  |       +-+I2C/IPMI+------>+BIC |             |
 |                               |           |       |                  |    |     Host1   |
@@ -175,5 +175,5 @@ The below operation part of the fb-yv2-misc.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ1NTA5NDk5LDE3OTE4ODY4XX0=
+eyJoaXN0b3J5IjpbMTk3NTk3NzgyMCwxNzkxODg2OF19
 -->
