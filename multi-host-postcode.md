@@ -177,6 +177,5 @@ The below D-Bus interface needs to created for multi-host post-code history.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDE0MjE2MjYsMTA1NDI2MDA4OCwtMT
-E4OTYwNDY3NCw3MDA0MTExMDhdfQ==
+eyJoaXN0b3J5IjpbLTE5MDE0MjE2MjZdfQ==
 -->
