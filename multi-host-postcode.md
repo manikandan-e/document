@@ -167,12 +167,12 @@ The below D-Bus interface needs to created for multi-host post-code history.
 
  This is new process going create as part of the openbmc/meta-facebook to handle Facebook platform specific feature as below .
    Enable postcode in each host through IPMB interface. 
-   Read host selection switch for 
+   7 seg 
  
 - Get Bridge IC(BIC) configuration(cmd = 0x0E, netfn=0x38, lun=00).
  - Set Bridge IC(BIC) configuration(cmd = 0x10, netfn=0x38, lun=00).
  
-## phosphor-dbus-interfaces
+## phosphor-dbus-interfacesment 
 
 D-bus interface need to create to support for multi-host postcode.
 
@@ -182,5 +182,5 @@ D-bus interface need to create to support for multi-host postcode.
        change single process into multi-process on phosphor-post-code-manager.
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYxMTA0ODMxLC05NTgwMjIxNzJdfQ==
+eyJoaXN0b3J5IjpbMTUyNjI4NjgzMCwtOTU4MDIyMTcyXX0=
 -->
