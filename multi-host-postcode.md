@@ -197,7 +197,7 @@ The below D-Bus interface needs to created for multi-host post-code history.
 
 ## Alternate design
 
- **phosphor-post-code-manager**
+**phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
   
   **Platform specific service(fb-yv2-misc) alternate to phosphor-host-postd**
@@ -205,5 +205,5 @@ The below D-Bus interface needs to created for multi-host post-code history.
       handle IPMI postcode , seven segment  display  and 
       host position specific feature.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2NDU3NzIzNl19
+eyJoaXN0b3J5IjpbLTU0NzI5NDU0NiwtODY0NTc3MjM2XX0=
 -->
