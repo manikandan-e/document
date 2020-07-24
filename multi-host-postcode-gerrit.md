@@ -152,12 +152,10 @@ and get the postcode  from host through
 ## phosphor-host-postd
 
 **Host discovery**
-    This feature adds to detect,  when the hot plug-able host connected in the slot.
-    Postcode D-bus interface needs to be created based on host present discovery
-    (Host state /xyz/openbmc_project/state/hostX(1,2,3.N) D-bus interface ).
-      
- - Create, register and add dbus connection for 
- "/xyz/openbmc_project/hostX(1,2,3.N)/state/boot/raw" based on  
+ This feature adds to detect, when the hot plug-able host connected in the slot.
+Postcode D-bus interface needs to be created based on host present discovery
+(Host state /xyz/openbmc_project/state/hostX(1,2,3.N) D-bus interface).
+ 
  Host discovery as mentioned above.
  - Read each hosts postcode from Platform Specific OEM ServicesIPMI OEM 
     handler(fb-ipmi-oem, intel-ipmi-oem,etc).
@@ -206,11 +204,11 @@ The below D-Bus interface needs to created for multi-host post-code history.
       handle IPMI postcode , seven segment  display  and 
       host position specific feature.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwODA0NzczNywtNTQ3Mjk0NTQ2LC05Mj
-g4ODUyNzAsODk2MTM2OTI4LC0xNTUwMzI2MzU1LDE1NTE1NDA5
-NjcsLTE3MjMyMDc2ODYsLTE5MDE0MjE2MjYsMTA1NDI2MDA4OC
-wtMTE4OTYwNDY3NCw3MDA0MTExMDgsMjYwNzE4MDkwLDE3NTQ1
-Njg5OTYsMTY2NzQ4MDkwNSwxNTU5MjIzMjg1LC04NjQ1OTIzOD
-MsMTk3NTk3NzgyMCwtMTg0OTEyMTU1Myw1MDQwODU4MzEsMTk0
-OTM2NjI1MF19
+eyJoaXN0b3J5IjpbNzQ3OTg4ODEzLC01NDcyOTQ1NDYsLTkyOD
+g4NTI3MCw4OTYxMzY5MjgsLTE1NTAzMjYzNTUsMTU1MTU0MDk2
+NywtMTcyMzIwNzY4NiwtMTkwMTQyMTYyNiwxMDU0MjYwMDg4LC
+0xMTg5NjA0Njc0LDcwMDQxMTEwOCwyNjA3MTgwOTAsMTc1NDU2
+ODk5NiwxNjY3NDgwOTA1LDE1NTkyMjMyODUsLTg2NDU5MjM4My
+wxOTc1OTc3ODIwLC0xODQ5MTIxNTUzLDUwNDA4NTgzMSwxOTQ5
+MzY2MjUwXX0=
 -->
