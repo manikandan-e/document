@@ -153,7 +153,7 @@ and get the postcode  from host through
 **Host discovery**
       This feature adds to detect,  when the hot plug-able host connected in the slot.
       Postcode D-bus interface needs to be created based on host present 
-      discovery(Host state /xyz/openbmc_project/state/hostX(1,2,3.N) D-bus interface ).
+ discovery(Host state /xyz/openbmc_project/state/hostX(1,2,3.N) D-bus interface ).
       
  - Create, register and add dbus connection for 
  "/xyz/openbmc_project/hostX(1,2,3.N)/state/boot/raw" based on  
@@ -203,5 +203,5 @@ The below D-Bus interface needs to created for multi-host post-code history.
   **Platform specific service(fb-yv2-misc) alternate to phosphor-host-postd**
         Handle 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Njc1NjI3MTZdfQ==
+eyJoaXN0b3J5IjpbLTIyNzc2ODA5NiwtMTU2NzU2MjcxNl19
 -->
