@@ -58,9 +58,8 @@ The below component diagram shows the present implementation for postcode and hi
  - Read postcode from all servers.
  - Display given host postcode to 7 segment display based host position in debug card.
  - Provide a command interface for user to see any server(multi-host) current postcode .
- - Provide a command interface for user to see any server(mul) postcode history.
- - Support for hotplug host.
- - Dynamic host management.
+ - Provide a command interface for user to see any server(multi-host) postcode history.
+ - Support for hot-plug-able host.
 
 ## Proposed Design
 
@@ -123,8 +122,8 @@ Following modules will updated for this implementation
 
 This library is part of [phosphor-ipmi-host](https://github.com/openbmc/phosphor-host-ipmid) and get the postcode  from host through [phosphor-ipmi-ipmb](https://github.com/openbmc/ipmbbridge).
 
- - Register postcode callback interrupt handler(cmd = 0x08, netfn=0x38, lun=00).
- - Extract postcode from IPMIB response based on length.
+ - Register postcode callback interrupt handler(cmd = 0x08, netfn=0x38, lun=00) to read postcode.
+ - Extract postcode from IPMB message.
  - Send extracted postcode to phosphor-host-postd.
  
 ## phosphor-host-postd
@@ -180,11 +179,11 @@ The below operation part of the fb-yv2-misc.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxODY2Mjc0MSw1MDQwODU4MzEsMTk0OT
-M2NjI1MCwtMTU1MzI5NzM5NSwtOTU4MDIyMTcyLC03MzE1NjY1
-NjAsLTE1MDQwOTE3MTIsMjA3OTA4MTM5NiwxODk3MTM3ODQwLD
-E4MDA4NDM2NDcsOTE2MjEwMTMsLTQxMDYyNzg0MiwxMDk3NTYy
-MDMxLDg0NzQ2NTYyOSwtMTIxMDcyMTM0NSwxNTgxMTAwMzE1LD
-IwNzQ5NDc1MjcsMTg5MTg1NDcyNCw1NTMwODE3NSw1Nzc0MzI2
-NThdfQ==
+eyJoaXN0b3J5IjpbMjE1ODgwOTA1LDUwNDA4NTgzMSwxOTQ5Mz
+Y2MjUwLC0xNTUzMjk3Mzk1LC05NTgwMjIxNzIsLTczMTU2NjU2
+MCwtMTUwNDA5MTcxMiwyMDc5MDgxMzk2LDE4OTcxMzc4NDAsMT
+gwMDg0MzY0Nyw5MTYyMTAxMywtNDEwNjI3ODQyLDEwOTc1NjIw
+MzEsODQ3NDY1NjI5LC0xMjEwNzIxMzQ1LDE1ODExMDAzMTUsMj
+A3NDk0NzUyNywxODkxODU0NzI0LDU1MzA4MTc1LDU3NzQzMjY1
+OF19
 -->
