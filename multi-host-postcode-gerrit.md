@@ -178,18 +178,18 @@ The below operation part of the fb-yv2-misc.
  
 ## phosphor-dbus-interfaces
 
-  Multi-host postcode 
+    
 
 ## Alternate design
 
  **phosphor-post-code-manager**
        change single process into multi-process on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTQ0OTQ4NTYsMTk0OTM2NjI1MCwtMT
-U1MzI5NzM5NSwtOTU4MDIyMTcyLC03MzE1NjY1NjAsLTE1MDQw
-OTE3MTIsMjA3OTA4MTM5NiwxODk3MTM3ODQwLDE4MDA4NDM2ND
-csOTE2MjEwMTMsLTQxMDYyNzg0MiwxMDk3NTYyMDMxLDg0NzQ2
-NTYyOSwtMTIxMDcyMTM0NSwxNTgxMTAwMzE1LDIwNzQ5NDc1Mj
-csMTg5MTg1NDcyNCw1NTMwODE3NSw1Nzc0MzI2NTgsODc5OTY0
-NzI5XX0=
+eyJoaXN0b3J5IjpbNTA0MDg1ODMxLDE5NDkzNjYyNTAsLTE1NT
+MyOTczOTUsLTk1ODAyMjE3MiwtNzMxNTY2NTYwLC0xNTA0MDkx
+NzEyLDIwNzkwODEzOTYsMTg5NzEzNzg0MCwxODAwODQzNjQ3LD
+kxNjIxMDEzLC00MTA2Mjc4NDIsMTA5NzU2MjAzMSw4NDc0NjU2
+MjksLTEyMTA3MjEzNDUsMTU4MTEwMDMxNSwyMDc0OTQ3NTI3LD
+E4OTE4NTQ3MjQsNTUzMDgxNzUsNTc3NDMyNjU4LDg3OTk2NDcy
+OV19
 -->
