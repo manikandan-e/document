@@ -120,9 +120,9 @@ Following modules will updated for this implementation
 
 ##  fb-ipmi-oem
 
-This library is part of [phosphor-ipmi-host](https://github.com/openbmc/phosphor-host-ipmid) and get the postcode  from host through [phosphor-ipmi-ipmb](https://github.com/openbmc/ipmbbridge).
+This library is part of  the [phosphor-ipmi-host](https://github.com/openbmc/phosphor-host-ipmid) and get the postcode  from host through [phosphor-ipmi-ipmb](https://github.com/openbmc/ipmbbridge).
 
- - Register postcode callback interrupt handler(cmd = 0x08, netfn=0x38, lun=00) to read postcode.
+ - Register IPMI OEM postcode callback interrupt handler.
  - Extract postcode from IPMB  message (phosphor-ipm-host/phosphor-ipmi-ipmb).
  - Send extracted postcode to phosphor-host-postd.
  
@@ -176,7 +176,7 @@ The below operation part of the fb-yv2-misc.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0ODkwNjA0MiwtMTg0OTEyMTU1Myw1MD
+eyJoaXN0b3J5IjpbMTA2MTE4NjY1MiwtMTg0OTEyMTU1Myw1MD
 QwODU4MzEsMTk0OTM2NjI1MCwtMTU1MzI5NzM5NSwtOTU4MDIy
 MTcyLC03MzE1NjY1NjAsLTE1MDQwOTE3MTIsMjA3OTA4MTM5Ni
 wxODk3MTM3ODQwLDE4MDA4NDM2NDcsOTE2MjEwMTMsLTQxMDYy
