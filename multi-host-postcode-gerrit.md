@@ -158,14 +158,14 @@ Postcode D-bus interface needs to be created based on host present discovery
 
  - Create, register and add dbus connection for 
     "/xyz/openbmc_project/hostX(1,2,3.N)/state/boot/raw" 
-based onhost discovery as mentioned above.
- - Read each hosts postcode from Platform Specific OEM ServicesIPMI OEM 
-    handler(fb-ipmi-oem, intel-ipmi-oem,etc).
- - Send event to post-code-manager based on which host's postcode received 
-   from IPMB interface (xyz.openbmc_project.State.HostX.Boot.Raw.Value) 
+based on host discovery as mentioned above.
+ - Read each hosts postcode from Platform Specific OEM ServicesIPMI OEM handler
+(fb-ipmi-oem, intel-ipmi-oem,etc).
+ - Send event to post-code-manager based on which host's postcode received from
+IPMB interface (xyz.openbmc_project.State.HostX.Boot.Raw.Value)
  - Read host position from dbus property .
- - Display current post-code into the 7 segment display 
-   connected to BMC's 8 GPIOs based on the host position.
+Display current post-code into the 7 segment display connected to BMC's 8 GPIOs
+based on the host position.
  
  **D-Bus interface**
  - xyz.openbmc_project.State.Host1.Boot.Raw.Value
@@ -206,7 +206,7 @@ The below D-Bus interface needs to created for multi-host post-code history.
       handle IPMI postcode , seven segment  display  and 
       host position specific feature.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NTE2Njk4OSwtNTQ3Mjk0NTQ2LC05Mj
+eyJoaXN0b3J5IjpbMTU0NjExOTA5NiwtNTQ3Mjk0NTQ2LC05Mj
 g4ODUyNzAsODk2MTM2OTI4LC0xNTUwMzI2MzU1LDE1NTE1NDA5
 NjcsLTE3MjMyMDc2ODYsLTE5MDE0MjE2MjYsMTA1NDI2MDA4OC
 wtMTE4OTYwNDY3NCw3MDA0MTExMDgsMjYwNzE4MDkwLDE3NTQ1
