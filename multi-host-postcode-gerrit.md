@@ -201,13 +201,14 @@ The below D-Bus interface needs to created for multi-host post-code history.
        Change single process into multi-process  on phosphor-post-code-manager.
   
   **Platform specific service(fb-yv2-misc) alternate to phosphor-host-postd**
-        create and run new process to handle platform specific feature  such OEM specific
+      phosphor-host-postd supports only LPC interface and IPMI postcode 
+      and display it seven segment  display specific to platform 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkwMzkwODExLC05Mjg4ODUyNzAsODk2MT
-M2OTI4LC0xNTUwMzI2MzU1LDE1NTE1NDA5NjcsLTE3MjMyMDc2
-ODYsLTE5MDE0MjE2MjYsMTA1NDI2MDA4OCwtMTE4OTYwNDY3NC
-w3MDA0MTExMDgsMjYwNzE4MDkwLDE3NTQ1Njg5OTYsMTY2NzQ4
-MDkwNSwxNTU5MjIzMjg1LC04NjQ1OTIzODMsMTk3NTk3NzgyMC
-wtMTg0OTEyMTU1Myw1MDQwODU4MzEsMTk0OTM2NjI1MCwtMTU1
-MzI5NzM5NV19
+eyJoaXN0b3J5IjpbMTg1NDk3MTQxNCwtOTI4ODg1MjcwLDg5Nj
+EzNjkyOCwtMTU1MDMyNjM1NSwxNTUxNTQwOTY3LC0xNzIzMjA3
+Njg2LC0xOTAxNDIxNjI2LDEwNTQyNjAwODgsLTExODk2MDQ2Nz
+QsNzAwNDExMTA4LDI2MDcxODA5MCwxNzU0NTY4OTk2LDE2Njc0
+ODA5MDUsMTU1OTIyMzI4NSwtODY0NTkyMzgzLDE5NzU5Nzc4Mj
+AsLTE4NDkxMjE1NTMsNTA0MDg1ODMxLDE5NDkzNjYyNTAsLTE1
+NTMyOTczOTVdfQ==
 -->
