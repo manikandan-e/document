@@ -123,17 +123,17 @@ Following modules will updated for this implementation
 This library is part of [phosphor-ipmi-host](https://github.com/openbmc/phosphor-host-ipmid) and get the postcode  from host through [phosphor-ipmi-ipmb](https://github.com/openbmc/ipmbbridge).
 
  - Register postcode callback interrupt handler(cmd = 0x08, netfn=0x38, lun=00) to read postcode.
- - Extract postcode from IPMB message.
+ - Extract postcode from IPMB  message (phosphor-ipm-host/phosphor-ipmi-ipmb).
  - Send extracted postcode to phosphor-host-postd.
  
 ## phosphor-host-postd
 
 **Host discovery**
-      This feature enables for Multi-host with hot plug-able host in slot.
+      This feature adds to detect Multi-host with hot plug-able host in slot.
       Postcode D-bus interface needs to create based on host present(Host Field replaceable Unit D-bus interface ).
       
  - Create, register and add dbus connection for "/xyz/openbmc_project/hostX/state/boot/raw" based on Host discovery as mentioned above..
- - Add "Value" property to store current postcode from hostX(X=0,1,2.N).
+ - Add "Value" property to store current postcode from hostX(0,1,2.N).
  - Read each hosts postcode from fb-ipmi-oem postcode interrupt handler.
  - Send event to post-code-manager based on which host's postcode received from IPMB interface(xyz.openbmc_project.State.HostX.Boot.Raw.Value) 
  - Read host position from dbus property (debug card).
@@ -179,5 +179,5 @@ The below operation part of the fb-yv2-misc.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE1ODgwOTA1LDEwNzY4OTgxMzddfQ==
+eyJoaXN0b3J5IjpbMTI3OTI2OTE3MiwxMDc2ODk4MTM3XX0=
 -->
