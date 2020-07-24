@@ -149,12 +149,7 @@ This library is part of [phosphor-ipmi-host](https://github.com/openbmc/phosphor
 
 phosphor-post-code-manager is the single process based on host discovery for multi-host. This design shall not affect single host for post-code.
 
-**Host discovery**
- 
- This feature adds to detect when hot plug-able host connected in the slot.
- The postcode related  D-bus interface needs to create based on host present(Host Field replaceable Unit D-bus interface ) in the slot.
-      
-- Create, register and add the dbus connection for "xyz.openbmc_project.State.Hostx(0,1,2.N).Boot.PostCode based on Host discovery as mentioned above.
+- Create, register and add the dbus connection for "xyz.openbmc_project.State.Hostx(0,1,2.N).Boot.PostCode based on Host discovery.
 - Store/retrieve post-code(/var/lib/phosphor-post-code-manager/hostX(0,1,2.N))  based on event received from phosphor-host-postd.
 - 
 The below D-Bus interface needs to created for multi-host post-code history.
@@ -181,5 +176,5 @@ The below operation part of the fb-yv2-misc.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1OTI2MDQ1Nl19
+eyJoaXN0b3J5IjpbMTc5MTg4NjhdfQ==
 -->
