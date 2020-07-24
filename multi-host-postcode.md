@@ -143,9 +143,9 @@ This library is part of [phosphor-ipmi-host](https://github.com/openbmc/phosphor
  - Create, register and add dbus connection for "/xyz/openbmc_project/hostX/state/boot/raw".
  - Add "Value" property to store current postcode from hostX(X=0,1,2.N).
  - Read each hosts postcode data from fb-ipmi-oem postcode interrupt handler.
- -  Send event to post-code-manager based on which host's postcode received from IPMB interface(xyz.openbmc_project.State.HostX.Boot.Raw.Value) 
+ - Send event to post-code-manager based on which host's postcode received from IPMB interface(xyz.openbmc_project.State.HostX.Boot.Raw.Value) 
  - Read host position from dbus property (debug card).
- - Display current post-code into the 7 segment display connected to BMC's 8 GPIOs based on the host selection in the plug-able debug card.
+ - Display current post-code into the 7 segment display connected to BMC's 8 GPIOs based on the host position.
  
  **D-Bus interface**
  - xyz.openbmc_project.State.Host0.Boot.Raw.Value
@@ -183,6 +183,6 @@ The below operation part of the fb-yv2-misc.
        change single process into multi-process on phosphor-post-code-manager.
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMDkxMzM1LC0xNTUzMjk3Mzk1LC05NT
-gwMjIxNzJdfQ==
+eyJoaXN0b3J5IjpbMTg1MzAyNDU5OCwtMTU1MzI5NzM5NSwtOT
+U4MDIyMTcyXX0=
 -->
