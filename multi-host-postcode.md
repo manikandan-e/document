@@ -137,8 +137,6 @@ This library is part of [phosphor-ipmi-host](https://github.com/openbmc/phosphor
 
  This is new process going create as part of the openbmc/meta-facebook to handle Facebook platform specific feature.
  
- - Get Bridge IC(BIC) configuration(cmd = 0x0E, netfn=0x38, lun=00).
- - Set Bridge IC(BIC) configuration(cmd = 0x10, netfn=0x38, lun=00).
  - Create, register and add dbus connection for "/xyz/openbmc_project/hostX/state/boot/raw".
  - Add "Value" property to store current postcode from hostX(X=0,1,2.N).
  - Read each hosts postcode data from fb-ipmi-oem postcode interrupt handler.
@@ -164,6 +162,10 @@ The below D-Bus interface needs to created for multi-host post-code history.
  - xyz.openbmc_project.State.Host1.Boot.PostCode
  - xyz.openbmc_project.State.Host2.Boot.PostCode
  - xyz.openbmc_project.State.HostN.Boot.PostCode
+ - 
+## fb-yv2-misc
+
+ This is new process going create as part of the openbmc/meta-facebook to handle Facebook platform specific feature.
  
 ## phosphor-dbus-interfaces
 
@@ -223,5 +225,5 @@ methods:
        change single process into multi-process on phosphor-post-code-manager
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzcyNzgxODM5XX0=
+eyJoaXN0b3J5IjpbNjg3MDQ4ODQwLDM3Mjc4MTgzOV19
 -->
