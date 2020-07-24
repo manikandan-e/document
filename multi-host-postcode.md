@@ -21,6 +21,9 @@ into phosphor-host-postd and phosphor-post-code-manager.
 
 [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem)
 
+BIC(Bridge IC)
+  
+
 
 The below component diagram shows the present implementation for postcode and history at high-level overview
 ```ascii
@@ -165,13 +168,8 @@ The below D-Bus interface needs to created for multi-host post-code history.
  - 
 ## fb-yv2-misc
 
-The Bridge IC plays as a bridge between BMC and the host system. The host system can
-be managed by the BMC through Bridge IC even if host hardware or OS hang or goes down
+ The command 10h “Enable postcode to BMC” need to send to each host though IPMB interface(cmd = 0x10, netfn=0x38, lun=00).
 
- The command 10h “Enable postcode to BMC” need to sen
- 
-- Get Bridge IC(BIC) configuration(cmd = 0x0E, netfn=0x38, lun=00).
- - Set Bridge IC(BIC) configuration(cmd = 0x10, netfn=0x38, lun=00).
  
 ## phosphor-dbus-interfacesment 
 
@@ -183,6 +181,6 @@ D-bus interface need to create to support for multi-host postcode.
        change single process into multi-process on phosphor-post-code-manager.
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI5MzAzNDY3LC0xNTUzMjk3Mzk1LC05NT
+eyJoaXN0b3J5IjpbOTE5OTU5MTIwLC0xNTUzMjk3Mzk1LC05NT
 gwMjIxNzJdfQ==
 -->
