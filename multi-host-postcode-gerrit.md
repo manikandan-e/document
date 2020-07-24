@@ -69,15 +69,15 @@ Following modules will updated for this implementation
 
  - phosphor-host-postd.
  - phosphor-post-code-manager.
- - fb-ipmi-oem.
- - fb-yv2-misc.
+ - Platform Specific OEM Handler (fb-ipmi-oem, intel-ipmi-oem,etc).
+ - Platform Specific Services(fb-yv2-misc).
  - phosphor-dbus-interfaces.
 
 **Interface Diagram**
 ```ascii
 +-------------------------------------------+
 |                      +-----------------+  |
-|                      | (fb-ipmi-oem)   |  |
+|                      | (fb-ipmi-oem, )   |  |
 |     BMC              |                 |  |                          +----+-------------+
 |                      +--------+--------+  |       +-+I2C/IPMI+------>+BIC |             |
 |                               |           |       |                  |    |     Host1   |
@@ -175,11 +175,11 @@ The below operation part of the fb-yv2-misc.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ1NTA5NDk5LC0xODQ5MTIxNTUzLDUwND
-A4NTgzMSwxOTQ5MzY2MjUwLC0xNTUzMjk3Mzk1LC05NTgwMjIx
-NzIsLTczMTU2NjU2MCwtMTUwNDA5MTcxMiwyMDc5MDgxMzk2LD
-E4OTcxMzc4NDAsMTgwMDg0MzY0Nyw5MTYyMTAxMywtNDEwNjI3
-ODQyLDEwOTc1NjIwMzEsODQ3NDY1NjI5LC0xMjEwNzIxMzQ1LD
-E1ODExMDAzMTUsMjA3NDk0NzUyNywxODkxODU0NzI0LDU1MzA4
-MTc1XX0=
+eyJoaXN0b3J5IjpbMTk3NTk3NzgyMCwtMTg0OTEyMTU1Myw1MD
+QwODU4MzEsMTk0OTM2NjI1MCwtMTU1MzI5NzM5NSwtOTU4MDIy
+MTcyLC03MzE1NjY1NjAsLTE1MDQwOTE3MTIsMjA3OTA4MTM5Ni
+wxODk3MTM3ODQwLDE4MDA4NDM2NDcsOTE2MjEwMTMsLTQxMDYy
+Nzg0MiwxMDk3NTYyMDMxLDg0NzQ2NTYyOSwtMTIxMDcyMTM0NS
+wxNTgxMTAwMzE1LDIwNzQ5NDc1MjcsMTg5MTg1NDcyNCw1NTMw
+ODE3NV19
 -->
