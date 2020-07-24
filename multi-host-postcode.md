@@ -73,7 +73,7 @@ This document proposes a new design engaging the IPMB interface to read port-80
 post code from multiple-host. This design also supports host discovery
 including the hot-plug-able host connected in slot.
 
-Following modules will updated for this implementation
+Following modules will be updated for this implementation
 
  - phosphor-host-postd.
  - phosphor-post-code-manager.
@@ -206,5 +206,5 @@ The below D-Bus interface needs to created for multi-host post-code history.
       handle IPMI postcode , seven segment  display  and 
       host position specific feature.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMDAwOTk3MV19
+eyJoaXN0b3J5IjpbMTM5NjUwOTA4NCwxNDMwMDA5OTcxXX0=
 -->
