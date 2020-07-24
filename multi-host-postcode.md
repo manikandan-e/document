@@ -178,13 +178,13 @@ The below operation part of the fb-yv2-misc.
  
 ## phosphor-dbus-interfaces
 
-       ph
+   All multi-host postcode releasted property and method need to create.
 
 ## Alternate design
 
  **phosphor-post-code-manager**
        change single process into multi-process on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjY2OTM2NTcsNTA0MDg1ODMxLDE5ND
-kzNjYyNTAsLTE1NTMyOTczOTUsLTk1ODAyMjE3Ml19
+eyJoaXN0b3J5IjpbMTM1MjgyNDk4MCw1MDQwODU4MzEsMTk0OT
+M2NjI1MCwtMTU1MzI5NzM5NSwtOTU4MDIyMTcyXX0=
 -->
