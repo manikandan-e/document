@@ -131,9 +131,9 @@ This library is part of [phosphor-ipmi-host](https://github.com/openbmc/phosphor
 
  - Register new Bridge IC(BIC) OEM callback interrupt handler for a postcode(cmd = 0x08, netfn=0x38, lun=00).
  - Extract port 80 data from IPMIBresponse based on length.
- - Send extracted postcode to fb-yv2-misc by D-bus callback method registered in the fb-yv2-misc(xyz.openbmc_project.Misc.Ipmi.Update).
+ - Send extracted postcode to phosphor-host-postd by D-bus callback method registered in the phosphor-host-postd(xyz.openbmc_project.Misc.Ipmi.Update).
  
-## fb-yv2-misc
+## phosphor-host-postd
 
  This is new process going create as part of the openbmc/meta-facebook to handle Facebook platform specific feature.
  
@@ -141,7 +141,7 @@ This library is part of [phosphor-ipmi-host](https://github.com/openbmc/phosphor
  - Add "Value" property to store current postcode from hostX(X=0,1,2.N).
  - Read each hosts postcode data from fb-ipmi-oem postcode interrupt handler.
  -  Send event to post-code-manager based on which host's postcode received from IPMB interface(xyz.openbmc_project.State.HostX.Boot.Raw.Value) 
- - Read host position from debug card.
+ - Read host position from dbus property (debug card).
  - Display current post-code into the 7 segment display connected to BMC's 8 GPIOs based on the host selection in the plug-able debug card.
  
  **D-Bus interface**
@@ -167,10 +167,10 @@ The below D-Bus interface needs to created for multi-host post-code history.
 
  This is new process going create as part of the openbmc/meta-facebook to handle Facebook platform specific feature.
  
+- Get Bridge IC(BIC) configuration(cmd = 0x0E, netfn=0x38, lun=00).
+ - Set Bridge IC(BIC) configuration(cmd = 0x10, netfn=0x38, lun=00).
+ 
 ## phosphor-dbus-interfaces
-
-
-  
 The new YAML file needs to create to handle the Facebook platform specific implementation .
 
 The example as below,
@@ -225,5 +225,5 @@ methods:
        change single process into multi-process on phosphor-post-code-manager
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg3MDQ4ODQwLDM3Mjc4MTgzOV19
+eyJoaXN0b3J5IjpbLTYzMzM0ODIxOCwzNzI3ODE4MzldfQ==
 -->
