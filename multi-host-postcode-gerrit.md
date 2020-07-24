@@ -12,15 +12,9 @@ The current implementation in the phosphor-host-postd supports only single host 
 
 ## Background and References
 
-Facebook Yosemitev2 had an internal solution already for the problem and solution may to add 
-into phosphor-host-postd and phosphor-post-code-manager. 
-
 [OCP Debug Card with LCD Spec v1.0](http://files.opencompute.org/oc/public.php?service=files&t=4d86c4bcd365cd733ee1c4fa129bafca&download)
 
-[fb-yv2-misc](https://github.com/HCLOpenBMC/fb-yv2-misc)
-
 [fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem)
-
 
 The below component diagram shows the present implementation for postcode and history at high-level overview
 ```ascii
@@ -63,10 +57,10 @@ The below component diagram shows the present implementation for postcode and hi
 
  - Read postcode from all servers.
  - Display given host postcode to 7 segment display based host position in debug card.
- - Provide a command interface for user to see any server current postcode .
- - Provide a command interface for user to see any server postcode history.
- - Support for hotplug host
- - Dynamic host management
+ - Provide a command interface for user to see any server(multi-host) current postcode .
+ - Provide a command interface for user to see any server(mul) postcode history.
+ - Support for hotplug host.
+ - Dynamic host management.
 
 ## Proposed Design
 
@@ -186,7 +180,7 @@ The below operation part of the fb-yv2-misc.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3Njg5ODEzNyw1MDQwODU4MzEsMTk0OT
+eyJoaXN0b3J5IjpbMTUxODY2Mjc0MSw1MDQwODU4MzEsMTk0OT
 M2NjI1MCwtMTU1MzI5NzM5NSwtOTU4MDIyMTcyLC03MzE1NjY1
 NjAsLTE1MDQwOTE3MTIsMjA3OTA4MTM5NiwxODk3MTM3ODQwLD
 E4MDA4NDM2NDcsOTE2MjEwMTMsLTQxMDYyNzg0MiwxMDk3NTYy
