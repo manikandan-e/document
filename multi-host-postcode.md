@@ -8,11 +8,12 @@ Created: 2020-07-02
 
 ## Problem Description
 
-The current implementation in the phosphor-host-postd supports only single host postcode access through LPC interface. Hence, multiple-host is not in the existing implementation.
+The current implementation in the phosphor-host-postd supports
+ only single host postcode access through LPC interface.
 
  As the open BMC architectrue is evolving, the single host support
-  becomes contingent and needs multiple-host post code access to 
-  be implemented.
+ becomes contingent and needs multiple-host post code access to 
+ be implemented.
 
 ## Background and References
 
@@ -191,6 +192,5 @@ The below D-Bus interface needs to created for multi-host post-code history.
   **Platfrom specific service(fb-yv2-misc) alternate to phosphor**
         Handle 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTE4MDc2NjEsLTE1NTAzMjYzNTUsMT
-U1MTU0MDk2N119
+eyJoaXN0b3J5IjpbLTE4NzMzODQ4NTldfQ==
 -->
