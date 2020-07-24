@@ -17,7 +17,8 @@ The current implementation in the phosphor-host-postd supports
 
 ## Background and References
 
-Existing postvod
+**Existing postcode implementation for single host**
+
 The below component diagram shows the present implementation for 
 postcode and history at high-level overview
 ```ascii
@@ -55,7 +56,6 @@ postcode and history at high-level overview
 |                                  |                           |                      |
 +----------------------------------+                           +----------------------+
 ```
-
 [OCP Debug Card with LCD Spec v1.0]
 (http://files.opencompute.org/oc/public.php?service=files&t=4d86c4bcd365cd733ee1c4fa129bafca&download)
 
@@ -193,5 +193,5 @@ The below D-Bus interface needs to created for multi-host post-code history.
   **Platfrom specific service(fb-yv2-misc) alternate to phosphor**
         Handle 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTgxNzIxNDMsOTY3MjQzMDgzXX0=
+eyJoaXN0b3J5IjpbLTEyNzMwMjE0OTQsOTY3MjQzMDgzXX0=
 -->
