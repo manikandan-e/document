@@ -56,11 +56,6 @@ postcode and history at high-level overview
 |                                  |                           |                      |
 +----------------------------------+                           +----------------------+
 ```
-[OCP Debug Card with LCD Spec v1.0]
-(http://files.opencompute.org/oc/public.php?service=files&t=4d86c4bcd365cd733ee1c4fa129bafca&download)
-
-[fb-ipmi-oem](https://github.com/openbmc/fb-ipmi-oem)
-
 ## Requirements
 
  - Read postcode from all servers.
@@ -190,14 +185,14 @@ The below D-Bus interface needs to created for multi-host post-code history.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
   
-  **Platfrom specific service(fb-yv2-misc) alternate to phosphor**
+  **Platform specific service(fb-yv2-misc) alternate to phosphor-host-postd**
         Handle 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzMwMjE0OTQsLTE1NTAzMjYzNTUsMT
-U1MTU0MDk2NywtMTcyMzIwNzY4NiwtMTkwMTQyMTYyNiwxMDU0
-MjYwMDg4LC0xMTg5NjA0Njc0LDcwMDQxMTEwOCwyNjA3MTgwOT
-AsMTc1NDU2ODk5NiwxNjY3NDgwOTA1LDE1NTkyMjMyODUsLTg2
-NDU5MjM4MywxOTc1OTc3ODIwLC0xODQ5MTIxNTUzLDUwNDA4NT
-gzMSwxOTQ5MzY2MjUwLC0xNTUzMjk3Mzk1LC05NTgwMjIxNzIs
-LTczMTU2NjU2MF19
+eyJoaXN0b3J5IjpbLTgzMjY1NzU5MywtMTU1MDMyNjM1NSwxNT
+UxNTQwOTY3LC0xNzIzMjA3Njg2LC0xOTAxNDIxNjI2LDEwNTQy
+NjAwODgsLTExODk2MDQ2NzQsNzAwNDExMTA4LDI2MDcxODA5MC
+wxNzU0NTY4OTk2LDE2Njc0ODA5MDUsMTU1OTIyMzI4NSwtODY0
+NTkyMzgzLDE5NzU5Nzc4MjAsLTE4NDkxMjE1NTMsNTA0MDg1OD
+MxLDE5NDkzNjYyNTAsLTE1NTMyOTczOTUsLTk1ODAyMjE3Miwt
+NzMxNTY2NTYwXX0=
 -->
