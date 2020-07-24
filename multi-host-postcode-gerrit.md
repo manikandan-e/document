@@ -68,7 +68,9 @@ postcode and history at high-level overview
 
 ## Proposed Design
 
-This document proposes a new design engaging the IPMB interface to read port-80 post code from multiple-host. This design also supports host discovery including the hot-plug-able host connected in slot.
+This document proposes a new design engaging the IPMB interface to read port-80 
+post code from multiple-host. This design also supports host discovery including the 
+hot-plug-able host connected in slot.
 
 Following modules will updated for this implementation
 
@@ -173,7 +175,7 @@ The below D-Bus interface needs to created for multi-host post-code history.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Njg1ODc3MTQsNzAwNDExMTA4LDI2MD
+eyJoaXN0b3J5IjpbLTExODk2MDQ2NzQsNzAwNDExMTA4LDI2MD
 cxODA5MCwxNzU0NTY4OTk2LDE2Njc0ODA5MDUsMTU1OTIyMzI4
 NSwtODY0NTkyMzgzLDE5NzU5Nzc4MjAsLTE4NDkxMjE1NTMsNT
 A0MDg1ODMxLDE5NDkzNjYyNTAsLTE1NTMyOTczOTUsLTk1ODAy
