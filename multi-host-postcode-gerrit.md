@@ -59,9 +59,11 @@ postcode and history at high-level overview
 ## Requirements
 
  - Read postcode from all servers.
- - Display the host postcode to the 7 segment display based on host position selected in the debug card.
+ - Display the host postcode to the 7 segment display based on host position 
+     selected in the debug card.
  - Provide a command interface for user to see any server(multi-host) current postcode .
- - Provide a command interface for user to see any server(multi-host) postcode history.
+ - Provide a command interface for user to see any server(multi-host)
+    postcode history.
  - Support for hot-plug-able host.
 
 ## Proposed Design
@@ -171,11 +173,11 @@ The below D-Bus interface needs to created for multi-host post-code history.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2NzQzNjk0Niw3MDA0MTExMDgsMjYwNz
-E4MDkwLDE3NTQ1Njg5OTYsMTY2NzQ4MDkwNSwxNTU5MjIzMjg1
-LC04NjQ1OTIzODMsMTk3NTk3NzgyMCwtMTg0OTEyMTU1Myw1MD
-QwODU4MzEsMTk0OTM2NjI1MCwtMTU1MzI5NzM5NSwtOTU4MDIy
-MTcyLC03MzE1NjY1NjAsLTE1MDQwOTE3MTIsMjA3OTA4MTM5Ni
-wxODk3MTM3ODQwLDE4MDA4NDM2NDcsOTE2MjEwMTMsLTQxMDYy
-Nzg0Ml19
+eyJoaXN0b3J5IjpbLTE5Njg1ODc3MTQsNzAwNDExMTA4LDI2MD
+cxODA5MCwxNzU0NTY4OTk2LDE2Njc0ODA5MDUsMTU1OTIyMzI4
+NSwtODY0NTkyMzgzLDE5NzU5Nzc4MjAsLTE4NDkxMjE1NTMsNT
+A0MDg1ODMxLDE5NDkzNjYyNTAsLTE1NTMyOTczOTUsLTk1ODAy
+MjE3MiwtNzMxNTY2NTYwLC0xNTA0MDkxNzEyLDIwNzkwODEzOT
+YsMTg5NzEzNzg0MCwxODAwODQzNjQ3LDkxNjIxMDEzLC00MTA2
+Mjc4NDJdfQ==
 -->
