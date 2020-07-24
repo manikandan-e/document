@@ -24,7 +24,39 @@ into phosphor-host-postd and phosphor-post-code-manager.
 
 The below component diagram shows the present implementation for postcode and history at high-level overview
 ```ascii
-
++----------------------------------+                           +--------------------+
+|  +-------------------------------+                           |                    |
+|  |Phosphor-host-postd            |                           |                    |
+|  |                    +----------+                           +------------+       |
+|  |                    | LPC      |                           |            |       |
+|  |                    |          +<--------------------------+            |       |
+|  |                    +----------+                           |  LPC       |       |
+|  |                               |                           |            |       |
+|  |xyz.openbmc_project.State.     +<--------------------+     +------------+       |
+|  |Boot.Raw.Value                 |                     |     |                    |
+|  +------+------------------------+                     |     |         Host       |
+|         |                        |                     |     |                    |
+|         +                        |                     |     |                    |
+|   postcode change event          |                     +     +--------------------+
+|         +                        |  xyz.openbmc_project.State.Boot.Raw
+|         |                        |                     +
+|         v                        |                     |      +------------------+
+|  +------+------------------------+                     +----->+                  |
+|  |Phosphor-postcode-manager      |                            |   CLI            |
+|  |                 +-------------+                            |                  |
+|  |                 |   postcode  +<-------------------------->+                  |
+|  |                 |   history   |                            |                  |
+|  |                 +-------------+                            +------------------+
+|  +-------------------------------+  xyz.openbmc_project.State.Boot.PostCode
+|                                  |
+|    BMC                           |
+|  +-------------------------------+                           +----------------------+
+|  |                               |                           |                      |
+|  |     SGPIO                     +----GPIOs(8 line)  ------> |                      |
+|  |                               |                           |     7 segment        |
+|  +-------------------------------+                           |     Display          |
+|                                  |                           |                      |
++----------------------------------+                           +----------------------+
 ```
 
 ## Requirements
@@ -191,5 +223,5 @@ methods:
        change single process into multi-process on phosphor-post-code-manager
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwOTk3NjQ1MCwtMTM1OTY3MDE5XX0=
+eyJoaXN0b3J5IjpbMzcyNzgxODM5LC0xMzU5NjcwMTldfQ==
 -->
