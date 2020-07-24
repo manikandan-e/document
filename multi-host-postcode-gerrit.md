@@ -123,17 +123,16 @@ Following modules will updated for this implementation
 This library is part of  the [phosphor-ipmi-host](https://github.com/openbmc/phosphor-host-ipmid) and get the postcode  from host through [phosphor-ipmi-ipmb](https://github.com/openbmc/ipmbbridge).
 
  - Register IPMI OEM postcode callback interrupt handler.
- - Extract postcode from IPMB  message (phosphor-ipm-host/phosphor-ipmi-ipmb).
- - Send extracted postcode to phosphor-host-postd.
+ - Extract postcode from IPMI message (phosphor-ipm-host/phosphor-ipmi-ipmb).
+ - Send extracted postcode to the phosphor-host-postd.
  
 ## phosphor-host-postd
 
 **Host discovery**
-      This feature adds to detect when hot plug-able host connected in the slot.
-      Postcode D-bus interface needs to create based on host present(Host Field replaceable Unit D-bus interface ).
+      This feature adds to detect,  when the hot plug-able host connected in the slot.
+      Postcode D-bus interface needs to be created based on host present discovery(Host Field replaceable Unit D-bus interface ).
       
- - Create, register and add dbus connection for "/xyz/openbmc_project/hostX/state/boot/raw" based on Host discovery as mentioned above..
- - Add "Value" property to store current postcode from hostX(0,1,2.N).
+ - Create, register and add dbus connection for "/xyz/openbmc_project/hostX/state/boot/raw" based on Host discovery as mentioned above.
  - Read each hosts postcode from fb-ipmi-oem postcode interrupt handler.
  - Send event to post-code-manager based on which host's postcode received from IPMB interface(xyz.openbmc_project.State.HostX.Boot.Raw.Value) 
  - Read host position from dbus property (debug card).
@@ -176,7 +175,7 @@ The below operation part of the fb-yv2-misc.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2MTE4NjY1MiwtMTg0OTEyMTU1Myw1MD
+eyJoaXN0b3J5IjpbLTQzMjA1OTIxOCwtMTg0OTEyMTU1Myw1MD
 QwODU4MzEsMTk0OTM2NjI1MCwtMTU1MzI5NzM5NSwtOTU4MDIy
 MTcyLC03MzE1NjY1NjAsLTE1MDQwOTE3MTIsMjA3OTA4MTM5Ni
 wxODk3MTM3ODQwLDE4MDA4NDM2NDcsOTE2MjEwMTMsLTQxMDYy
