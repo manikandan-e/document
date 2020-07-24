@@ -17,7 +17,8 @@ The current implementation in the phosphor-host-postd supports
 
 ## Background and References
 
-Existing post
+**Existing postcode implementation for single host**
+
 The below component diagram shows the present implementation for 
 postcode and history at high-level overview
 ```ascii
@@ -55,7 +56,6 @@ postcode and history at high-level overview
 |                                  |                           |                      |
 +----------------------------------+                           +----------------------+
 ```
-
 [OCP Debug Card with LCD Spec v1.0]
 (http://files.opencompute.org/oc/public.php?service=files&t=4d86c4bcd365cd733ee1c4fa129bafca&download)
 
@@ -193,11 +193,11 @@ The below D-Bus interface needs to created for multi-host post-code history.
   **Platfrom specific service(fb-yv2-misc) alternate to phosphor**
         Handle 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgzNTExMjUwLC0xNTUwMzI2MzU1LDE1NT
-E1NDA5NjcsLTE3MjMyMDc2ODYsLTE5MDE0MjE2MjYsMTA1NDI2
-MDA4OCwtMTE4OTYwNDY3NCw3MDA0MTExMDgsMjYwNzE4MDkwLD
-E3NTQ1Njg5OTYsMTY2NzQ4MDkwNSwxNTU5MjIzMjg1LC04NjQ1
-OTIzODMsMTk3NTk3NzgyMCwtMTg0OTEyMTU1Myw1MDQwODU4Mz
-EsMTk0OTM2NjI1MCwtMTU1MzI5NzM5NSwtOTU4MDIyMTcyLC03
-MzE1NjY1NjBdfQ==
+eyJoaXN0b3J5IjpbLTEyNzMwMjE0OTQsLTE1NTAzMjYzNTUsMT
+U1MTU0MDk2NywtMTcyMzIwNzY4NiwtMTkwMTQyMTYyNiwxMDU0
+MjYwMDg4LC0xMTg5NjA0Njc0LDcwMDQxMTEwOCwyNjA3MTgwOT
+AsMTc1NDU2ODk5NiwxNjY3NDgwOTA1LDE1NTkyMjMyODUsLTg2
+NDU5MjM4MywxOTc1OTc3ODIwLC0xODQ5MTIxNTUzLDUwNDA4NT
+gzMSwxOTQ5MzY2MjUwLC0xNTUzMjk3Mzk1LC05NTgwMjIxNzIs
+LTczMTU2NjU2MF19
 -->
