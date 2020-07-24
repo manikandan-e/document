@@ -171,60 +171,12 @@ The below D-Bus interface needs to created for multi-host post-code history.
  - Set Bridge IC(BIC) configuration(cmd = 0x10, netfn=0x38, lun=00).
  
 ## phosphor-dbus-interfaces
-The new YAML file needs to create to handle the Facebook platform specific implementation .
 
-The example as below,
-
-description: >
-
-    Implement to provide D-bus interface for Facebook specific implementation.
-    
-properties:
-
-    - name: hostPosition
-    
-      type: uint16
-      
-      description: >
-      
-          hostPosition indicates the current host position selected in OCP debug card.
-          
-methods:
-
-    - name: update
-    
-      description: >
-      
-          Method to get the post codes from specific host.
-          
-      parameters:
-      
-        - name: postcode
-        
-          type: uint16
-          
-          description: >
-          
-              postcode indicates which host postcode.
-              
-        - name: host
-        
-          type: uint16
-          
-          description: >
-          
-              postcode indicates which host postcode. 
-
-**D-Bus interface**
-- xyz.openbmc_project.State.Host(0, 1,2.N).Boot.PostCode.
-- xyz.openbmc_project.State.Host(0, 1,2.N).Boot.Raw.Value.
-- xyz.openbmc_project.State.Host(0, 1,2.N).Boot.PostCode.
-- xyz.openbmc_project.Misc.Ipmi.Postcode
 ## Alternate design
 
  **phosphor-post-code-manager**
        change single process into multi-process on phosphor-post-code-manager
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2Nzk0NjgyNCwzNzI3ODE4MzldfQ==
+eyJoaXN0b3J5IjpbLTk1ODAyMjE3MiwzNzI3ODE4MzldfQ==
 -->
