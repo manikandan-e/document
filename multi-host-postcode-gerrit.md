@@ -129,7 +129,7 @@ This library is part of [phosphor-ipmi-host](https://github.com/openbmc/phosphor
 ## phosphor-host-postd
 
 **Host discovery**
-      This feature adds to detect Multi-host with hot plug-able host in slot.
+      This feature adds to detect when hot plug-able host connected in the slot.
       Postcode D-bus interface needs to create based on host present(Host Field replaceable Unit D-bus interface ).
       
  - Create, register and add dbus connection for "/xyz/openbmc_project/hostX/state/boot/raw" based on Host discovery as mentioned above..
@@ -146,10 +146,11 @@ This library is part of [phosphor-ipmi-host](https://github.com/openbmc/phosphor
  - xyz.openbmc_project.State.HostN.Boot.Raw.Value
 
 ## phosphor-post-code-manager
+
 The design shall handle the hot plugged multi-host in the single process phosphor-post-code-manager based on host discovery.
 
 **Host discovery**
-     This feature enables for Multi-host with hot plug-able host in slot.
+     This feature adds to detect when hot plug-able host connected in the slot.
       Postcode D-bus interface needs to create based on host present(Host Field replaceable Unit D-bus interface ).
       
 - Create, register and add the dbus connection for "xyz.openbmc_project.State.Hostx(0,1,2.N).Boot.PostCode based on Host discovery as mentioned above.
@@ -179,11 +180,11 @@ The below operation part of the fb-yv2-misc.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3OTI2OTE3Miw1MDQwODU4MzEsMTk0OT
-M2NjI1MCwtMTU1MzI5NzM5NSwtOTU4MDIyMTcyLC03MzE1NjY1
-NjAsLTE1MDQwOTE3MTIsMjA3OTA4MTM5NiwxODk3MTM3ODQwLD
-E4MDA4NDM2NDcsOTE2MjEwMTMsLTQxMDYyNzg0MiwxMDk3NTYy
-MDMxLDg0NzQ2NTYyOSwtMTIxMDcyMTM0NSwxNTgxMTAwMzE1LD
-IwNzQ5NDc1MjcsMTg5MTg1NDcyNCw1NTMwODE3NSw1Nzc0MzI2
-NThdfQ==
+eyJoaXN0b3J5IjpbLTE4NDkxMjE1NTMsNTA0MDg1ODMxLDE5ND
+kzNjYyNTAsLTE1NTMyOTczOTUsLTk1ODAyMjE3MiwtNzMxNTY2
+NTYwLC0xNTA0MDkxNzEyLDIwNzkwODEzOTYsMTg5NzEzNzg0MC
+wxODAwODQzNjQ3LDkxNjIxMDEzLC00MTA2Mjc4NDIsMTA5NzU2
+MjAzMSw4NDc0NjU2MjksLTEyMTA3MjEzNDUsMTU4MTEwMDMxNS
+wyMDc0OTQ3NTI3LDE4OTE4NTQ3MjQsNTUzMDgxNzUsNTc3NDMy
+NjU4XX0=
 -->
