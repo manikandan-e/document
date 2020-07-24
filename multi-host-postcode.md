@@ -127,8 +127,7 @@ Following modules will updated for this implementation
 
 ##  Platform Specific OEM Handler (fb-ipmi-oem)
 
-This library is part of  the 
-[phosphor-ipmi-host](https://github.com/openbmc/phosphor-host-ipmid) 
+This library is part of  the [phosphor-ipmi-host](https://github.com/openbmc/phosphor-host-ipmid) 
 and get the postcode  from host through [phosphor-ipmi-ipmb](https://github.com/openbmc/ipmbbridge).
 
  - Register IPMI OEM postcode callback interrupt handler.
@@ -139,7 +138,8 @@ and get the postcode  from host through [phosphor-ipmi-ipmb](https://github.com/
 
 **Host discovery**
       This feature adds to detect,  when the hot plug-able host connected in the slot.
-      Postcode D-bus interface needs to be created based on host present discovery(Host state /xyz/openbmc_project/state/hostX(0,1,2.N) D-bus interface ).
+      Postcode D-bus interface needs to be created based on host present 
+      discovery(Host state /xyz/openbmc_project/state/hostX(0,1,2.N) D-bus interface ).
       
  - Create, register and add dbus connection for "/xyz/openbmc_project/hostX(0,1,2.N)/state/boot/raw" based on Host discovery as mentioned above.
  - Read each hosts postcode from Platform Specific OEM ServicesIPMI OEM handler(fb-ipmi-oem, intel-ipmi-oem,etc).
@@ -177,6 +177,6 @@ The below D-Bus interface needs to created for multi-host post-code history.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NzAwMTczMCwtMTE4OTYwNDY3NCw3MD
-A0MTExMDhdfQ==
+eyJoaXN0b3J5IjpbMTUzMDY4MzIyLC0xMTg5NjA0Njc0LDcwMD
+QxMTEwOF19
 -->
