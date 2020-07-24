@@ -233,21 +233,11 @@ methods:
 - xyz.openbmc_project.Misc.Ipmi.Postcode
 ## Alternate design
 
-**Approach 1 : << Move Platform Dependent Service (fb-yv2-misc)  feature into phosphor-gpio-monitor  >>**
-
-**Approach 2 : << change single process into multi-process on phosphor-post-code-manager>>**
-  
-  Move postcode D-bus creation and event generation from fb-yv2-misc into phoshor-post-code-manager.
-  
-     xyz.openbmc_project.State.Hostx(0,1,2.N).Boot.Raw.Value
-
-**Approach 3 : << Move  Platform Dependent Service (fb-yv2-misc)  feature into phoshor-state-manager >>**
-  
-   Move postcode D-bus creation and event generation from fb-yv2-misc into phoshor-state-manager.
-   
-    xyz.openbmc_project.State.Hostx(0,1,2.N).Boot.Raw.Value
+ **phosphor-post-code-manager**
+       change single process into multi-process on phosphor-post-code-manager
+ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0OTcwNjU3OSwtNzMxNTY2NTYwLC0xNT
+eyJoaXN0b3J5IjpbLTEzNTk2NzAxOSwtNzMxNTY2NTYwLC0xNT
 A0MDkxNzEyLDIwNzkwODEzOTYsMTg5NzEzNzg0MCwxODAwODQz
 NjQ3LDkxNjIxMDEzLC00MTA2Mjc4NDIsMTA5NzU2MjAzMSw4ND
 c0NjU2MjksLTEyMTA3MjEzNDUsMTU4MTEwMDMxNSwyMDc0OTQ3
