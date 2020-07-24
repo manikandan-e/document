@@ -134,12 +134,10 @@ This library is part of [phosphor-ipmi-host](https://github.com/openbmc/phosphor
 
  - Register postcode callback interrupt handler(cmd = 0x08, netfn=0x38, lun=00).
  - Extract postcode from IPMIB response based on length.
- - Send extracted postcode to phosphor-host-postd by D-bus callback method registered in the phosphor-host-postd(xyz.openbmc_project.Misc.Ipmi.Update).
+ - Send extracted postcode to phosphor-host-postd.
  
 ## phosphor-host-postd
 
- This is new process going create as part of the openbmc/meta-facebook to handle Facebook platform specific feature.
- 
  - Create, register and add dbus connection for "/xyz/openbmc_project/hostX/state/boot/raw".
  - Add "Value" property to store current postcode from hostX(X=0,1,2.N).
  - Read each hosts postcode data from fb-ipmi-oem postcode interrupt handler.
@@ -187,6 +185,6 @@ The below operation part of the fb-yv2-misc.
  **phosphor-post-code-manager**
        change single process into multi-process on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MjU2ODI0LDE5NDkzNjYyNTAsLTE1NT
+eyJoaXN0b3J5IjpbNjYwMDE0ODAyLDE5NDkzNjYyNTAsLTE1NT
 MyOTczOTUsLTk1ODAyMjE3Ml19
 -->
