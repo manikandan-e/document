@@ -61,16 +61,17 @@ history at high-level overview
  - Read postcode from all servers.
  - Display the host postcode to the 7 segment display based on host position 
      selection.
- - Provide a command interface for user to see any server(multi-host) current postcode .
- - Provide a command interface for user to see any server(multi-host)
-    postcode history.
+ - Provide a command interface for user to see any server(multi-host) current 
+    postcode .
+  - Provide a command interface for user to see any server(multi-host) postcode
+    history.
  - Support for hot-plug-able host.
 
 ## Proposed Design
 
-This document proposes a new design engaging the IPMB interface to read port-80 
-post code from multiple-host. This design also supports host discovery including the 
-hot-plug-able host connected in slot.
+This document proposes a new design engaging the IPMB interface to read port-80
+post code from multiple-host. This design also supports host discovery
+including the hot-plug-able host connected in slot.
 
 Following modules will updated for this implementation
 
@@ -80,6 +81,7 @@ Following modules will updated for this implementation
  - phosphor-dbus-interfaces.
 
 **Interface Diagram**
+Provided below the post code interface diagram with flow sequence
 ```ascii
 +-------------------------------------------+                                                        
 |                  BMC                      |                                                        
@@ -204,6 +206,6 @@ The below D-Bus interface needs to created for multi-host post-code history.
       handle IPMI postcode , seven segment  display  and 
       host position specific feature.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMDQ1NzgxMiwtNTQ3Mjk0NTQ2LC04Nj
-Q1NzcyMzZdfQ==
+eyJoaXN0b3J5IjpbLTIwNjA3MDU3OTksLTU0NzI5NDU0NiwtOD
+Y0NTc3MjM2XX0=
 -->
