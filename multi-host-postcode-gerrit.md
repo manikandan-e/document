@@ -60,7 +60,7 @@ postcode and history at high-level overview
 
  - Read postcode from all servers.
  - Display the host postcode to the 7 segment display based on host position 
-     selected in the debug card.
+     selection.
  - Provide a command interface for user to see any server(multi-host) current postcode .
  - Provide a command interface for user to see any server(multi-host)
     postcode history.
@@ -147,7 +147,7 @@ and get the postcode  from host through
     handler(fb-ipmi-oem, intel-ipmi-oem,etc).
  - Send event to post-code-manager based on which host's postcode received 
    from IPMB interface (xyz.openbmc_project.State.HostX.Boot.Raw.Value) 
- - Read host position from dbus property (debug card).
+ - Read host position from dbus property .
  - Display current post-code into the 7 segment display 
    connected to BMC's 8 GPIOs based on the host position.
  
@@ -188,7 +188,7 @@ The below D-Bus interface needs to created for multi-host post-code history.
   **Platform specific service(fb-yv2-misc) alternate to phosphor-host-postd**
         Handle 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMjY1NzU5MywtMTU1MDMyNjM1NSwxNT
+eyJoaXN0b3J5IjpbMTk5MTc2MDQ0NSwtMTU1MDMyNjM1NSwxNT
 UxNTQwOTY3LC0xNzIzMjA3Njg2LC0xOTAxNDIxNjI2LDEwNTQy
 NjAwODgsLTExODk2MDQ2NzQsNzAwNDExMTA4LDI2MDcxODA5MC
 wxNzU0NTY4OTk2LDE2Njc0ODA5MDUsMTU1OTIyMzI4NSwtODY0
