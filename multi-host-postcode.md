@@ -201,8 +201,8 @@ The below D-Bus interface needs to created for multi-host post-code history.
        Change single process into multi-process  on phosphor-post-code-manager.
   
   **Platform specific service(fb-yv2-misc) alternate to phosphor-host-postd**
-      phosphor-host-postd supports only LPC interface and IPMI postcode 
-      and display it seven segment  display specific to platform 
+      create and run plafrom specific process daemon phosphIPMI postcode , seven segment  display  and host position specific to platform 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NDk3MTQxNCwtMTU2NzU2MjcxNl19
+eyJoaXN0b3J5IjpbLTIwMjM4NzIxNzAsLTE1Njc1NjI3MTZdfQ
+==
 -->
