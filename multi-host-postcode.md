@@ -56,7 +56,7 @@ The below component diagram shows the present implementation for postcode and hi
 ## Requirements
 
  - Read postcode from all servers.
- - Display given host postcode to 7 segment display based host position in debug card.
+ - Display the host postcode to the 7 segment display based on host position selected in the debug card.
  - Provide a command interface for user to see any server(multi-host) current postcode .
  - Provide a command interface for user to see any server(multi-host) postcode history.
  - Support for hot-plug-able host.
@@ -176,5 +176,5 @@ The below operation part of the fb-yv2-misc.
  **phosphor-post-code-manager**
        Change single process into multi-process  on phosphor-post-code-manager.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MTg4NjhdfQ==
+eyJoaXN0b3J5IjpbMTE0ODkwNjA0MiwxNzkxODg2OF19
 -->
