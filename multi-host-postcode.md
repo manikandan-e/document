@@ -147,7 +147,9 @@ and get the postcode  from host through
       Postcode D-bus interface needs to be created based on host present 
       discovery(Host state /xyz/openbmc_project/state/hostX(1,2,3.N) D-bus interface ).
       
- - Create, register and add dbus connection for "/xyz/openbmc_project/hostX(1,2,3.N)/state/boot/raw" based on  Host discovery as mentioned above.
+ - Create, register and add dbus connection for 
+ "/xyz/openbmc_project/hostX(1,2,3.N)/state/boot/raw" based on  
+ Host discovery as mentioned above.
  - Read each hosts postcode from Platform Specific OEM ServicesIPMI OEM 
     handler(fb-ipmi-oem, intel-ipmi-oem,etc).
  - Send event to post-code-manager based on which host's postcode received 
@@ -193,5 +195,5 @@ The below D-Bus interface needs to created for multi-host post-code history.
   **Platform specific service(fb-yv2-misc) alternate to phosphor-host-postd**
         Handle 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NDg2MTk5OF19
+eyJoaXN0b3J5IjpbODk2MTM2OTI4LDE0OTQ4NjE5OThdfQ==
 -->
