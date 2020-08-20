@@ -206,8 +206,8 @@ multi-host. This design shall not affect single host for post-code.
   The new method needs to create to interact between
   phosphor-host-postd and fb-ipmi-oem.
 
-  https://github.com/openbmc/phosphor-dbus-interfaces/blob/master/
-  xyz/openbmc_project/State/Boot/Raw.interface.yaml
+ [Raw.interface.yaml]( https://github.com/openbmc/phosphor-dbus-interfaces/blob/master/
+  xyz/openbmc_project/State/Boot/Raw.interface.yaml)
 
   methods:
   
@@ -240,11 +240,11 @@ multi-host. This design shall not affect single host for post-code.
    handle IPMI postcode, seven segment display and
    host position specific feature.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NzUwMTk2MiwtMTY0MDM1MjY2OCwtMj
-EyNzA2MzAxOSwtNTQ3Mjk0NTQ2LC05Mjg4ODUyNzAsODk2MTM2
-OTI4LC0xNTUwMzI2MzU1LDE1NTE1NDA5NjcsLTE3MjMyMDc2OD
-YsLTE5MDE0MjE2MjYsMTA1NDI2MDA4OCwtMTE4OTYwNDY3NCw3
-MDA0MTExMDgsMjYwNzE4MDkwLDE3NTQ1Njg5OTYsMTY2NzQ4MD
-kwNSwxNTU5MjIzMjg1LC04NjQ1OTIzODMsMTk3NTk3NzgyMCwt
-MTg0OTEyMTU1M119
+eyJoaXN0b3J5IjpbLTE3MzI4ODg0NzMsLTE2NDAzNTI2NjgsLT
+IxMjcwNjMwMTksLTU0NzI5NDU0NiwtOTI4ODg1MjcwLDg5NjEz
+NjkyOCwtMTU1MDMyNjM1NSwxNTUxNTQwOTY3LC0xNzIzMjA3Nj
+g2LC0xOTAxNDIxNjI2LDEwNTQyNjAwODgsLTExODk2MDQ2NzQs
+NzAwNDExMTA4LDI2MDcxODA5MCwxNzU0NTY4OTk2LDE2Njc0OD
+A5MDUsMTU1OTIyMzI4NSwtODY0NTkyMzgzLDE5NzU5Nzc4MjAs
+LTE4NDkxMjE1NTNdfQ==
 -->
