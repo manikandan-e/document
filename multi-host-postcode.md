@@ -210,6 +210,7 @@ multi-host. This design shall not affect single host for post-code.
   xyz/openbmc_project/State/Boot/Raw.interface.yaml
 
   methods:
+  
     - name: readPostcode
       description: >
           Method to get the post codes .
@@ -239,5 +240,5 @@ multi-host. This design shall not affect single host for post-code.
    handle IPMI postcode, seven segment display and
    host position specific feature.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyMzUxOTMzMiwtMTY0MDM1MjY2OF19
+eyJoaXN0b3J5IjpbLTk3NzUwMTk2MiwtMTY0MDM1MjY2OF19
 -->
