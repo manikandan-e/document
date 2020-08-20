@@ -177,6 +177,7 @@ The implementation involves the following changes in the phosphor-host-postd.
   Obj path  name    -- /xyz/openbmc_project/State/Boot/Raw
   
   Interface name    -- xyz.openbmc_project.State.Boot.Raw
+  
   method            -- readPostcode(new method added in
                         phoshpor-dbus-interfaces)
 
@@ -195,12 +196,10 @@ multi-host. This design shall not affect single host for post-code.
    The below D-Bus names needs to be created for multi-host post-code history.
 
    Service   name    -- xyz.openbmc_project.State.Boot.PostCodeX(0,1,2..N)
+   
    Obj path  name    -- /xyz/openbmc_project/State/Boot/PostCode
+   
    Interface name    -- xyz.openbmc_project.State.Boot.PostCode
-   property          -- CurrentBootCycleCount
-   property          -- MaxBootCycleNum
-   method            -- GetPostCodesWithTimeStamp
-
 
 ## phosphor-dbus-interfaces
 
@@ -240,5 +239,5 @@ multi-host. This design shall not affect single host for post-code.
    handle IPMI postcode, seven segment display and
    host position specific feature.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg0MDU5NTE3LC01NDUxMTMyNTVdfQ==
+eyJoaXN0b3J5IjpbLTE2NDAzNTI2NjgsLTU0NTExMzI1NV19
 -->
