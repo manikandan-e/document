@@ -178,7 +178,7 @@ The implementation involves the following changes in the phosphor-host-postd.
   
   Interface name    -- xyz.openbmc_project.State.Boot.Raw
   
-  method            -- readPostcode(new method added in
+  method                -- readPostcode(new method added in
                         phoshpor-dbus-interfaces)
 
 ## phosphor-post-code-manager
@@ -239,11 +239,11 @@ multi-host. This design shall not affect single host for post-code.
    handle IPMI postcode, seven segment display and
    host position specific feature.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDAzNTI2NjgsLTIxMjcwNjMwMTksLT
-U0NzI5NDU0NiwtOTI4ODg1MjcwLDg5NjEzNjkyOCwtMTU1MDMy
-NjM1NSwxNTUxNTQwOTY3LC0xNzIzMjA3Njg2LC0xOTAxNDIxNj
-I2LDEwNTQyNjAwODgsLTExODk2MDQ2NzQsNzAwNDExMTA4LDI2
-MDcxODA5MCwxNzU0NTY4OTk2LDE2Njc0ODA5MDUsMTU1OTIyMz
-I4NSwtODY0NTkyMzgzLDE5NzU5Nzc4MjAsLTE4NDkxMjE1NTMs
-NTA0MDg1ODMxXX0=
+eyJoaXN0b3J5IjpbMTMyMzUxOTMzMiwtMTY0MDM1MjY2OCwtMj
+EyNzA2MzAxOSwtNTQ3Mjk0NTQ2LC05Mjg4ODUyNzAsODk2MTM2
+OTI4LC0xNTUwMzI2MzU1LDE1NTE1NDA5NjcsLTE3MjMyMDc2OD
+YsLTE5MDE0MjE2MjYsMTA1NDI2MDA4OCwtMTE4OTYwNDY3NCw3
+MDA0MTExMDgsMjYwNzE4MDkwLDE3NTQ1Njg5OTYsMTY2NzQ4MD
+kwNSwxNTU5MjIzMjg1LC04NjQ1OTIzODMsMTk3NTk3NzgyMCwt
+MTg0OTEyMTU1M119
 -->
