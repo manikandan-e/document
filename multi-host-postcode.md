@@ -240,5 +240,5 @@ multi-host. This design shall not affect single host for post-code.
    handle IPMI postcode, seven segment display and
    host position specific feature.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzI4ODg0NzMsLTk3NzUwMTk2Ml19
+eyJoaXN0b3J5IjpbLTE3MzI4ODg0NzNdfQ==
 -->
