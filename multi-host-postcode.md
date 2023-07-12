@@ -8,7 +8,7 @@ Created: 2020-07-02
 
 ## Problem Description
 
-The current implementation in the phosphor-host-postd supports only single host
+The current implementation in the phosphor-host-postd supports only single host1
 postcode access through LPC interface.
 
 As the open BMC architecture is evolving, the single host support becomes
